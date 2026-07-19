@@ -18,6 +18,7 @@ Some files in this library are manually defined and are not automatically genera
 
 ### Predicates
 **interaction_attack**: Used to detect if entities have the `attack` NBT tag.
+
 **interaction_interact**: Used to detect if entities have the `interaction` NBT tag.
 
 ### Item Tags
