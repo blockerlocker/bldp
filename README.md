@@ -1,6 +1,6 @@
-bldp is a data pack library I use for my projects. This repo contains the entirety of bldp, but the individual modules can be generated with each individual Python script. The Python scripts must be stored in the `data` folder of your data pack in order to generate correctly. Below are descriptions of each module.
+bldp is a data pack library I use for my projects. This repo contains the entirety of bldp, but the individual modules can be generated with each individual Python script. The Python scripts must be stored in the `data` folder of your data pack in order to generate correctly. These are typically kept up-to-date to the latest snapshot, since that is the version I tend to develop in, so they are not guaranteed to be backwards compatible. Below are descriptions of each module.
 
-All Python scripts can have the target Minecraft version set manually be editing the **MCVERSION** variable near the top of script, or by running the script via the command line (ie; `python mined_block.py "26.2"`). This is also true of `!all.py`, which installs all modules in the folder using whatever MCVERSION it has set for itself.
+All Python scripts can have the target Minecraft version set manually be editing the **MCVERSION** variable near the top of script, or by running the script via the command line (ie; `python mined_block.py "26.3"`). This is also true of `!all.py`, which installs all modules in the folder using whatever MCVERSION it has set for itself.
 
 These generators are powered using the automatically generated and version-controlled mcmeta data maintained by Misode, check out the repo here: https://github.com/misode/mcmeta
 
@@ -14,7 +14,7 @@ These generators are powered using the automatically generated and version-contr
 (Other modules have yet to be converted into Python scripts, and will be documented here once they are.)
 
 ## Manually Defined Resources
-Some files in this library are manually defined and are not automatically generated. These are typically kept up-to-date to the latest snapshot, since that is the version I tend to develop in.
+Some files in this library are manually defined and are not automatically generated.
 
 ### Predicates
 **interaction_attack**: Used to detect if entities have the `attack` NBT tag.
