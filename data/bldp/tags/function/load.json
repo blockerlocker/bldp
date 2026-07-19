@@ -1,5 +1,7 @@
 {
     "values": [
-        "bldp:mined_block/load"
+        "bldp:crafted_item/load",
+        "bldp:mined_block/load",
+        "bldp:picked_up_item/load"
     ]
 }
