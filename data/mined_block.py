@@ -9,7 +9,7 @@ if len(sys.argv) > 1:
     MCVERSION = sys.argv[1]
 else:
 #### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "26.3-snapshot-5"
+    MCVERSION = "26.3-snapshot-6"
 
 
 abspath = os.path.abspath(__file__)
@@ -46,27 +46,17 @@ def generate_predicate(block_list):
     with open("bldp/predicate/mined_block.json", "w") as predicate_json:
         json.dump(predicate_template,predicate_json,indent=4)
 
-def generate_load(block_list):
-    load_template = ""
+def generate_per_item(list,string,path,file_name):
+    template = ""
 
-    for block in block_list:
-        load_template += "\nscoreboard objectives add bldp.mined."+block+" minecraft.mined:"+block
+    for item in list:
+        template += "\n"
+        template += string.replace("%(item)",item)
     
-    Path("bldp/function/mined_block/").mkdir(parents=True, exist_ok=True)
+    Path(path).mkdir(parents=True, exist_ok=True)
 
-    with open("bldp/function/mined_block/load.mcfunction", "w", encoding="utf-8") as load_mcfunction:
-        load_mcfunction.write(load_template)
-
-def generate_reset(block_list):
-    reset_template = ""
-
-    for block in block_list:
-        reset_template += "\nscoreboard players reset @s bldp.mined."+block
-    
-    Path("bldp/function/mined_block/").mkdir(parents=True, exist_ok=True)
-
-    with open("bldp/function/mined_block/reset.mcfunction", "w", encoding="utf-8") as reset_mcfunction:
-        reset_mcfunction.write(reset_template)
+    with open(path+file_name, "w", encoding="utf-8") as output_file:
+        output_file.write(template)
 
 def append_to_load(path,append_value):
     file_path = path + "load.json"
@@ -89,8 +79,9 @@ def append_to_load(path,append_value):
 def main():
     block_list = get_block_list()
     generate_predicate(block_list)
-    generate_load(block_list)
-    generate_reset(block_list)
+    generate_per_item(block_list,"scoreboard objectives add bldp.mined.%(item) minecraft.mined:%(item)","bldp/function/mined_block/","load.mcfunction")
+    generate_per_item(block_list,"scoreboard players reset @s bldp.mined.%(item)","bldp/function/mined_block/","reset.mcfunction")
+    generate_per_item(block_list,"execute if score @s bldp.mined.%(item) matches 1.. run data modify storage bldp:mined_block out set value %(item)","bldp/function/mined_block/","identify.mcfunction")
     append_to_load("bldp/tags/function/","bldp:mined_block/load")
     append_to_load("minecraft/tags/function/","#bldp:load")
 

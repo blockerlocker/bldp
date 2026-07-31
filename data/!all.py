@@ -8,7 +8,7 @@ if len(sys.argv) > 1:
     MCVERSION = sys.argv[1]
 else:
 #### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "26.3-snapshot-5"
+    MCVERSION = "26.3-snapshot-6"
 
 
 abspath = os.path.abspath(__file__)

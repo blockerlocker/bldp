@@ -9,7 +9,7 @@ if len(sys.argv) > 1:
     MCVERSION = sys.argv[1]
 else:
 #### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "26.3-snapshot-5"
+    MCVERSION = "26.3-snapshot-6"
 
 
 abspath = os.path.abspath(__file__)
@@ -46,27 +46,17 @@ def generate_predicate(item_list):
     with open("bldp/predicate/crafted_item.json", "w") as predicate_json:
         json.dump(predicate_template,predicate_json,indent=4)
 
-def generate_load(item_list):
-    load_template = ""
+def generate_per_item(list,string,path,file_name):
+    template = ""
 
-    for item in item_list:
-        load_template += "\nscoreboard objectives add bldp.crafted."+item+" minecraft.crafted:"+item
+    for item in list:
+        template += "\n"
+        template += string.replace("%(item)",item)
     
-    Path("bldp/function/crafted_item/").mkdir(parents=True, exist_ok=True)
+    Path(path).mkdir(parents=True, exist_ok=True)
 
-    with open("bldp/function/crafted_item/load.mcfunction", "w", encoding="utf-8") as load_mcfunction:
-        load_mcfunction.write(load_template)
-
-def generate_reset(item_list):
-    reset_template = ""
-
-    for item in item_list:
-        reset_template += "\nscoreboard players reset @s bldp.crafted."+item
-    
-    Path("bldp/function/crafted_item/").mkdir(parents=True, exist_ok=True)
-
-    with open("bldp/function/crafted_item/reset.mcfunction", "w", encoding="utf-8") as reset_mcfunction:
-        reset_mcfunction.write(reset_template)
+    with open(path+file_name, "w", encoding="utf-8") as output_file:
+        output_file.write(template)
 
 def append_to_load(path,append_value):
     file_path = path + "load.json"
@@ -89,8 +79,9 @@ def append_to_load(path,append_value):
 def main():
     item_list = get_item_list()
     generate_predicate(item_list)
-    generate_load(item_list)
-    generate_reset(item_list)
+    generate_per_item(item_list,"scoreboard objectives add bldp.crafted.%(item) minecraft.crafted:%(item)","bldp/function/crafted_item/","load.mcfunction")
+    generate_per_item(item_list,"scoreboard players reset @s bldp.crafted.%(item)","bldp/function/crafted_item/","reset.mcfunction")
+    generate_per_item(item_list,"execute if score @s bldp.crafted.%(item) matches 1.. run data modify storage bldp:crafted_item out set value %(item)","bldp/function/crafted_item/","identify.mcfunction")
     append_to_load("bldp/tags/function/","bldp:crafted_item/load")
     append_to_load("minecraft/tags/function/","#bldp:load")
 
