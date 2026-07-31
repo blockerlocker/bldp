@@ -46,7 +46,7 @@ def generate_predicate(block_list):
     with open("bldp/predicate/mined_block.json", "w") as predicate_json:
         json.dump(predicate_template,predicate_json,indent=4)
 
-def generate_per_item(list,string,path,file_name):
+def generate_line_per_item(list,string,path,file_name):
     template = ""
 
     for item in list:
@@ -79,9 +79,9 @@ def append_to_load(path,append_value):
 def main():
     block_list = get_block_list()
     generate_predicate(block_list)
-    generate_per_item(block_list,"scoreboard objectives add bldp.mined.%(item) minecraft.mined:%(item)","bldp/function/mined_block/","load.mcfunction")
-    generate_per_item(block_list,"scoreboard players reset @s bldp.mined.%(item)","bldp/function/mined_block/","reset.mcfunction")
-    generate_per_item(block_list,"execute if score @s bldp.mined.%(item) matches 1.. run data modify storage bldp:mined_block out set value %(item)","bldp/function/mined_block/","identify.mcfunction")
+    generate_line_per_item(block_list,"scoreboard objectives add bldp.mined.%(item) minecraft.mined:%(item)","bldp/function/mined_block/","load.mcfunction")
+    generate_line_per_item(block_list,"scoreboard players reset @s bldp.mined.%(item)","bldp/function/mined_block/","reset.mcfunction")
+    generate_line_per_item(block_list,"execute if score @s bldp.mined.%(item) matches 1.. run data modify storage bldp:mined_block out set value %(item)","bldp/function/mined_block/","identify.mcfunction")
     append_to_load("bldp/tags/function/","bldp:mined_block/load")
     append_to_load("minecraft/tags/function/","#bldp:load")
 
