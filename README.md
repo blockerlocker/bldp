@@ -10,6 +10,7 @@ These generators are powered using the automatically generated and version-contr
 | mined_block | A predicate that can be used to detect if the player mined any block. The predicate is `bldp:mined_block`, and uses a scoreboard for every block in the game. You must manually program logic for resetting the scoreboard once detected via the function `bldp:mined_block/reset`. |
 | crafted_item | A predicate that can be used to detect if the player crafted any item. The predicate is `bldp:crafted_item`, and uses a scoreboard for every item in the game. You must manually program logic for resetting the scoreboard once detected via the function `bldp:crafted_item/reset`. |
 | picked_up_item | A predicate that can be used to detect if the player picked up any item. The predicate is `bldp:picked_up_item`, and uses a scoreboard for every item in the game. You must manually program logic for resetting the scoreboard once detected via the function `bldp:picked_up_item/reset`. |
+| update_tags | Sorts every block, entity, and item into different tags based on when they were added to the game. So if you want to kill every entity added in the 1.4.2 Pretty Scary Update, you can run `/kill @e[type=#bldp:update/1.4.2]`. The generator for this pack does not currently support older versions where IDs were different, its designed for the most recent version of the game. |
 
 (Other modules have yet to be converted into Python scripts, and will be documented here once they are.)
 
