@@ -3,6 +3,8 @@ from pathlib import Path
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+DEBUG = True
+
 print("--Grabbing version manifest")
 version_manifest = json.load(urllib.request.urlopen("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"))
 
@@ -224,10 +226,22 @@ def save_tag(tag_list,path,id):
         json.dump({"values":tag_list},new_json,indent=4)
 
 print("--Saving tag files")
+applicable_versions = []
 for version in all_versions:
     if "item_list" in version and version["item_list"] != None and len(version["item_list"]) > 0:
         save_tag(version["item_list"],"bldp/tags/item/update",version['id'])
+        if not version['id'] in applicable_versions:
+            applicable_versions.append(version['id'])
     if "block_list" in version and version["block_list"] != None and len(version["block_list"]) > 0:
         save_tag(version["block_list"],"bldp/tags/block/update",version['id'])
+        if not version['id'] in applicable_versions:
+            applicable_versions.append(version['id'])
     if "entity_type_list" in version and version["entity_type_list"] != None and len(version["entity_type_list"]) > 0:
         save_tag(version["entity_type_list"],"bldp/tags/entity_type/update",version['id'])
+        if not version['id'] in applicable_versions:
+            applicable_versions.append(version['id'])
+
+if DEBUG == True:
+    Path("debug").mkdir(parents=True, exist_ok=True)
+    with open(f"debug/update_tags_versions.json", "w") as new_json:
+        json.dump({"versions":applicable_versions},new_json,indent=4)
