@@ -27,3 +27,8 @@ Some files in this library are manually defined and are not automatically genera
 | Item Tag | Description |
 | --- | --- |
 | block_placing_item | All items that can be used to place blocks. |
+
+### Functions
+| Function | Description |
+| --- | --- |
+| test/within_world | Returns either true or false depending on whether or not the execution location is within the world (the tile allows block modification). |
