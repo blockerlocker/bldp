@@ -1,4 +1,5 @@
 
+scoreboard players reset @s bldp.picked_up.abandoned_camp_map
 scoreboard players reset @s bldp.picked_up.acacia_boat
 scoreboard players reset @s bldp.picked_up.acacia_button
 scoreboard players reset @s bldp.picked_up.acacia_chest_boat
@@ -103,6 +104,8 @@ scoreboard players reset @s bldp.picked_up.black_candle
 scoreboard players reset @s bldp.picked_up.black_carpet
 scoreboard players reset @s bldp.picked_up.black_concrete
 scoreboard players reset @s bldp.picked_up.black_concrete_powder
+scoreboard players reset @s bldp.picked_up.black_concrete_slab
+scoreboard players reset @s bldp.picked_up.black_concrete_stairs
 scoreboard players reset @s bldp.picked_up.black_cushion
 scoreboard players reset @s bldp.picked_up.black_dye
 scoreboard players reset @s bldp.picked_up.black_glazed_terracotta
@@ -130,6 +133,8 @@ scoreboard players reset @s bldp.picked_up.blue_candle
 scoreboard players reset @s bldp.picked_up.blue_carpet
 scoreboard players reset @s bldp.picked_up.blue_concrete
 scoreboard players reset @s bldp.picked_up.blue_concrete_powder
+scoreboard players reset @s bldp.picked_up.blue_concrete_slab
+scoreboard players reset @s bldp.picked_up.blue_concrete_stairs
 scoreboard players reset @s bldp.picked_up.blue_cushion
 scoreboard players reset @s bldp.picked_up.blue_dye
 scoreboard players reset @s bldp.picked_up.blue_egg
@@ -174,6 +179,8 @@ scoreboard players reset @s bldp.picked_up.brown_candle
 scoreboard players reset @s bldp.picked_up.brown_carpet
 scoreboard players reset @s bldp.picked_up.brown_concrete
 scoreboard players reset @s bldp.picked_up.brown_concrete_powder
+scoreboard players reset @s bldp.picked_up.brown_concrete_slab
+scoreboard players reset @s bldp.picked_up.brown_concrete_stairs
 scoreboard players reset @s bldp.picked_up.brown_cushion
 scoreboard players reset @s bldp.picked_up.brown_dye
 scoreboard players reset @s bldp.picked_up.brown_egg
@@ -195,6 +202,9 @@ scoreboard players reset @s bldp.picked_up.bubble_coral_fan
 scoreboard players reset @s bldp.picked_up.bucket
 scoreboard players reset @s bldp.picked_up.budding_amethyst
 scoreboard players reset @s bldp.picked_up.bundle
+scoreboard players reset @s bldp.picked_up.buried_ancient_city_map
+scoreboard players reset @s bldp.picked_up.buried_mineshaft_map
+scoreboard players reset @s bldp.picked_up.buried_treasure_map
 scoreboard players reset @s bldp.picked_up.burn_pottery_sherd
 scoreboard players reset @s bldp.picked_up.bush
 scoreboard players reset @s bldp.picked_up.cactus
@@ -377,6 +387,8 @@ scoreboard players reset @s bldp.picked_up.cyan_candle
 scoreboard players reset @s bldp.picked_up.cyan_carpet
 scoreboard players reset @s bldp.picked_up.cyan_concrete
 scoreboard players reset @s bldp.picked_up.cyan_concrete_powder
+scoreboard players reset @s bldp.picked_up.cyan_concrete_slab
+scoreboard players reset @s bldp.picked_up.cyan_concrete_stairs
 scoreboard players reset @s bldp.picked_up.cyan_cushion
 scoreboard players reset @s bldp.picked_up.cyan_dye
 scoreboard players reset @s bldp.picked_up.cyan_glazed_terracotta
@@ -448,6 +460,8 @@ scoreboard players reset @s bldp.picked_up.deepslate_tile_slab
 scoreboard players reset @s bldp.picked_up.deepslate_tile_stairs
 scoreboard players reset @s bldp.picked_up.deepslate_tile_wall
 scoreboard players reset @s bldp.picked_up.deepslate_tiles
+scoreboard players reset @s bldp.picked_up.desert_pyramid_map
+scoreboard players reset @s bldp.picked_up.desert_village_map
 scoreboard players reset @s bldp.picked_up.detector_rail
 scoreboard players reset @s bldp.picked_up.diamond
 scoreboard players reset @s bldp.picked_up.diamond_axe
@@ -606,6 +620,8 @@ scoreboard players reset @s bldp.picked_up.gray_candle
 scoreboard players reset @s bldp.picked_up.gray_carpet
 scoreboard players reset @s bldp.picked_up.gray_concrete
 scoreboard players reset @s bldp.picked_up.gray_concrete_powder
+scoreboard players reset @s bldp.picked_up.gray_concrete_slab
+scoreboard players reset @s bldp.picked_up.gray_concrete_stairs
 scoreboard players reset @s bldp.picked_up.gray_cushion
 scoreboard players reset @s bldp.picked_up.gray_dye
 scoreboard players reset @s bldp.picked_up.gray_glazed_terracotta
@@ -624,6 +640,8 @@ scoreboard players reset @s bldp.picked_up.green_candle
 scoreboard players reset @s bldp.picked_up.green_carpet
 scoreboard players reset @s bldp.picked_up.green_concrete
 scoreboard players reset @s bldp.picked_up.green_concrete_powder
+scoreboard players reset @s bldp.picked_up.green_concrete_slab
+scoreboard players reset @s bldp.picked_up.green_concrete_stairs
 scoreboard players reset @s bldp.picked_up.green_cushion
 scoreboard players reset @s bldp.picked_up.green_dye
 scoreboard players reset @s bldp.picked_up.green_glazed_terracotta
@@ -700,6 +718,7 @@ scoreboard players reset @s bldp.picked_up.jungle_boat
 scoreboard players reset @s bldp.picked_up.jungle_button
 scoreboard players reset @s bldp.picked_up.jungle_chest_boat
 scoreboard players reset @s bldp.picked_up.jungle_door
+scoreboard players reset @s bldp.picked_up.jungle_explorer_map
 scoreboard players reset @s bldp.picked_up.jungle_fence
 scoreboard players reset @s bldp.picked_up.jungle_fence_gate
 scoreboard players reset @s bldp.picked_up.jungle_hanging_sign
@@ -742,6 +761,8 @@ scoreboard players reset @s bldp.picked_up.light_blue_candle
 scoreboard players reset @s bldp.picked_up.light_blue_carpet
 scoreboard players reset @s bldp.picked_up.light_blue_concrete
 scoreboard players reset @s bldp.picked_up.light_blue_concrete_powder
+scoreboard players reset @s bldp.picked_up.light_blue_concrete_slab
+scoreboard players reset @s bldp.picked_up.light_blue_concrete_stairs
 scoreboard players reset @s bldp.picked_up.light_blue_cushion
 scoreboard players reset @s bldp.picked_up.light_blue_dye
 scoreboard players reset @s bldp.picked_up.light_blue_glazed_terracotta
@@ -760,6 +781,8 @@ scoreboard players reset @s bldp.picked_up.light_gray_candle
 scoreboard players reset @s bldp.picked_up.light_gray_carpet
 scoreboard players reset @s bldp.picked_up.light_gray_concrete
 scoreboard players reset @s bldp.picked_up.light_gray_concrete_powder
+scoreboard players reset @s bldp.picked_up.light_gray_concrete_slab
+scoreboard players reset @s bldp.picked_up.light_gray_concrete_stairs
 scoreboard players reset @s bldp.picked_up.light_gray_cushion
 scoreboard players reset @s bldp.picked_up.light_gray_dye
 scoreboard players reset @s bldp.picked_up.light_gray_glazed_terracotta
@@ -783,6 +806,8 @@ scoreboard players reset @s bldp.picked_up.lime_candle
 scoreboard players reset @s bldp.picked_up.lime_carpet
 scoreboard players reset @s bldp.picked_up.lime_concrete
 scoreboard players reset @s bldp.picked_up.lime_concrete_powder
+scoreboard players reset @s bldp.picked_up.lime_concrete_slab
+scoreboard players reset @s bldp.picked_up.lime_concrete_stairs
 scoreboard players reset @s bldp.picked_up.lime_cushion
 scoreboard players reset @s bldp.picked_up.lime_dye
 scoreboard players reset @s bldp.picked_up.lime_glazed_terracotta
@@ -806,6 +831,8 @@ scoreboard players reset @s bldp.picked_up.magenta_candle
 scoreboard players reset @s bldp.picked_up.magenta_carpet
 scoreboard players reset @s bldp.picked_up.magenta_concrete
 scoreboard players reset @s bldp.picked_up.magenta_concrete_powder
+scoreboard players reset @s bldp.picked_up.magenta_concrete_slab
+scoreboard players reset @s bldp.picked_up.magenta_concrete_stairs
 scoreboard players reset @s bldp.picked_up.magenta_cushion
 scoreboard players reset @s bldp.picked_up.magenta_dye
 scoreboard players reset @s bldp.picked_up.magenta_glazed_terracotta
@@ -946,6 +973,7 @@ scoreboard players reset @s bldp.picked_up.oak_trapdoor
 scoreboard players reset @s bldp.picked_up.oak_wood
 scoreboard players reset @s bldp.picked_up.observer
 scoreboard players reset @s bldp.picked_up.obsidian
+scoreboard players reset @s bldp.picked_up.ocean_explorer_map
 scoreboard players reset @s bldp.picked_up.ocelot_spawn_egg
 scoreboard players reset @s bldp.picked_up.ochre_froglight
 scoreboard players reset @s bldp.picked_up.ominous_bottle
@@ -958,6 +986,8 @@ scoreboard players reset @s bldp.picked_up.orange_candle
 scoreboard players reset @s bldp.picked_up.orange_carpet
 scoreboard players reset @s bldp.picked_up.orange_concrete
 scoreboard players reset @s bldp.picked_up.orange_concrete_powder
+scoreboard players reset @s bldp.picked_up.orange_concrete_slab
+scoreboard players reset @s bldp.picked_up.orange_concrete_stairs
 scoreboard players reset @s bldp.picked_up.orange_cushion
 scoreboard players reset @s bldp.picked_up.orange_dye
 scoreboard players reset @s bldp.picked_up.orange_glazed_terracotta
@@ -1033,6 +1063,8 @@ scoreboard players reset @s bldp.picked_up.pink_candle
 scoreboard players reset @s bldp.picked_up.pink_carpet
 scoreboard players reset @s bldp.picked_up.pink_concrete
 scoreboard players reset @s bldp.picked_up.pink_concrete_powder
+scoreboard players reset @s bldp.picked_up.pink_concrete_slab
+scoreboard players reset @s bldp.picked_up.pink_concrete_stairs
 scoreboard players reset @s bldp.picked_up.pink_cushion
 scoreboard players reset @s bldp.picked_up.pink_dye
 scoreboard players reset @s bldp.picked_up.pink_glazed_terracotta
@@ -1049,6 +1081,7 @@ scoreboard players reset @s bldp.picked_up.pink_wool_stairs
 scoreboard players reset @s bldp.picked_up.piston
 scoreboard players reset @s bldp.picked_up.pitcher_plant
 scoreboard players reset @s bldp.picked_up.pitcher_pod
+scoreboard players reset @s bldp.picked_up.plains_village_map
 scoreboard players reset @s bldp.picked_up.player_head
 scoreboard players reset @s bldp.picked_up.plenty_pottery_sherd
 scoreboard players reset @s bldp.picked_up.podzol
@@ -1139,6 +1172,8 @@ scoreboard players reset @s bldp.picked_up.purple_candle
 scoreboard players reset @s bldp.picked_up.purple_carpet
 scoreboard players reset @s bldp.picked_up.purple_concrete
 scoreboard players reset @s bldp.picked_up.purple_concrete_powder
+scoreboard players reset @s bldp.picked_up.purple_concrete_slab
+scoreboard players reset @s bldp.picked_up.purple_concrete_stairs
 scoreboard players reset @s bldp.picked_up.purple_cushion
 scoreboard players reset @s bldp.picked_up.purple_dye
 scoreboard players reset @s bldp.picked_up.purple_glazed_terracotta
@@ -1182,6 +1217,8 @@ scoreboard players reset @s bldp.picked_up.red_candle
 scoreboard players reset @s bldp.picked_up.red_carpet
 scoreboard players reset @s bldp.picked_up.red_concrete
 scoreboard players reset @s bldp.picked_up.red_concrete_powder
+scoreboard players reset @s bldp.picked_up.red_concrete_slab
+scoreboard players reset @s bldp.picked_up.red_concrete_stairs
 scoreboard players reset @s bldp.picked_up.red_cushion
 scoreboard players reset @s bldp.picked_up.red_dye
 scoreboard players reset @s bldp.picked_up.red_glazed_terracotta
@@ -1236,6 +1273,7 @@ scoreboard players reset @s bldp.picked_up.sandstone
 scoreboard players reset @s bldp.picked_up.sandstone_slab
 scoreboard players reset @s bldp.picked_up.sandstone_stairs
 scoreboard players reset @s bldp.picked_up.sandstone_wall
+scoreboard players reset @s bldp.picked_up.savanna_village_map
 scoreboard players reset @s bldp.picked_up.scaffolding
 scoreboard players reset @s bldp.picked_up.scrape_pottery_sherd
 scoreboard players reset @s bldp.picked_up.sculk
@@ -1294,6 +1332,7 @@ scoreboard players reset @s bldp.picked_up.snow
 scoreboard players reset @s bldp.picked_up.snow_block
 scoreboard players reset @s bldp.picked_up.snow_golem_spawn_egg
 scoreboard players reset @s bldp.picked_up.snowball
+scoreboard players reset @s bldp.picked_up.snowy_village_map
 scoreboard players reset @s bldp.picked_up.soul_campfire
 scoreboard players reset @s bldp.picked_up.soul_lantern
 scoreboard players reset @s bldp.picked_up.soul_sand
@@ -1393,9 +1432,11 @@ scoreboard players reset @s bldp.picked_up.sunflower
 scoreboard players reset @s bldp.picked_up.suspicious_gravel
 scoreboard players reset @s bldp.picked_up.suspicious_sand
 scoreboard players reset @s bldp.picked_up.suspicious_stew
+scoreboard players reset @s bldp.picked_up.swamp_explorer_map
 scoreboard players reset @s bldp.picked_up.sweet_berries
 scoreboard players reset @s bldp.picked_up.tadpole_bucket
 scoreboard players reset @s bldp.picked_up.tadpole_spawn_egg
+scoreboard players reset @s bldp.picked_up.taiga_village_map
 scoreboard players reset @s bldp.picked_up.tall_dry_grass
 scoreboard players reset @s bldp.picked_up.tall_grass
 scoreboard players reset @s bldp.picked_up.target
@@ -1413,6 +1454,7 @@ scoreboard players reset @s bldp.picked_up.torchflower_seeds
 scoreboard players reset @s bldp.picked_up.totem_of_undying
 scoreboard players reset @s bldp.picked_up.trader_llama_spawn_egg
 scoreboard players reset @s bldp.picked_up.trapped_chest
+scoreboard players reset @s bldp.picked_up.trial_explorer_map
 scoreboard players reset @s bldp.picked_up.trial_key
 scoreboard players reset @s bldp.picked_up.trial_spawner
 scoreboard players reset @s bldp.picked_up.trident
@@ -1446,6 +1488,7 @@ scoreboard players reset @s bldp.picked_up.vine
 scoreboard players reset @s bldp.picked_up.wandering_trader_spawn_egg
 scoreboard players reset @s bldp.picked_up.ward_armor_trim_smithing_template
 scoreboard players reset @s bldp.picked_up.warden_spawn_egg
+scoreboard players reset @s bldp.picked_up.warm_ocean_ruins_map
 scoreboard players reset @s bldp.picked_up.warped_button
 scoreboard players reset @s bldp.picked_up.warped_door
 scoreboard players reset @s bldp.picked_up.warped_fence
@@ -1553,6 +1596,8 @@ scoreboard players reset @s bldp.picked_up.white_candle
 scoreboard players reset @s bldp.picked_up.white_carpet
 scoreboard players reset @s bldp.picked_up.white_concrete
 scoreboard players reset @s bldp.picked_up.white_concrete_powder
+scoreboard players reset @s bldp.picked_up.white_concrete_slab
+scoreboard players reset @s bldp.picked_up.white_concrete_stairs
 scoreboard players reset @s bldp.picked_up.white_cushion
 scoreboard players reset @s bldp.picked_up.white_dye
 scoreboard players reset @s bldp.picked_up.white_glazed_terracotta
@@ -1581,6 +1626,7 @@ scoreboard players reset @s bldp.picked_up.wooden_pickaxe
 scoreboard players reset @s bldp.picked_up.wooden_shovel
 scoreboard players reset @s bldp.picked_up.wooden_spear
 scoreboard players reset @s bldp.picked_up.wooden_sword
+scoreboard players reset @s bldp.picked_up.woodland_explorer_map
 scoreboard players reset @s bldp.picked_up.writable_book
 scoreboard players reset @s bldp.picked_up.written_book
 scoreboard players reset @s bldp.picked_up.yellow_banner
@@ -1590,6 +1636,8 @@ scoreboard players reset @s bldp.picked_up.yellow_candle
 scoreboard players reset @s bldp.picked_up.yellow_carpet
 scoreboard players reset @s bldp.picked_up.yellow_concrete
 scoreboard players reset @s bldp.picked_up.yellow_concrete_powder
+scoreboard players reset @s bldp.picked_up.yellow_concrete_slab
+scoreboard players reset @s bldp.picked_up.yellow_concrete_stairs
 scoreboard players reset @s bldp.picked_up.yellow_cushion
 scoreboard players reset @s bldp.picked_up.yellow_dye
 scoreboard players reset @s bldp.picked_up.yellow_glazed_terracotta

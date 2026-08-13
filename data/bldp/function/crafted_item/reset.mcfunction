@@ -1,4 +1,5 @@
 
+scoreboard players reset @s bldp.crafted.abandoned_camp_map
 scoreboard players reset @s bldp.crafted.acacia_boat
 scoreboard players reset @s bldp.crafted.acacia_button
 scoreboard players reset @s bldp.crafted.acacia_chest_boat
@@ -103,6 +104,8 @@ scoreboard players reset @s bldp.crafted.black_candle
 scoreboard players reset @s bldp.crafted.black_carpet
 scoreboard players reset @s bldp.crafted.black_concrete
 scoreboard players reset @s bldp.crafted.black_concrete_powder
+scoreboard players reset @s bldp.crafted.black_concrete_slab
+scoreboard players reset @s bldp.crafted.black_concrete_stairs
 scoreboard players reset @s bldp.crafted.black_cushion
 scoreboard players reset @s bldp.crafted.black_dye
 scoreboard players reset @s bldp.crafted.black_glazed_terracotta
@@ -130,6 +133,8 @@ scoreboard players reset @s bldp.crafted.blue_candle
 scoreboard players reset @s bldp.crafted.blue_carpet
 scoreboard players reset @s bldp.crafted.blue_concrete
 scoreboard players reset @s bldp.crafted.blue_concrete_powder
+scoreboard players reset @s bldp.crafted.blue_concrete_slab
+scoreboard players reset @s bldp.crafted.blue_concrete_stairs
 scoreboard players reset @s bldp.crafted.blue_cushion
 scoreboard players reset @s bldp.crafted.blue_dye
 scoreboard players reset @s bldp.crafted.blue_egg
@@ -174,6 +179,8 @@ scoreboard players reset @s bldp.crafted.brown_candle
 scoreboard players reset @s bldp.crafted.brown_carpet
 scoreboard players reset @s bldp.crafted.brown_concrete
 scoreboard players reset @s bldp.crafted.brown_concrete_powder
+scoreboard players reset @s bldp.crafted.brown_concrete_slab
+scoreboard players reset @s bldp.crafted.brown_concrete_stairs
 scoreboard players reset @s bldp.crafted.brown_cushion
 scoreboard players reset @s bldp.crafted.brown_dye
 scoreboard players reset @s bldp.crafted.brown_egg
@@ -195,6 +202,9 @@ scoreboard players reset @s bldp.crafted.bubble_coral_fan
 scoreboard players reset @s bldp.crafted.bucket
 scoreboard players reset @s bldp.crafted.budding_amethyst
 scoreboard players reset @s bldp.crafted.bundle
+scoreboard players reset @s bldp.crafted.buried_ancient_city_map
+scoreboard players reset @s bldp.crafted.buried_mineshaft_map
+scoreboard players reset @s bldp.crafted.buried_treasure_map
 scoreboard players reset @s bldp.crafted.burn_pottery_sherd
 scoreboard players reset @s bldp.crafted.bush
 scoreboard players reset @s bldp.crafted.cactus
@@ -377,6 +387,8 @@ scoreboard players reset @s bldp.crafted.cyan_candle
 scoreboard players reset @s bldp.crafted.cyan_carpet
 scoreboard players reset @s bldp.crafted.cyan_concrete
 scoreboard players reset @s bldp.crafted.cyan_concrete_powder
+scoreboard players reset @s bldp.crafted.cyan_concrete_slab
+scoreboard players reset @s bldp.crafted.cyan_concrete_stairs
 scoreboard players reset @s bldp.crafted.cyan_cushion
 scoreboard players reset @s bldp.crafted.cyan_dye
 scoreboard players reset @s bldp.crafted.cyan_glazed_terracotta
@@ -448,6 +460,8 @@ scoreboard players reset @s bldp.crafted.deepslate_tile_slab
 scoreboard players reset @s bldp.crafted.deepslate_tile_stairs
 scoreboard players reset @s bldp.crafted.deepslate_tile_wall
 scoreboard players reset @s bldp.crafted.deepslate_tiles
+scoreboard players reset @s bldp.crafted.desert_pyramid_map
+scoreboard players reset @s bldp.crafted.desert_village_map
 scoreboard players reset @s bldp.crafted.detector_rail
 scoreboard players reset @s bldp.crafted.diamond
 scoreboard players reset @s bldp.crafted.diamond_axe
@@ -606,6 +620,8 @@ scoreboard players reset @s bldp.crafted.gray_candle
 scoreboard players reset @s bldp.crafted.gray_carpet
 scoreboard players reset @s bldp.crafted.gray_concrete
 scoreboard players reset @s bldp.crafted.gray_concrete_powder
+scoreboard players reset @s bldp.crafted.gray_concrete_slab
+scoreboard players reset @s bldp.crafted.gray_concrete_stairs
 scoreboard players reset @s bldp.crafted.gray_cushion
 scoreboard players reset @s bldp.crafted.gray_dye
 scoreboard players reset @s bldp.crafted.gray_glazed_terracotta
@@ -624,6 +640,8 @@ scoreboard players reset @s bldp.crafted.green_candle
 scoreboard players reset @s bldp.crafted.green_carpet
 scoreboard players reset @s bldp.crafted.green_concrete
 scoreboard players reset @s bldp.crafted.green_concrete_powder
+scoreboard players reset @s bldp.crafted.green_concrete_slab
+scoreboard players reset @s bldp.crafted.green_concrete_stairs
 scoreboard players reset @s bldp.crafted.green_cushion
 scoreboard players reset @s bldp.crafted.green_dye
 scoreboard players reset @s bldp.crafted.green_glazed_terracotta
@@ -700,6 +718,7 @@ scoreboard players reset @s bldp.crafted.jungle_boat
 scoreboard players reset @s bldp.crafted.jungle_button
 scoreboard players reset @s bldp.crafted.jungle_chest_boat
 scoreboard players reset @s bldp.crafted.jungle_door
+scoreboard players reset @s bldp.crafted.jungle_explorer_map
 scoreboard players reset @s bldp.crafted.jungle_fence
 scoreboard players reset @s bldp.crafted.jungle_fence_gate
 scoreboard players reset @s bldp.crafted.jungle_hanging_sign
@@ -742,6 +761,8 @@ scoreboard players reset @s bldp.crafted.light_blue_candle
 scoreboard players reset @s bldp.crafted.light_blue_carpet
 scoreboard players reset @s bldp.crafted.light_blue_concrete
 scoreboard players reset @s bldp.crafted.light_blue_concrete_powder
+scoreboard players reset @s bldp.crafted.light_blue_concrete_slab
+scoreboard players reset @s bldp.crafted.light_blue_concrete_stairs
 scoreboard players reset @s bldp.crafted.light_blue_cushion
 scoreboard players reset @s bldp.crafted.light_blue_dye
 scoreboard players reset @s bldp.crafted.light_blue_glazed_terracotta
@@ -760,6 +781,8 @@ scoreboard players reset @s bldp.crafted.light_gray_candle
 scoreboard players reset @s bldp.crafted.light_gray_carpet
 scoreboard players reset @s bldp.crafted.light_gray_concrete
 scoreboard players reset @s bldp.crafted.light_gray_concrete_powder
+scoreboard players reset @s bldp.crafted.light_gray_concrete_slab
+scoreboard players reset @s bldp.crafted.light_gray_concrete_stairs
 scoreboard players reset @s bldp.crafted.light_gray_cushion
 scoreboard players reset @s bldp.crafted.light_gray_dye
 scoreboard players reset @s bldp.crafted.light_gray_glazed_terracotta
@@ -783,6 +806,8 @@ scoreboard players reset @s bldp.crafted.lime_candle
 scoreboard players reset @s bldp.crafted.lime_carpet
 scoreboard players reset @s bldp.crafted.lime_concrete
 scoreboard players reset @s bldp.crafted.lime_concrete_powder
+scoreboard players reset @s bldp.crafted.lime_concrete_slab
+scoreboard players reset @s bldp.crafted.lime_concrete_stairs
 scoreboard players reset @s bldp.crafted.lime_cushion
 scoreboard players reset @s bldp.crafted.lime_dye
 scoreboard players reset @s bldp.crafted.lime_glazed_terracotta
@@ -806,6 +831,8 @@ scoreboard players reset @s bldp.crafted.magenta_candle
 scoreboard players reset @s bldp.crafted.magenta_carpet
 scoreboard players reset @s bldp.crafted.magenta_concrete
 scoreboard players reset @s bldp.crafted.magenta_concrete_powder
+scoreboard players reset @s bldp.crafted.magenta_concrete_slab
+scoreboard players reset @s bldp.crafted.magenta_concrete_stairs
 scoreboard players reset @s bldp.crafted.magenta_cushion
 scoreboard players reset @s bldp.crafted.magenta_dye
 scoreboard players reset @s bldp.crafted.magenta_glazed_terracotta
@@ -946,6 +973,7 @@ scoreboard players reset @s bldp.crafted.oak_trapdoor
 scoreboard players reset @s bldp.crafted.oak_wood
 scoreboard players reset @s bldp.crafted.observer
 scoreboard players reset @s bldp.crafted.obsidian
+scoreboard players reset @s bldp.crafted.ocean_explorer_map
 scoreboard players reset @s bldp.crafted.ocelot_spawn_egg
 scoreboard players reset @s bldp.crafted.ochre_froglight
 scoreboard players reset @s bldp.crafted.ominous_bottle
@@ -958,6 +986,8 @@ scoreboard players reset @s bldp.crafted.orange_candle
 scoreboard players reset @s bldp.crafted.orange_carpet
 scoreboard players reset @s bldp.crafted.orange_concrete
 scoreboard players reset @s bldp.crafted.orange_concrete_powder
+scoreboard players reset @s bldp.crafted.orange_concrete_slab
+scoreboard players reset @s bldp.crafted.orange_concrete_stairs
 scoreboard players reset @s bldp.crafted.orange_cushion
 scoreboard players reset @s bldp.crafted.orange_dye
 scoreboard players reset @s bldp.crafted.orange_glazed_terracotta
@@ -1033,6 +1063,8 @@ scoreboard players reset @s bldp.crafted.pink_candle
 scoreboard players reset @s bldp.crafted.pink_carpet
 scoreboard players reset @s bldp.crafted.pink_concrete
 scoreboard players reset @s bldp.crafted.pink_concrete_powder
+scoreboard players reset @s bldp.crafted.pink_concrete_slab
+scoreboard players reset @s bldp.crafted.pink_concrete_stairs
 scoreboard players reset @s bldp.crafted.pink_cushion
 scoreboard players reset @s bldp.crafted.pink_dye
 scoreboard players reset @s bldp.crafted.pink_glazed_terracotta
@@ -1049,6 +1081,7 @@ scoreboard players reset @s bldp.crafted.pink_wool_stairs
 scoreboard players reset @s bldp.crafted.piston
 scoreboard players reset @s bldp.crafted.pitcher_plant
 scoreboard players reset @s bldp.crafted.pitcher_pod
+scoreboard players reset @s bldp.crafted.plains_village_map
 scoreboard players reset @s bldp.crafted.player_head
 scoreboard players reset @s bldp.crafted.plenty_pottery_sherd
 scoreboard players reset @s bldp.crafted.podzol
@@ -1139,6 +1172,8 @@ scoreboard players reset @s bldp.crafted.purple_candle
 scoreboard players reset @s bldp.crafted.purple_carpet
 scoreboard players reset @s bldp.crafted.purple_concrete
 scoreboard players reset @s bldp.crafted.purple_concrete_powder
+scoreboard players reset @s bldp.crafted.purple_concrete_slab
+scoreboard players reset @s bldp.crafted.purple_concrete_stairs
 scoreboard players reset @s bldp.crafted.purple_cushion
 scoreboard players reset @s bldp.crafted.purple_dye
 scoreboard players reset @s bldp.crafted.purple_glazed_terracotta
@@ -1182,6 +1217,8 @@ scoreboard players reset @s bldp.crafted.red_candle
 scoreboard players reset @s bldp.crafted.red_carpet
 scoreboard players reset @s bldp.crafted.red_concrete
 scoreboard players reset @s bldp.crafted.red_concrete_powder
+scoreboard players reset @s bldp.crafted.red_concrete_slab
+scoreboard players reset @s bldp.crafted.red_concrete_stairs
 scoreboard players reset @s bldp.crafted.red_cushion
 scoreboard players reset @s bldp.crafted.red_dye
 scoreboard players reset @s bldp.crafted.red_glazed_terracotta
@@ -1236,6 +1273,7 @@ scoreboard players reset @s bldp.crafted.sandstone
 scoreboard players reset @s bldp.crafted.sandstone_slab
 scoreboard players reset @s bldp.crafted.sandstone_stairs
 scoreboard players reset @s bldp.crafted.sandstone_wall
+scoreboard players reset @s bldp.crafted.savanna_village_map
 scoreboard players reset @s bldp.crafted.scaffolding
 scoreboard players reset @s bldp.crafted.scrape_pottery_sherd
 scoreboard players reset @s bldp.crafted.sculk
@@ -1294,6 +1332,7 @@ scoreboard players reset @s bldp.crafted.snow
 scoreboard players reset @s bldp.crafted.snow_block
 scoreboard players reset @s bldp.crafted.snow_golem_spawn_egg
 scoreboard players reset @s bldp.crafted.snowball
+scoreboard players reset @s bldp.crafted.snowy_village_map
 scoreboard players reset @s bldp.crafted.soul_campfire
 scoreboard players reset @s bldp.crafted.soul_lantern
 scoreboard players reset @s bldp.crafted.soul_sand
@@ -1393,9 +1432,11 @@ scoreboard players reset @s bldp.crafted.sunflower
 scoreboard players reset @s bldp.crafted.suspicious_gravel
 scoreboard players reset @s bldp.crafted.suspicious_sand
 scoreboard players reset @s bldp.crafted.suspicious_stew
+scoreboard players reset @s bldp.crafted.swamp_explorer_map
 scoreboard players reset @s bldp.crafted.sweet_berries
 scoreboard players reset @s bldp.crafted.tadpole_bucket
 scoreboard players reset @s bldp.crafted.tadpole_spawn_egg
+scoreboard players reset @s bldp.crafted.taiga_village_map
 scoreboard players reset @s bldp.crafted.tall_dry_grass
 scoreboard players reset @s bldp.crafted.tall_grass
 scoreboard players reset @s bldp.crafted.target
@@ -1413,6 +1454,7 @@ scoreboard players reset @s bldp.crafted.torchflower_seeds
 scoreboard players reset @s bldp.crafted.totem_of_undying
 scoreboard players reset @s bldp.crafted.trader_llama_spawn_egg
 scoreboard players reset @s bldp.crafted.trapped_chest
+scoreboard players reset @s bldp.crafted.trial_explorer_map
 scoreboard players reset @s bldp.crafted.trial_key
 scoreboard players reset @s bldp.crafted.trial_spawner
 scoreboard players reset @s bldp.crafted.trident
@@ -1446,6 +1488,7 @@ scoreboard players reset @s bldp.crafted.vine
 scoreboard players reset @s bldp.crafted.wandering_trader_spawn_egg
 scoreboard players reset @s bldp.crafted.ward_armor_trim_smithing_template
 scoreboard players reset @s bldp.crafted.warden_spawn_egg
+scoreboard players reset @s bldp.crafted.warm_ocean_ruins_map
 scoreboard players reset @s bldp.crafted.warped_button
 scoreboard players reset @s bldp.crafted.warped_door
 scoreboard players reset @s bldp.crafted.warped_fence
@@ -1553,6 +1596,8 @@ scoreboard players reset @s bldp.crafted.white_candle
 scoreboard players reset @s bldp.crafted.white_carpet
 scoreboard players reset @s bldp.crafted.white_concrete
 scoreboard players reset @s bldp.crafted.white_concrete_powder
+scoreboard players reset @s bldp.crafted.white_concrete_slab
+scoreboard players reset @s bldp.crafted.white_concrete_stairs
 scoreboard players reset @s bldp.crafted.white_cushion
 scoreboard players reset @s bldp.crafted.white_dye
 scoreboard players reset @s bldp.crafted.white_glazed_terracotta
@@ -1581,6 +1626,7 @@ scoreboard players reset @s bldp.crafted.wooden_pickaxe
 scoreboard players reset @s bldp.crafted.wooden_shovel
 scoreboard players reset @s bldp.crafted.wooden_spear
 scoreboard players reset @s bldp.crafted.wooden_sword
+scoreboard players reset @s bldp.crafted.woodland_explorer_map
 scoreboard players reset @s bldp.crafted.writable_book
 scoreboard players reset @s bldp.crafted.written_book
 scoreboard players reset @s bldp.crafted.yellow_banner
@@ -1590,6 +1636,8 @@ scoreboard players reset @s bldp.crafted.yellow_candle
 scoreboard players reset @s bldp.crafted.yellow_carpet
 scoreboard players reset @s bldp.crafted.yellow_concrete
 scoreboard players reset @s bldp.crafted.yellow_concrete_powder
+scoreboard players reset @s bldp.crafted.yellow_concrete_slab
+scoreboard players reset @s bldp.crafted.yellow_concrete_stairs
 scoreboard players reset @s bldp.crafted.yellow_cushion
 scoreboard players reset @s bldp.crafted.yellow_dye
 scoreboard players reset @s bldp.crafted.yellow_glazed_terracotta

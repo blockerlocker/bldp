@@ -1,4 +1,5 @@
 
+scoreboard objectives add bldp.picked_up.abandoned_camp_map minecraft.picked_up:abandoned_camp_map
 scoreboard objectives add bldp.picked_up.acacia_boat minecraft.picked_up:acacia_boat
 scoreboard objectives add bldp.picked_up.acacia_button minecraft.picked_up:acacia_button
 scoreboard objectives add bldp.picked_up.acacia_chest_boat minecraft.picked_up:acacia_chest_boat
@@ -103,6 +104,8 @@ scoreboard objectives add bldp.picked_up.black_candle minecraft.picked_up:black_
 scoreboard objectives add bldp.picked_up.black_carpet minecraft.picked_up:black_carpet
 scoreboard objectives add bldp.picked_up.black_concrete minecraft.picked_up:black_concrete
 scoreboard objectives add bldp.picked_up.black_concrete_powder minecraft.picked_up:black_concrete_powder
+scoreboard objectives add bldp.picked_up.black_concrete_slab minecraft.picked_up:black_concrete_slab
+scoreboard objectives add bldp.picked_up.black_concrete_stairs minecraft.picked_up:black_concrete_stairs
 scoreboard objectives add bldp.picked_up.black_cushion minecraft.picked_up:black_cushion
 scoreboard objectives add bldp.picked_up.black_dye minecraft.picked_up:black_dye
 scoreboard objectives add bldp.picked_up.black_glazed_terracotta minecraft.picked_up:black_glazed_terracotta
@@ -130,6 +133,8 @@ scoreboard objectives add bldp.picked_up.blue_candle minecraft.picked_up:blue_ca
 scoreboard objectives add bldp.picked_up.blue_carpet minecraft.picked_up:blue_carpet
 scoreboard objectives add bldp.picked_up.blue_concrete minecraft.picked_up:blue_concrete
 scoreboard objectives add bldp.picked_up.blue_concrete_powder minecraft.picked_up:blue_concrete_powder
+scoreboard objectives add bldp.picked_up.blue_concrete_slab minecraft.picked_up:blue_concrete_slab
+scoreboard objectives add bldp.picked_up.blue_concrete_stairs minecraft.picked_up:blue_concrete_stairs
 scoreboard objectives add bldp.picked_up.blue_cushion minecraft.picked_up:blue_cushion
 scoreboard objectives add bldp.picked_up.blue_dye minecraft.picked_up:blue_dye
 scoreboard objectives add bldp.picked_up.blue_egg minecraft.picked_up:blue_egg
@@ -174,6 +179,8 @@ scoreboard objectives add bldp.picked_up.brown_candle minecraft.picked_up:brown_
 scoreboard objectives add bldp.picked_up.brown_carpet minecraft.picked_up:brown_carpet
 scoreboard objectives add bldp.picked_up.brown_concrete minecraft.picked_up:brown_concrete
 scoreboard objectives add bldp.picked_up.brown_concrete_powder minecraft.picked_up:brown_concrete_powder
+scoreboard objectives add bldp.picked_up.brown_concrete_slab minecraft.picked_up:brown_concrete_slab
+scoreboard objectives add bldp.picked_up.brown_concrete_stairs minecraft.picked_up:brown_concrete_stairs
 scoreboard objectives add bldp.picked_up.brown_cushion minecraft.picked_up:brown_cushion
 scoreboard objectives add bldp.picked_up.brown_dye minecraft.picked_up:brown_dye
 scoreboard objectives add bldp.picked_up.brown_egg minecraft.picked_up:brown_egg
@@ -195,6 +202,9 @@ scoreboard objectives add bldp.picked_up.bubble_coral_fan minecraft.picked_up:bu
 scoreboard objectives add bldp.picked_up.bucket minecraft.picked_up:bucket
 scoreboard objectives add bldp.picked_up.budding_amethyst minecraft.picked_up:budding_amethyst
 scoreboard objectives add bldp.picked_up.bundle minecraft.picked_up:bundle
+scoreboard objectives add bldp.picked_up.buried_ancient_city_map minecraft.picked_up:buried_ancient_city_map
+scoreboard objectives add bldp.picked_up.buried_mineshaft_map minecraft.picked_up:buried_mineshaft_map
+scoreboard objectives add bldp.picked_up.buried_treasure_map minecraft.picked_up:buried_treasure_map
 scoreboard objectives add bldp.picked_up.burn_pottery_sherd minecraft.picked_up:burn_pottery_sherd
 scoreboard objectives add bldp.picked_up.bush minecraft.picked_up:bush
 scoreboard objectives add bldp.picked_up.cactus minecraft.picked_up:cactus
@@ -377,6 +387,8 @@ scoreboard objectives add bldp.picked_up.cyan_candle minecraft.picked_up:cyan_ca
 scoreboard objectives add bldp.picked_up.cyan_carpet minecraft.picked_up:cyan_carpet
 scoreboard objectives add bldp.picked_up.cyan_concrete minecraft.picked_up:cyan_concrete
 scoreboard objectives add bldp.picked_up.cyan_concrete_powder minecraft.picked_up:cyan_concrete_powder
+scoreboard objectives add bldp.picked_up.cyan_concrete_slab minecraft.picked_up:cyan_concrete_slab
+scoreboard objectives add bldp.picked_up.cyan_concrete_stairs minecraft.picked_up:cyan_concrete_stairs
 scoreboard objectives add bldp.picked_up.cyan_cushion minecraft.picked_up:cyan_cushion
 scoreboard objectives add bldp.picked_up.cyan_dye minecraft.picked_up:cyan_dye
 scoreboard objectives add bldp.picked_up.cyan_glazed_terracotta minecraft.picked_up:cyan_glazed_terracotta
@@ -448,6 +460,8 @@ scoreboard objectives add bldp.picked_up.deepslate_tile_slab minecraft.picked_up
 scoreboard objectives add bldp.picked_up.deepslate_tile_stairs minecraft.picked_up:deepslate_tile_stairs
 scoreboard objectives add bldp.picked_up.deepslate_tile_wall minecraft.picked_up:deepslate_tile_wall
 scoreboard objectives add bldp.picked_up.deepslate_tiles minecraft.picked_up:deepslate_tiles
+scoreboard objectives add bldp.picked_up.desert_pyramid_map minecraft.picked_up:desert_pyramid_map
+scoreboard objectives add bldp.picked_up.desert_village_map minecraft.picked_up:desert_village_map
 scoreboard objectives add bldp.picked_up.detector_rail minecraft.picked_up:detector_rail
 scoreboard objectives add bldp.picked_up.diamond minecraft.picked_up:diamond
 scoreboard objectives add bldp.picked_up.diamond_axe minecraft.picked_up:diamond_axe
@@ -606,6 +620,8 @@ scoreboard objectives add bldp.picked_up.gray_candle minecraft.picked_up:gray_ca
 scoreboard objectives add bldp.picked_up.gray_carpet minecraft.picked_up:gray_carpet
 scoreboard objectives add bldp.picked_up.gray_concrete minecraft.picked_up:gray_concrete
 scoreboard objectives add bldp.picked_up.gray_concrete_powder minecraft.picked_up:gray_concrete_powder
+scoreboard objectives add bldp.picked_up.gray_concrete_slab minecraft.picked_up:gray_concrete_slab
+scoreboard objectives add bldp.picked_up.gray_concrete_stairs minecraft.picked_up:gray_concrete_stairs
 scoreboard objectives add bldp.picked_up.gray_cushion minecraft.picked_up:gray_cushion
 scoreboard objectives add bldp.picked_up.gray_dye minecraft.picked_up:gray_dye
 scoreboard objectives add bldp.picked_up.gray_glazed_terracotta minecraft.picked_up:gray_glazed_terracotta
@@ -624,6 +640,8 @@ scoreboard objectives add bldp.picked_up.green_candle minecraft.picked_up:green_
 scoreboard objectives add bldp.picked_up.green_carpet minecraft.picked_up:green_carpet
 scoreboard objectives add bldp.picked_up.green_concrete minecraft.picked_up:green_concrete
 scoreboard objectives add bldp.picked_up.green_concrete_powder minecraft.picked_up:green_concrete_powder
+scoreboard objectives add bldp.picked_up.green_concrete_slab minecraft.picked_up:green_concrete_slab
+scoreboard objectives add bldp.picked_up.green_concrete_stairs minecraft.picked_up:green_concrete_stairs
 scoreboard objectives add bldp.picked_up.green_cushion minecraft.picked_up:green_cushion
 scoreboard objectives add bldp.picked_up.green_dye minecraft.picked_up:green_dye
 scoreboard objectives add bldp.picked_up.green_glazed_terracotta minecraft.picked_up:green_glazed_terracotta
@@ -700,6 +718,7 @@ scoreboard objectives add bldp.picked_up.jungle_boat minecraft.picked_up:jungle_
 scoreboard objectives add bldp.picked_up.jungle_button minecraft.picked_up:jungle_button
 scoreboard objectives add bldp.picked_up.jungle_chest_boat minecraft.picked_up:jungle_chest_boat
 scoreboard objectives add bldp.picked_up.jungle_door minecraft.picked_up:jungle_door
+scoreboard objectives add bldp.picked_up.jungle_explorer_map minecraft.picked_up:jungle_explorer_map
 scoreboard objectives add bldp.picked_up.jungle_fence minecraft.picked_up:jungle_fence
 scoreboard objectives add bldp.picked_up.jungle_fence_gate minecraft.picked_up:jungle_fence_gate
 scoreboard objectives add bldp.picked_up.jungle_hanging_sign minecraft.picked_up:jungle_hanging_sign
@@ -742,6 +761,8 @@ scoreboard objectives add bldp.picked_up.light_blue_candle minecraft.picked_up:l
 scoreboard objectives add bldp.picked_up.light_blue_carpet minecraft.picked_up:light_blue_carpet
 scoreboard objectives add bldp.picked_up.light_blue_concrete minecraft.picked_up:light_blue_concrete
 scoreboard objectives add bldp.picked_up.light_blue_concrete_powder minecraft.picked_up:light_blue_concrete_powder
+scoreboard objectives add bldp.picked_up.light_blue_concrete_slab minecraft.picked_up:light_blue_concrete_slab
+scoreboard objectives add bldp.picked_up.light_blue_concrete_stairs minecraft.picked_up:light_blue_concrete_stairs
 scoreboard objectives add bldp.picked_up.light_blue_cushion minecraft.picked_up:light_blue_cushion
 scoreboard objectives add bldp.picked_up.light_blue_dye minecraft.picked_up:light_blue_dye
 scoreboard objectives add bldp.picked_up.light_blue_glazed_terracotta minecraft.picked_up:light_blue_glazed_terracotta
@@ -760,6 +781,8 @@ scoreboard objectives add bldp.picked_up.light_gray_candle minecraft.picked_up:l
 scoreboard objectives add bldp.picked_up.light_gray_carpet minecraft.picked_up:light_gray_carpet
 scoreboard objectives add bldp.picked_up.light_gray_concrete minecraft.picked_up:light_gray_concrete
 scoreboard objectives add bldp.picked_up.light_gray_concrete_powder minecraft.picked_up:light_gray_concrete_powder
+scoreboard objectives add bldp.picked_up.light_gray_concrete_slab minecraft.picked_up:light_gray_concrete_slab
+scoreboard objectives add bldp.picked_up.light_gray_concrete_stairs minecraft.picked_up:light_gray_concrete_stairs
 scoreboard objectives add bldp.picked_up.light_gray_cushion minecraft.picked_up:light_gray_cushion
 scoreboard objectives add bldp.picked_up.light_gray_dye minecraft.picked_up:light_gray_dye
 scoreboard objectives add bldp.picked_up.light_gray_glazed_terracotta minecraft.picked_up:light_gray_glazed_terracotta
@@ -783,6 +806,8 @@ scoreboard objectives add bldp.picked_up.lime_candle minecraft.picked_up:lime_ca
 scoreboard objectives add bldp.picked_up.lime_carpet minecraft.picked_up:lime_carpet
 scoreboard objectives add bldp.picked_up.lime_concrete minecraft.picked_up:lime_concrete
 scoreboard objectives add bldp.picked_up.lime_concrete_powder minecraft.picked_up:lime_concrete_powder
+scoreboard objectives add bldp.picked_up.lime_concrete_slab minecraft.picked_up:lime_concrete_slab
+scoreboard objectives add bldp.picked_up.lime_concrete_stairs minecraft.picked_up:lime_concrete_stairs
 scoreboard objectives add bldp.picked_up.lime_cushion minecraft.picked_up:lime_cushion
 scoreboard objectives add bldp.picked_up.lime_dye minecraft.picked_up:lime_dye
 scoreboard objectives add bldp.picked_up.lime_glazed_terracotta minecraft.picked_up:lime_glazed_terracotta
@@ -806,6 +831,8 @@ scoreboard objectives add bldp.picked_up.magenta_candle minecraft.picked_up:mage
 scoreboard objectives add bldp.picked_up.magenta_carpet minecraft.picked_up:magenta_carpet
 scoreboard objectives add bldp.picked_up.magenta_concrete minecraft.picked_up:magenta_concrete
 scoreboard objectives add bldp.picked_up.magenta_concrete_powder minecraft.picked_up:magenta_concrete_powder
+scoreboard objectives add bldp.picked_up.magenta_concrete_slab minecraft.picked_up:magenta_concrete_slab
+scoreboard objectives add bldp.picked_up.magenta_concrete_stairs minecraft.picked_up:magenta_concrete_stairs
 scoreboard objectives add bldp.picked_up.magenta_cushion minecraft.picked_up:magenta_cushion
 scoreboard objectives add bldp.picked_up.magenta_dye minecraft.picked_up:magenta_dye
 scoreboard objectives add bldp.picked_up.magenta_glazed_terracotta minecraft.picked_up:magenta_glazed_terracotta
@@ -946,6 +973,7 @@ scoreboard objectives add bldp.picked_up.oak_trapdoor minecraft.picked_up:oak_tr
 scoreboard objectives add bldp.picked_up.oak_wood minecraft.picked_up:oak_wood
 scoreboard objectives add bldp.picked_up.observer minecraft.picked_up:observer
 scoreboard objectives add bldp.picked_up.obsidian minecraft.picked_up:obsidian
+scoreboard objectives add bldp.picked_up.ocean_explorer_map minecraft.picked_up:ocean_explorer_map
 scoreboard objectives add bldp.picked_up.ocelot_spawn_egg minecraft.picked_up:ocelot_spawn_egg
 scoreboard objectives add bldp.picked_up.ochre_froglight minecraft.picked_up:ochre_froglight
 scoreboard objectives add bldp.picked_up.ominous_bottle minecraft.picked_up:ominous_bottle
@@ -958,6 +986,8 @@ scoreboard objectives add bldp.picked_up.orange_candle minecraft.picked_up:orang
 scoreboard objectives add bldp.picked_up.orange_carpet minecraft.picked_up:orange_carpet
 scoreboard objectives add bldp.picked_up.orange_concrete minecraft.picked_up:orange_concrete
 scoreboard objectives add bldp.picked_up.orange_concrete_powder minecraft.picked_up:orange_concrete_powder
+scoreboard objectives add bldp.picked_up.orange_concrete_slab minecraft.picked_up:orange_concrete_slab
+scoreboard objectives add bldp.picked_up.orange_concrete_stairs minecraft.picked_up:orange_concrete_stairs
 scoreboard objectives add bldp.picked_up.orange_cushion minecraft.picked_up:orange_cushion
 scoreboard objectives add bldp.picked_up.orange_dye minecraft.picked_up:orange_dye
 scoreboard objectives add bldp.picked_up.orange_glazed_terracotta minecraft.picked_up:orange_glazed_terracotta
@@ -1033,6 +1063,8 @@ scoreboard objectives add bldp.picked_up.pink_candle minecraft.picked_up:pink_ca
 scoreboard objectives add bldp.picked_up.pink_carpet minecraft.picked_up:pink_carpet
 scoreboard objectives add bldp.picked_up.pink_concrete minecraft.picked_up:pink_concrete
 scoreboard objectives add bldp.picked_up.pink_concrete_powder minecraft.picked_up:pink_concrete_powder
+scoreboard objectives add bldp.picked_up.pink_concrete_slab minecraft.picked_up:pink_concrete_slab
+scoreboard objectives add bldp.picked_up.pink_concrete_stairs minecraft.picked_up:pink_concrete_stairs
 scoreboard objectives add bldp.picked_up.pink_cushion minecraft.picked_up:pink_cushion
 scoreboard objectives add bldp.picked_up.pink_dye minecraft.picked_up:pink_dye
 scoreboard objectives add bldp.picked_up.pink_glazed_terracotta minecraft.picked_up:pink_glazed_terracotta
@@ -1049,6 +1081,7 @@ scoreboard objectives add bldp.picked_up.pink_wool_stairs minecraft.picked_up:pi
 scoreboard objectives add bldp.picked_up.piston minecraft.picked_up:piston
 scoreboard objectives add bldp.picked_up.pitcher_plant minecraft.picked_up:pitcher_plant
 scoreboard objectives add bldp.picked_up.pitcher_pod minecraft.picked_up:pitcher_pod
+scoreboard objectives add bldp.picked_up.plains_village_map minecraft.picked_up:plains_village_map
 scoreboard objectives add bldp.picked_up.player_head minecraft.picked_up:player_head
 scoreboard objectives add bldp.picked_up.plenty_pottery_sherd minecraft.picked_up:plenty_pottery_sherd
 scoreboard objectives add bldp.picked_up.podzol minecraft.picked_up:podzol
@@ -1139,6 +1172,8 @@ scoreboard objectives add bldp.picked_up.purple_candle minecraft.picked_up:purpl
 scoreboard objectives add bldp.picked_up.purple_carpet minecraft.picked_up:purple_carpet
 scoreboard objectives add bldp.picked_up.purple_concrete minecraft.picked_up:purple_concrete
 scoreboard objectives add bldp.picked_up.purple_concrete_powder minecraft.picked_up:purple_concrete_powder
+scoreboard objectives add bldp.picked_up.purple_concrete_slab minecraft.picked_up:purple_concrete_slab
+scoreboard objectives add bldp.picked_up.purple_concrete_stairs minecraft.picked_up:purple_concrete_stairs
 scoreboard objectives add bldp.picked_up.purple_cushion minecraft.picked_up:purple_cushion
 scoreboard objectives add bldp.picked_up.purple_dye minecraft.picked_up:purple_dye
 scoreboard objectives add bldp.picked_up.purple_glazed_terracotta minecraft.picked_up:purple_glazed_terracotta
@@ -1182,6 +1217,8 @@ scoreboard objectives add bldp.picked_up.red_candle minecraft.picked_up:red_cand
 scoreboard objectives add bldp.picked_up.red_carpet minecraft.picked_up:red_carpet
 scoreboard objectives add bldp.picked_up.red_concrete minecraft.picked_up:red_concrete
 scoreboard objectives add bldp.picked_up.red_concrete_powder minecraft.picked_up:red_concrete_powder
+scoreboard objectives add bldp.picked_up.red_concrete_slab minecraft.picked_up:red_concrete_slab
+scoreboard objectives add bldp.picked_up.red_concrete_stairs minecraft.picked_up:red_concrete_stairs
 scoreboard objectives add bldp.picked_up.red_cushion minecraft.picked_up:red_cushion
 scoreboard objectives add bldp.picked_up.red_dye minecraft.picked_up:red_dye
 scoreboard objectives add bldp.picked_up.red_glazed_terracotta minecraft.picked_up:red_glazed_terracotta
@@ -1236,6 +1273,7 @@ scoreboard objectives add bldp.picked_up.sandstone minecraft.picked_up:sandstone
 scoreboard objectives add bldp.picked_up.sandstone_slab minecraft.picked_up:sandstone_slab
 scoreboard objectives add bldp.picked_up.sandstone_stairs minecraft.picked_up:sandstone_stairs
 scoreboard objectives add bldp.picked_up.sandstone_wall minecraft.picked_up:sandstone_wall
+scoreboard objectives add bldp.picked_up.savanna_village_map minecraft.picked_up:savanna_village_map
 scoreboard objectives add bldp.picked_up.scaffolding minecraft.picked_up:scaffolding
 scoreboard objectives add bldp.picked_up.scrape_pottery_sherd minecraft.picked_up:scrape_pottery_sherd
 scoreboard objectives add bldp.picked_up.sculk minecraft.picked_up:sculk
@@ -1294,6 +1332,7 @@ scoreboard objectives add bldp.picked_up.snow minecraft.picked_up:snow
 scoreboard objectives add bldp.picked_up.snow_block minecraft.picked_up:snow_block
 scoreboard objectives add bldp.picked_up.snow_golem_spawn_egg minecraft.picked_up:snow_golem_spawn_egg
 scoreboard objectives add bldp.picked_up.snowball minecraft.picked_up:snowball
+scoreboard objectives add bldp.picked_up.snowy_village_map minecraft.picked_up:snowy_village_map
 scoreboard objectives add bldp.picked_up.soul_campfire minecraft.picked_up:soul_campfire
 scoreboard objectives add bldp.picked_up.soul_lantern minecraft.picked_up:soul_lantern
 scoreboard objectives add bldp.picked_up.soul_sand minecraft.picked_up:soul_sand
@@ -1393,9 +1432,11 @@ scoreboard objectives add bldp.picked_up.sunflower minecraft.picked_up:sunflower
 scoreboard objectives add bldp.picked_up.suspicious_gravel minecraft.picked_up:suspicious_gravel
 scoreboard objectives add bldp.picked_up.suspicious_sand minecraft.picked_up:suspicious_sand
 scoreboard objectives add bldp.picked_up.suspicious_stew minecraft.picked_up:suspicious_stew
+scoreboard objectives add bldp.picked_up.swamp_explorer_map minecraft.picked_up:swamp_explorer_map
 scoreboard objectives add bldp.picked_up.sweet_berries minecraft.picked_up:sweet_berries
 scoreboard objectives add bldp.picked_up.tadpole_bucket minecraft.picked_up:tadpole_bucket
 scoreboard objectives add bldp.picked_up.tadpole_spawn_egg minecraft.picked_up:tadpole_spawn_egg
+scoreboard objectives add bldp.picked_up.taiga_village_map minecraft.picked_up:taiga_village_map
 scoreboard objectives add bldp.picked_up.tall_dry_grass minecraft.picked_up:tall_dry_grass
 scoreboard objectives add bldp.picked_up.tall_grass minecraft.picked_up:tall_grass
 scoreboard objectives add bldp.picked_up.target minecraft.picked_up:target
@@ -1413,6 +1454,7 @@ scoreboard objectives add bldp.picked_up.torchflower_seeds minecraft.picked_up:t
 scoreboard objectives add bldp.picked_up.totem_of_undying minecraft.picked_up:totem_of_undying
 scoreboard objectives add bldp.picked_up.trader_llama_spawn_egg minecraft.picked_up:trader_llama_spawn_egg
 scoreboard objectives add bldp.picked_up.trapped_chest minecraft.picked_up:trapped_chest
+scoreboard objectives add bldp.picked_up.trial_explorer_map minecraft.picked_up:trial_explorer_map
 scoreboard objectives add bldp.picked_up.trial_key minecraft.picked_up:trial_key
 scoreboard objectives add bldp.picked_up.trial_spawner minecraft.picked_up:trial_spawner
 scoreboard objectives add bldp.picked_up.trident minecraft.picked_up:trident
@@ -1446,6 +1488,7 @@ scoreboard objectives add bldp.picked_up.vine minecraft.picked_up:vine
 scoreboard objectives add bldp.picked_up.wandering_trader_spawn_egg minecraft.picked_up:wandering_trader_spawn_egg
 scoreboard objectives add bldp.picked_up.ward_armor_trim_smithing_template minecraft.picked_up:ward_armor_trim_smithing_template
 scoreboard objectives add bldp.picked_up.warden_spawn_egg minecraft.picked_up:warden_spawn_egg
+scoreboard objectives add bldp.picked_up.warm_ocean_ruins_map minecraft.picked_up:warm_ocean_ruins_map
 scoreboard objectives add bldp.picked_up.warped_button minecraft.picked_up:warped_button
 scoreboard objectives add bldp.picked_up.warped_door minecraft.picked_up:warped_door
 scoreboard objectives add bldp.picked_up.warped_fence minecraft.picked_up:warped_fence
@@ -1553,6 +1596,8 @@ scoreboard objectives add bldp.picked_up.white_candle minecraft.picked_up:white_
 scoreboard objectives add bldp.picked_up.white_carpet minecraft.picked_up:white_carpet
 scoreboard objectives add bldp.picked_up.white_concrete minecraft.picked_up:white_concrete
 scoreboard objectives add bldp.picked_up.white_concrete_powder minecraft.picked_up:white_concrete_powder
+scoreboard objectives add bldp.picked_up.white_concrete_slab minecraft.picked_up:white_concrete_slab
+scoreboard objectives add bldp.picked_up.white_concrete_stairs minecraft.picked_up:white_concrete_stairs
 scoreboard objectives add bldp.picked_up.white_cushion minecraft.picked_up:white_cushion
 scoreboard objectives add bldp.picked_up.white_dye minecraft.picked_up:white_dye
 scoreboard objectives add bldp.picked_up.white_glazed_terracotta minecraft.picked_up:white_glazed_terracotta
@@ -1581,6 +1626,7 @@ scoreboard objectives add bldp.picked_up.wooden_pickaxe minecraft.picked_up:wood
 scoreboard objectives add bldp.picked_up.wooden_shovel minecraft.picked_up:wooden_shovel
 scoreboard objectives add bldp.picked_up.wooden_spear minecraft.picked_up:wooden_spear
 scoreboard objectives add bldp.picked_up.wooden_sword minecraft.picked_up:wooden_sword
+scoreboard objectives add bldp.picked_up.woodland_explorer_map minecraft.picked_up:woodland_explorer_map
 scoreboard objectives add bldp.picked_up.writable_book minecraft.picked_up:writable_book
 scoreboard objectives add bldp.picked_up.written_book minecraft.picked_up:written_book
 scoreboard objectives add bldp.picked_up.yellow_banner minecraft.picked_up:yellow_banner
@@ -1590,6 +1636,8 @@ scoreboard objectives add bldp.picked_up.yellow_candle minecraft.picked_up:yello
 scoreboard objectives add bldp.picked_up.yellow_carpet minecraft.picked_up:yellow_carpet
 scoreboard objectives add bldp.picked_up.yellow_concrete minecraft.picked_up:yellow_concrete
 scoreboard objectives add bldp.picked_up.yellow_concrete_powder minecraft.picked_up:yellow_concrete_powder
+scoreboard objectives add bldp.picked_up.yellow_concrete_slab minecraft.picked_up:yellow_concrete_slab
+scoreboard objectives add bldp.picked_up.yellow_concrete_stairs minecraft.picked_up:yellow_concrete_stairs
 scoreboard objectives add bldp.picked_up.yellow_cushion minecraft.picked_up:yellow_cushion
 scoreboard objectives add bldp.picked_up.yellow_dye minecraft.picked_up:yellow_dye
 scoreboard objectives add bldp.picked_up.yellow_glazed_terracotta minecraft.picked_up:yellow_glazed_terracotta

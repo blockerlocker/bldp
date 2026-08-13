@@ -1,4 +1,5 @@
 
+execute if score @s bldp.picked_up.abandoned_camp_map matches 1.. run data modify storage bldp:picked_up_item out set value abandoned_camp_map
 execute if score @s bldp.picked_up.acacia_boat matches 1.. run data modify storage bldp:picked_up_item out set value acacia_boat
 execute if score @s bldp.picked_up.acacia_button matches 1.. run data modify storage bldp:picked_up_item out set value acacia_button
 execute if score @s bldp.picked_up.acacia_chest_boat matches 1.. run data modify storage bldp:picked_up_item out set value acacia_chest_boat
@@ -103,6 +104,8 @@ execute if score @s bldp.picked_up.black_candle matches 1.. run data modify stor
 execute if score @s bldp.picked_up.black_carpet matches 1.. run data modify storage bldp:picked_up_item out set value black_carpet
 execute if score @s bldp.picked_up.black_concrete matches 1.. run data modify storage bldp:picked_up_item out set value black_concrete
 execute if score @s bldp.picked_up.black_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value black_concrete_powder
+execute if score @s bldp.picked_up.black_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value black_concrete_slab
+execute if score @s bldp.picked_up.black_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value black_concrete_stairs
 execute if score @s bldp.picked_up.black_cushion matches 1.. run data modify storage bldp:picked_up_item out set value black_cushion
 execute if score @s bldp.picked_up.black_dye matches 1.. run data modify storage bldp:picked_up_item out set value black_dye
 execute if score @s bldp.picked_up.black_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value black_glazed_terracotta
@@ -130,6 +133,8 @@ execute if score @s bldp.picked_up.blue_candle matches 1.. run data modify stora
 execute if score @s bldp.picked_up.blue_carpet matches 1.. run data modify storage bldp:picked_up_item out set value blue_carpet
 execute if score @s bldp.picked_up.blue_concrete matches 1.. run data modify storage bldp:picked_up_item out set value blue_concrete
 execute if score @s bldp.picked_up.blue_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value blue_concrete_powder
+execute if score @s bldp.picked_up.blue_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value blue_concrete_slab
+execute if score @s bldp.picked_up.blue_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value blue_concrete_stairs
 execute if score @s bldp.picked_up.blue_cushion matches 1.. run data modify storage bldp:picked_up_item out set value blue_cushion
 execute if score @s bldp.picked_up.blue_dye matches 1.. run data modify storage bldp:picked_up_item out set value blue_dye
 execute if score @s bldp.picked_up.blue_egg matches 1.. run data modify storage bldp:picked_up_item out set value blue_egg
@@ -174,6 +179,8 @@ execute if score @s bldp.picked_up.brown_candle matches 1.. run data modify stor
 execute if score @s bldp.picked_up.brown_carpet matches 1.. run data modify storage bldp:picked_up_item out set value brown_carpet
 execute if score @s bldp.picked_up.brown_concrete matches 1.. run data modify storage bldp:picked_up_item out set value brown_concrete
 execute if score @s bldp.picked_up.brown_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value brown_concrete_powder
+execute if score @s bldp.picked_up.brown_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value brown_concrete_slab
+execute if score @s bldp.picked_up.brown_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value brown_concrete_stairs
 execute if score @s bldp.picked_up.brown_cushion matches 1.. run data modify storage bldp:picked_up_item out set value brown_cushion
 execute if score @s bldp.picked_up.brown_dye matches 1.. run data modify storage bldp:picked_up_item out set value brown_dye
 execute if score @s bldp.picked_up.brown_egg matches 1.. run data modify storage bldp:picked_up_item out set value brown_egg
@@ -195,6 +202,9 @@ execute if score @s bldp.picked_up.bubble_coral_fan matches 1.. run data modify 
 execute if score @s bldp.picked_up.bucket matches 1.. run data modify storage bldp:picked_up_item out set value bucket
 execute if score @s bldp.picked_up.budding_amethyst matches 1.. run data modify storage bldp:picked_up_item out set value budding_amethyst
 execute if score @s bldp.picked_up.bundle matches 1.. run data modify storage bldp:picked_up_item out set value bundle
+execute if score @s bldp.picked_up.buried_ancient_city_map matches 1.. run data modify storage bldp:picked_up_item out set value buried_ancient_city_map
+execute if score @s bldp.picked_up.buried_mineshaft_map matches 1.. run data modify storage bldp:picked_up_item out set value buried_mineshaft_map
+execute if score @s bldp.picked_up.buried_treasure_map matches 1.. run data modify storage bldp:picked_up_item out set value buried_treasure_map
 execute if score @s bldp.picked_up.burn_pottery_sherd matches 1.. run data modify storage bldp:picked_up_item out set value burn_pottery_sherd
 execute if score @s bldp.picked_up.bush matches 1.. run data modify storage bldp:picked_up_item out set value bush
 execute if score @s bldp.picked_up.cactus matches 1.. run data modify storage bldp:picked_up_item out set value cactus
@@ -377,6 +387,8 @@ execute if score @s bldp.picked_up.cyan_candle matches 1.. run data modify stora
 execute if score @s bldp.picked_up.cyan_carpet matches 1.. run data modify storage bldp:picked_up_item out set value cyan_carpet
 execute if score @s bldp.picked_up.cyan_concrete matches 1.. run data modify storage bldp:picked_up_item out set value cyan_concrete
 execute if score @s bldp.picked_up.cyan_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value cyan_concrete_powder
+execute if score @s bldp.picked_up.cyan_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value cyan_concrete_slab
+execute if score @s bldp.picked_up.cyan_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value cyan_concrete_stairs
 execute if score @s bldp.picked_up.cyan_cushion matches 1.. run data modify storage bldp:picked_up_item out set value cyan_cushion
 execute if score @s bldp.picked_up.cyan_dye matches 1.. run data modify storage bldp:picked_up_item out set value cyan_dye
 execute if score @s bldp.picked_up.cyan_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value cyan_glazed_terracotta
@@ -448,6 +460,8 @@ execute if score @s bldp.picked_up.deepslate_tile_slab matches 1.. run data modi
 execute if score @s bldp.picked_up.deepslate_tile_stairs matches 1.. run data modify storage bldp:picked_up_item out set value deepslate_tile_stairs
 execute if score @s bldp.picked_up.deepslate_tile_wall matches 1.. run data modify storage bldp:picked_up_item out set value deepslate_tile_wall
 execute if score @s bldp.picked_up.deepslate_tiles matches 1.. run data modify storage bldp:picked_up_item out set value deepslate_tiles
+execute if score @s bldp.picked_up.desert_pyramid_map matches 1.. run data modify storage bldp:picked_up_item out set value desert_pyramid_map
+execute if score @s bldp.picked_up.desert_village_map matches 1.. run data modify storage bldp:picked_up_item out set value desert_village_map
 execute if score @s bldp.picked_up.detector_rail matches 1.. run data modify storage bldp:picked_up_item out set value detector_rail
 execute if score @s bldp.picked_up.diamond matches 1.. run data modify storage bldp:picked_up_item out set value diamond
 execute if score @s bldp.picked_up.diamond_axe matches 1.. run data modify storage bldp:picked_up_item out set value diamond_axe
@@ -606,6 +620,8 @@ execute if score @s bldp.picked_up.gray_candle matches 1.. run data modify stora
 execute if score @s bldp.picked_up.gray_carpet matches 1.. run data modify storage bldp:picked_up_item out set value gray_carpet
 execute if score @s bldp.picked_up.gray_concrete matches 1.. run data modify storage bldp:picked_up_item out set value gray_concrete
 execute if score @s bldp.picked_up.gray_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value gray_concrete_powder
+execute if score @s bldp.picked_up.gray_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value gray_concrete_slab
+execute if score @s bldp.picked_up.gray_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value gray_concrete_stairs
 execute if score @s bldp.picked_up.gray_cushion matches 1.. run data modify storage bldp:picked_up_item out set value gray_cushion
 execute if score @s bldp.picked_up.gray_dye matches 1.. run data modify storage bldp:picked_up_item out set value gray_dye
 execute if score @s bldp.picked_up.gray_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value gray_glazed_terracotta
@@ -624,6 +640,8 @@ execute if score @s bldp.picked_up.green_candle matches 1.. run data modify stor
 execute if score @s bldp.picked_up.green_carpet matches 1.. run data modify storage bldp:picked_up_item out set value green_carpet
 execute if score @s bldp.picked_up.green_concrete matches 1.. run data modify storage bldp:picked_up_item out set value green_concrete
 execute if score @s bldp.picked_up.green_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value green_concrete_powder
+execute if score @s bldp.picked_up.green_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value green_concrete_slab
+execute if score @s bldp.picked_up.green_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value green_concrete_stairs
 execute if score @s bldp.picked_up.green_cushion matches 1.. run data modify storage bldp:picked_up_item out set value green_cushion
 execute if score @s bldp.picked_up.green_dye matches 1.. run data modify storage bldp:picked_up_item out set value green_dye
 execute if score @s bldp.picked_up.green_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value green_glazed_terracotta
@@ -700,6 +718,7 @@ execute if score @s bldp.picked_up.jungle_boat matches 1.. run data modify stora
 execute if score @s bldp.picked_up.jungle_button matches 1.. run data modify storage bldp:picked_up_item out set value jungle_button
 execute if score @s bldp.picked_up.jungle_chest_boat matches 1.. run data modify storage bldp:picked_up_item out set value jungle_chest_boat
 execute if score @s bldp.picked_up.jungle_door matches 1.. run data modify storage bldp:picked_up_item out set value jungle_door
+execute if score @s bldp.picked_up.jungle_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value jungle_explorer_map
 execute if score @s bldp.picked_up.jungle_fence matches 1.. run data modify storage bldp:picked_up_item out set value jungle_fence
 execute if score @s bldp.picked_up.jungle_fence_gate matches 1.. run data modify storage bldp:picked_up_item out set value jungle_fence_gate
 execute if score @s bldp.picked_up.jungle_hanging_sign matches 1.. run data modify storage bldp:picked_up_item out set value jungle_hanging_sign
@@ -742,6 +761,8 @@ execute if score @s bldp.picked_up.light_blue_candle matches 1.. run data modify
 execute if score @s bldp.picked_up.light_blue_carpet matches 1.. run data modify storage bldp:picked_up_item out set value light_blue_carpet
 execute if score @s bldp.picked_up.light_blue_concrete matches 1.. run data modify storage bldp:picked_up_item out set value light_blue_concrete
 execute if score @s bldp.picked_up.light_blue_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value light_blue_concrete_powder
+execute if score @s bldp.picked_up.light_blue_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value light_blue_concrete_slab
+execute if score @s bldp.picked_up.light_blue_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value light_blue_concrete_stairs
 execute if score @s bldp.picked_up.light_blue_cushion matches 1.. run data modify storage bldp:picked_up_item out set value light_blue_cushion
 execute if score @s bldp.picked_up.light_blue_dye matches 1.. run data modify storage bldp:picked_up_item out set value light_blue_dye
 execute if score @s bldp.picked_up.light_blue_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value light_blue_glazed_terracotta
@@ -760,6 +781,8 @@ execute if score @s bldp.picked_up.light_gray_candle matches 1.. run data modify
 execute if score @s bldp.picked_up.light_gray_carpet matches 1.. run data modify storage bldp:picked_up_item out set value light_gray_carpet
 execute if score @s bldp.picked_up.light_gray_concrete matches 1.. run data modify storage bldp:picked_up_item out set value light_gray_concrete
 execute if score @s bldp.picked_up.light_gray_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value light_gray_concrete_powder
+execute if score @s bldp.picked_up.light_gray_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value light_gray_concrete_slab
+execute if score @s bldp.picked_up.light_gray_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value light_gray_concrete_stairs
 execute if score @s bldp.picked_up.light_gray_cushion matches 1.. run data modify storage bldp:picked_up_item out set value light_gray_cushion
 execute if score @s bldp.picked_up.light_gray_dye matches 1.. run data modify storage bldp:picked_up_item out set value light_gray_dye
 execute if score @s bldp.picked_up.light_gray_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value light_gray_glazed_terracotta
@@ -783,6 +806,8 @@ execute if score @s bldp.picked_up.lime_candle matches 1.. run data modify stora
 execute if score @s bldp.picked_up.lime_carpet matches 1.. run data modify storage bldp:picked_up_item out set value lime_carpet
 execute if score @s bldp.picked_up.lime_concrete matches 1.. run data modify storage bldp:picked_up_item out set value lime_concrete
 execute if score @s bldp.picked_up.lime_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value lime_concrete_powder
+execute if score @s bldp.picked_up.lime_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value lime_concrete_slab
+execute if score @s bldp.picked_up.lime_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value lime_concrete_stairs
 execute if score @s bldp.picked_up.lime_cushion matches 1.. run data modify storage bldp:picked_up_item out set value lime_cushion
 execute if score @s bldp.picked_up.lime_dye matches 1.. run data modify storage bldp:picked_up_item out set value lime_dye
 execute if score @s bldp.picked_up.lime_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value lime_glazed_terracotta
@@ -806,6 +831,8 @@ execute if score @s bldp.picked_up.magenta_candle matches 1.. run data modify st
 execute if score @s bldp.picked_up.magenta_carpet matches 1.. run data modify storage bldp:picked_up_item out set value magenta_carpet
 execute if score @s bldp.picked_up.magenta_concrete matches 1.. run data modify storage bldp:picked_up_item out set value magenta_concrete
 execute if score @s bldp.picked_up.magenta_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value magenta_concrete_powder
+execute if score @s bldp.picked_up.magenta_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value magenta_concrete_slab
+execute if score @s bldp.picked_up.magenta_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value magenta_concrete_stairs
 execute if score @s bldp.picked_up.magenta_cushion matches 1.. run data modify storage bldp:picked_up_item out set value magenta_cushion
 execute if score @s bldp.picked_up.magenta_dye matches 1.. run data modify storage bldp:picked_up_item out set value magenta_dye
 execute if score @s bldp.picked_up.magenta_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value magenta_glazed_terracotta
@@ -946,6 +973,7 @@ execute if score @s bldp.picked_up.oak_trapdoor matches 1.. run data modify stor
 execute if score @s bldp.picked_up.oak_wood matches 1.. run data modify storage bldp:picked_up_item out set value oak_wood
 execute if score @s bldp.picked_up.observer matches 1.. run data modify storage bldp:picked_up_item out set value observer
 execute if score @s bldp.picked_up.obsidian matches 1.. run data modify storage bldp:picked_up_item out set value obsidian
+execute if score @s bldp.picked_up.ocean_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value ocean_explorer_map
 execute if score @s bldp.picked_up.ocelot_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value ocelot_spawn_egg
 execute if score @s bldp.picked_up.ochre_froglight matches 1.. run data modify storage bldp:picked_up_item out set value ochre_froglight
 execute if score @s bldp.picked_up.ominous_bottle matches 1.. run data modify storage bldp:picked_up_item out set value ominous_bottle
@@ -958,6 +986,8 @@ execute if score @s bldp.picked_up.orange_candle matches 1.. run data modify sto
 execute if score @s bldp.picked_up.orange_carpet matches 1.. run data modify storage bldp:picked_up_item out set value orange_carpet
 execute if score @s bldp.picked_up.orange_concrete matches 1.. run data modify storage bldp:picked_up_item out set value orange_concrete
 execute if score @s bldp.picked_up.orange_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value orange_concrete_powder
+execute if score @s bldp.picked_up.orange_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value orange_concrete_slab
+execute if score @s bldp.picked_up.orange_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value orange_concrete_stairs
 execute if score @s bldp.picked_up.orange_cushion matches 1.. run data modify storage bldp:picked_up_item out set value orange_cushion
 execute if score @s bldp.picked_up.orange_dye matches 1.. run data modify storage bldp:picked_up_item out set value orange_dye
 execute if score @s bldp.picked_up.orange_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value orange_glazed_terracotta
@@ -1033,6 +1063,8 @@ execute if score @s bldp.picked_up.pink_candle matches 1.. run data modify stora
 execute if score @s bldp.picked_up.pink_carpet matches 1.. run data modify storage bldp:picked_up_item out set value pink_carpet
 execute if score @s bldp.picked_up.pink_concrete matches 1.. run data modify storage bldp:picked_up_item out set value pink_concrete
 execute if score @s bldp.picked_up.pink_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value pink_concrete_powder
+execute if score @s bldp.picked_up.pink_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value pink_concrete_slab
+execute if score @s bldp.picked_up.pink_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value pink_concrete_stairs
 execute if score @s bldp.picked_up.pink_cushion matches 1.. run data modify storage bldp:picked_up_item out set value pink_cushion
 execute if score @s bldp.picked_up.pink_dye matches 1.. run data modify storage bldp:picked_up_item out set value pink_dye
 execute if score @s bldp.picked_up.pink_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value pink_glazed_terracotta
@@ -1049,6 +1081,7 @@ execute if score @s bldp.picked_up.pink_wool_stairs matches 1.. run data modify 
 execute if score @s bldp.picked_up.piston matches 1.. run data modify storage bldp:picked_up_item out set value piston
 execute if score @s bldp.picked_up.pitcher_plant matches 1.. run data modify storage bldp:picked_up_item out set value pitcher_plant
 execute if score @s bldp.picked_up.pitcher_pod matches 1.. run data modify storage bldp:picked_up_item out set value pitcher_pod
+execute if score @s bldp.picked_up.plains_village_map matches 1.. run data modify storage bldp:picked_up_item out set value plains_village_map
 execute if score @s bldp.picked_up.player_head matches 1.. run data modify storage bldp:picked_up_item out set value player_head
 execute if score @s bldp.picked_up.plenty_pottery_sherd matches 1.. run data modify storage bldp:picked_up_item out set value plenty_pottery_sherd
 execute if score @s bldp.picked_up.podzol matches 1.. run data modify storage bldp:picked_up_item out set value podzol
@@ -1139,6 +1172,8 @@ execute if score @s bldp.picked_up.purple_candle matches 1.. run data modify sto
 execute if score @s bldp.picked_up.purple_carpet matches 1.. run data modify storage bldp:picked_up_item out set value purple_carpet
 execute if score @s bldp.picked_up.purple_concrete matches 1.. run data modify storage bldp:picked_up_item out set value purple_concrete
 execute if score @s bldp.picked_up.purple_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value purple_concrete_powder
+execute if score @s bldp.picked_up.purple_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value purple_concrete_slab
+execute if score @s bldp.picked_up.purple_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value purple_concrete_stairs
 execute if score @s bldp.picked_up.purple_cushion matches 1.. run data modify storage bldp:picked_up_item out set value purple_cushion
 execute if score @s bldp.picked_up.purple_dye matches 1.. run data modify storage bldp:picked_up_item out set value purple_dye
 execute if score @s bldp.picked_up.purple_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value purple_glazed_terracotta
@@ -1182,6 +1217,8 @@ execute if score @s bldp.picked_up.red_candle matches 1.. run data modify storag
 execute if score @s bldp.picked_up.red_carpet matches 1.. run data modify storage bldp:picked_up_item out set value red_carpet
 execute if score @s bldp.picked_up.red_concrete matches 1.. run data modify storage bldp:picked_up_item out set value red_concrete
 execute if score @s bldp.picked_up.red_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value red_concrete_powder
+execute if score @s bldp.picked_up.red_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value red_concrete_slab
+execute if score @s bldp.picked_up.red_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value red_concrete_stairs
 execute if score @s bldp.picked_up.red_cushion matches 1.. run data modify storage bldp:picked_up_item out set value red_cushion
 execute if score @s bldp.picked_up.red_dye matches 1.. run data modify storage bldp:picked_up_item out set value red_dye
 execute if score @s bldp.picked_up.red_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value red_glazed_terracotta
@@ -1236,6 +1273,7 @@ execute if score @s bldp.picked_up.sandstone matches 1.. run data modify storage
 execute if score @s bldp.picked_up.sandstone_slab matches 1.. run data modify storage bldp:picked_up_item out set value sandstone_slab
 execute if score @s bldp.picked_up.sandstone_stairs matches 1.. run data modify storage bldp:picked_up_item out set value sandstone_stairs
 execute if score @s bldp.picked_up.sandstone_wall matches 1.. run data modify storage bldp:picked_up_item out set value sandstone_wall
+execute if score @s bldp.picked_up.savanna_village_map matches 1.. run data modify storage bldp:picked_up_item out set value savanna_village_map
 execute if score @s bldp.picked_up.scaffolding matches 1.. run data modify storage bldp:picked_up_item out set value scaffolding
 execute if score @s bldp.picked_up.scrape_pottery_sherd matches 1.. run data modify storage bldp:picked_up_item out set value scrape_pottery_sherd
 execute if score @s bldp.picked_up.sculk matches 1.. run data modify storage bldp:picked_up_item out set value sculk
@@ -1294,6 +1332,7 @@ execute if score @s bldp.picked_up.snow matches 1.. run data modify storage bldp
 execute if score @s bldp.picked_up.snow_block matches 1.. run data modify storage bldp:picked_up_item out set value snow_block
 execute if score @s bldp.picked_up.snow_golem_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value snow_golem_spawn_egg
 execute if score @s bldp.picked_up.snowball matches 1.. run data modify storage bldp:picked_up_item out set value snowball
+execute if score @s bldp.picked_up.snowy_village_map matches 1.. run data modify storage bldp:picked_up_item out set value snowy_village_map
 execute if score @s bldp.picked_up.soul_campfire matches 1.. run data modify storage bldp:picked_up_item out set value soul_campfire
 execute if score @s bldp.picked_up.soul_lantern matches 1.. run data modify storage bldp:picked_up_item out set value soul_lantern
 execute if score @s bldp.picked_up.soul_sand matches 1.. run data modify storage bldp:picked_up_item out set value soul_sand
@@ -1393,9 +1432,11 @@ execute if score @s bldp.picked_up.sunflower matches 1.. run data modify storage
 execute if score @s bldp.picked_up.suspicious_gravel matches 1.. run data modify storage bldp:picked_up_item out set value suspicious_gravel
 execute if score @s bldp.picked_up.suspicious_sand matches 1.. run data modify storage bldp:picked_up_item out set value suspicious_sand
 execute if score @s bldp.picked_up.suspicious_stew matches 1.. run data modify storage bldp:picked_up_item out set value suspicious_stew
+execute if score @s bldp.picked_up.swamp_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value swamp_explorer_map
 execute if score @s bldp.picked_up.sweet_berries matches 1.. run data modify storage bldp:picked_up_item out set value sweet_berries
 execute if score @s bldp.picked_up.tadpole_bucket matches 1.. run data modify storage bldp:picked_up_item out set value tadpole_bucket
 execute if score @s bldp.picked_up.tadpole_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value tadpole_spawn_egg
+execute if score @s bldp.picked_up.taiga_village_map matches 1.. run data modify storage bldp:picked_up_item out set value taiga_village_map
 execute if score @s bldp.picked_up.tall_dry_grass matches 1.. run data modify storage bldp:picked_up_item out set value tall_dry_grass
 execute if score @s bldp.picked_up.tall_grass matches 1.. run data modify storage bldp:picked_up_item out set value tall_grass
 execute if score @s bldp.picked_up.target matches 1.. run data modify storage bldp:picked_up_item out set value target
@@ -1413,6 +1454,7 @@ execute if score @s bldp.picked_up.torchflower_seeds matches 1.. run data modify
 execute if score @s bldp.picked_up.totem_of_undying matches 1.. run data modify storage bldp:picked_up_item out set value totem_of_undying
 execute if score @s bldp.picked_up.trader_llama_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value trader_llama_spawn_egg
 execute if score @s bldp.picked_up.trapped_chest matches 1.. run data modify storage bldp:picked_up_item out set value trapped_chest
+execute if score @s bldp.picked_up.trial_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value trial_explorer_map
 execute if score @s bldp.picked_up.trial_key matches 1.. run data modify storage bldp:picked_up_item out set value trial_key
 execute if score @s bldp.picked_up.trial_spawner matches 1.. run data modify storage bldp:picked_up_item out set value trial_spawner
 execute if score @s bldp.picked_up.trident matches 1.. run data modify storage bldp:picked_up_item out set value trident
@@ -1446,6 +1488,7 @@ execute if score @s bldp.picked_up.vine matches 1.. run data modify storage bldp
 execute if score @s bldp.picked_up.wandering_trader_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value wandering_trader_spawn_egg
 execute if score @s bldp.picked_up.ward_armor_trim_smithing_template matches 1.. run data modify storage bldp:picked_up_item out set value ward_armor_trim_smithing_template
 execute if score @s bldp.picked_up.warden_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value warden_spawn_egg
+execute if score @s bldp.picked_up.warm_ocean_ruins_map matches 1.. run data modify storage bldp:picked_up_item out set value warm_ocean_ruins_map
 execute if score @s bldp.picked_up.warped_button matches 1.. run data modify storage bldp:picked_up_item out set value warped_button
 execute if score @s bldp.picked_up.warped_door matches 1.. run data modify storage bldp:picked_up_item out set value warped_door
 execute if score @s bldp.picked_up.warped_fence matches 1.. run data modify storage bldp:picked_up_item out set value warped_fence
@@ -1553,6 +1596,8 @@ execute if score @s bldp.picked_up.white_candle matches 1.. run data modify stor
 execute if score @s bldp.picked_up.white_carpet matches 1.. run data modify storage bldp:picked_up_item out set value white_carpet
 execute if score @s bldp.picked_up.white_concrete matches 1.. run data modify storage bldp:picked_up_item out set value white_concrete
 execute if score @s bldp.picked_up.white_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value white_concrete_powder
+execute if score @s bldp.picked_up.white_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value white_concrete_slab
+execute if score @s bldp.picked_up.white_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value white_concrete_stairs
 execute if score @s bldp.picked_up.white_cushion matches 1.. run data modify storage bldp:picked_up_item out set value white_cushion
 execute if score @s bldp.picked_up.white_dye matches 1.. run data modify storage bldp:picked_up_item out set value white_dye
 execute if score @s bldp.picked_up.white_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value white_glazed_terracotta
@@ -1581,6 +1626,7 @@ execute if score @s bldp.picked_up.wooden_pickaxe matches 1.. run data modify st
 execute if score @s bldp.picked_up.wooden_shovel matches 1.. run data modify storage bldp:picked_up_item out set value wooden_shovel
 execute if score @s bldp.picked_up.wooden_spear matches 1.. run data modify storage bldp:picked_up_item out set value wooden_spear
 execute if score @s bldp.picked_up.wooden_sword matches 1.. run data modify storage bldp:picked_up_item out set value wooden_sword
+execute if score @s bldp.picked_up.woodland_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value woodland_explorer_map
 execute if score @s bldp.picked_up.writable_book matches 1.. run data modify storage bldp:picked_up_item out set value writable_book
 execute if score @s bldp.picked_up.written_book matches 1.. run data modify storage bldp:picked_up_item out set value written_book
 execute if score @s bldp.picked_up.yellow_banner matches 1.. run data modify storage bldp:picked_up_item out set value yellow_banner
@@ -1590,6 +1636,8 @@ execute if score @s bldp.picked_up.yellow_candle matches 1.. run data modify sto
 execute if score @s bldp.picked_up.yellow_carpet matches 1.. run data modify storage bldp:picked_up_item out set value yellow_carpet
 execute if score @s bldp.picked_up.yellow_concrete matches 1.. run data modify storage bldp:picked_up_item out set value yellow_concrete
 execute if score @s bldp.picked_up.yellow_concrete_powder matches 1.. run data modify storage bldp:picked_up_item out set value yellow_concrete_powder
+execute if score @s bldp.picked_up.yellow_concrete_slab matches 1.. run data modify storage bldp:picked_up_item out set value yellow_concrete_slab
+execute if score @s bldp.picked_up.yellow_concrete_stairs matches 1.. run data modify storage bldp:picked_up_item out set value yellow_concrete_stairs
 execute if score @s bldp.picked_up.yellow_cushion matches 1.. run data modify storage bldp:picked_up_item out set value yellow_cushion
 execute if score @s bldp.picked_up.yellow_dye matches 1.. run data modify storage bldp:picked_up_item out set value yellow_dye
 execute if score @s bldp.picked_up.yellow_glazed_terracotta matches 1.. run data modify storage bldp:picked_up_item out set value yellow_glazed_terracotta

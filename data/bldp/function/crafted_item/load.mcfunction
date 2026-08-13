@@ -1,4 +1,5 @@
 
+scoreboard objectives add bldp.crafted.abandoned_camp_map minecraft.crafted:abandoned_camp_map
 scoreboard objectives add bldp.crafted.acacia_boat minecraft.crafted:acacia_boat
 scoreboard objectives add bldp.crafted.acacia_button minecraft.crafted:acacia_button
 scoreboard objectives add bldp.crafted.acacia_chest_boat minecraft.crafted:acacia_chest_boat
@@ -103,6 +104,8 @@ scoreboard objectives add bldp.crafted.black_candle minecraft.crafted:black_cand
 scoreboard objectives add bldp.crafted.black_carpet minecraft.crafted:black_carpet
 scoreboard objectives add bldp.crafted.black_concrete minecraft.crafted:black_concrete
 scoreboard objectives add bldp.crafted.black_concrete_powder minecraft.crafted:black_concrete_powder
+scoreboard objectives add bldp.crafted.black_concrete_slab minecraft.crafted:black_concrete_slab
+scoreboard objectives add bldp.crafted.black_concrete_stairs minecraft.crafted:black_concrete_stairs
 scoreboard objectives add bldp.crafted.black_cushion minecraft.crafted:black_cushion
 scoreboard objectives add bldp.crafted.black_dye minecraft.crafted:black_dye
 scoreboard objectives add bldp.crafted.black_glazed_terracotta minecraft.crafted:black_glazed_terracotta
@@ -130,6 +133,8 @@ scoreboard objectives add bldp.crafted.blue_candle minecraft.crafted:blue_candle
 scoreboard objectives add bldp.crafted.blue_carpet minecraft.crafted:blue_carpet
 scoreboard objectives add bldp.crafted.blue_concrete minecraft.crafted:blue_concrete
 scoreboard objectives add bldp.crafted.blue_concrete_powder minecraft.crafted:blue_concrete_powder
+scoreboard objectives add bldp.crafted.blue_concrete_slab minecraft.crafted:blue_concrete_slab
+scoreboard objectives add bldp.crafted.blue_concrete_stairs minecraft.crafted:blue_concrete_stairs
 scoreboard objectives add bldp.crafted.blue_cushion minecraft.crafted:blue_cushion
 scoreboard objectives add bldp.crafted.blue_dye minecraft.crafted:blue_dye
 scoreboard objectives add bldp.crafted.blue_egg minecraft.crafted:blue_egg
@@ -174,6 +179,8 @@ scoreboard objectives add bldp.crafted.brown_candle minecraft.crafted:brown_cand
 scoreboard objectives add bldp.crafted.brown_carpet minecraft.crafted:brown_carpet
 scoreboard objectives add bldp.crafted.brown_concrete minecraft.crafted:brown_concrete
 scoreboard objectives add bldp.crafted.brown_concrete_powder minecraft.crafted:brown_concrete_powder
+scoreboard objectives add bldp.crafted.brown_concrete_slab minecraft.crafted:brown_concrete_slab
+scoreboard objectives add bldp.crafted.brown_concrete_stairs minecraft.crafted:brown_concrete_stairs
 scoreboard objectives add bldp.crafted.brown_cushion minecraft.crafted:brown_cushion
 scoreboard objectives add bldp.crafted.brown_dye minecraft.crafted:brown_dye
 scoreboard objectives add bldp.crafted.brown_egg minecraft.crafted:brown_egg
@@ -195,6 +202,9 @@ scoreboard objectives add bldp.crafted.bubble_coral_fan minecraft.crafted:bubble
 scoreboard objectives add bldp.crafted.bucket minecraft.crafted:bucket
 scoreboard objectives add bldp.crafted.budding_amethyst minecraft.crafted:budding_amethyst
 scoreboard objectives add bldp.crafted.bundle minecraft.crafted:bundle
+scoreboard objectives add bldp.crafted.buried_ancient_city_map minecraft.crafted:buried_ancient_city_map
+scoreboard objectives add bldp.crafted.buried_mineshaft_map minecraft.crafted:buried_mineshaft_map
+scoreboard objectives add bldp.crafted.buried_treasure_map minecraft.crafted:buried_treasure_map
 scoreboard objectives add bldp.crafted.burn_pottery_sherd minecraft.crafted:burn_pottery_sherd
 scoreboard objectives add bldp.crafted.bush minecraft.crafted:bush
 scoreboard objectives add bldp.crafted.cactus minecraft.crafted:cactus
@@ -377,6 +387,8 @@ scoreboard objectives add bldp.crafted.cyan_candle minecraft.crafted:cyan_candle
 scoreboard objectives add bldp.crafted.cyan_carpet minecraft.crafted:cyan_carpet
 scoreboard objectives add bldp.crafted.cyan_concrete minecraft.crafted:cyan_concrete
 scoreboard objectives add bldp.crafted.cyan_concrete_powder minecraft.crafted:cyan_concrete_powder
+scoreboard objectives add bldp.crafted.cyan_concrete_slab minecraft.crafted:cyan_concrete_slab
+scoreboard objectives add bldp.crafted.cyan_concrete_stairs minecraft.crafted:cyan_concrete_stairs
 scoreboard objectives add bldp.crafted.cyan_cushion minecraft.crafted:cyan_cushion
 scoreboard objectives add bldp.crafted.cyan_dye minecraft.crafted:cyan_dye
 scoreboard objectives add bldp.crafted.cyan_glazed_terracotta minecraft.crafted:cyan_glazed_terracotta
@@ -448,6 +460,8 @@ scoreboard objectives add bldp.crafted.deepslate_tile_slab minecraft.crafted:dee
 scoreboard objectives add bldp.crafted.deepslate_tile_stairs minecraft.crafted:deepslate_tile_stairs
 scoreboard objectives add bldp.crafted.deepslate_tile_wall minecraft.crafted:deepslate_tile_wall
 scoreboard objectives add bldp.crafted.deepslate_tiles minecraft.crafted:deepslate_tiles
+scoreboard objectives add bldp.crafted.desert_pyramid_map minecraft.crafted:desert_pyramid_map
+scoreboard objectives add bldp.crafted.desert_village_map minecraft.crafted:desert_village_map
 scoreboard objectives add bldp.crafted.detector_rail minecraft.crafted:detector_rail
 scoreboard objectives add bldp.crafted.diamond minecraft.crafted:diamond
 scoreboard objectives add bldp.crafted.diamond_axe minecraft.crafted:diamond_axe
@@ -606,6 +620,8 @@ scoreboard objectives add bldp.crafted.gray_candle minecraft.crafted:gray_candle
 scoreboard objectives add bldp.crafted.gray_carpet minecraft.crafted:gray_carpet
 scoreboard objectives add bldp.crafted.gray_concrete minecraft.crafted:gray_concrete
 scoreboard objectives add bldp.crafted.gray_concrete_powder minecraft.crafted:gray_concrete_powder
+scoreboard objectives add bldp.crafted.gray_concrete_slab minecraft.crafted:gray_concrete_slab
+scoreboard objectives add bldp.crafted.gray_concrete_stairs minecraft.crafted:gray_concrete_stairs
 scoreboard objectives add bldp.crafted.gray_cushion minecraft.crafted:gray_cushion
 scoreboard objectives add bldp.crafted.gray_dye minecraft.crafted:gray_dye
 scoreboard objectives add bldp.crafted.gray_glazed_terracotta minecraft.crafted:gray_glazed_terracotta
@@ -624,6 +640,8 @@ scoreboard objectives add bldp.crafted.green_candle minecraft.crafted:green_cand
 scoreboard objectives add bldp.crafted.green_carpet minecraft.crafted:green_carpet
 scoreboard objectives add bldp.crafted.green_concrete minecraft.crafted:green_concrete
 scoreboard objectives add bldp.crafted.green_concrete_powder minecraft.crafted:green_concrete_powder
+scoreboard objectives add bldp.crafted.green_concrete_slab minecraft.crafted:green_concrete_slab
+scoreboard objectives add bldp.crafted.green_concrete_stairs minecraft.crafted:green_concrete_stairs
 scoreboard objectives add bldp.crafted.green_cushion minecraft.crafted:green_cushion
 scoreboard objectives add bldp.crafted.green_dye minecraft.crafted:green_dye
 scoreboard objectives add bldp.crafted.green_glazed_terracotta minecraft.crafted:green_glazed_terracotta
@@ -700,6 +718,7 @@ scoreboard objectives add bldp.crafted.jungle_boat minecraft.crafted:jungle_boat
 scoreboard objectives add bldp.crafted.jungle_button minecraft.crafted:jungle_button
 scoreboard objectives add bldp.crafted.jungle_chest_boat minecraft.crafted:jungle_chest_boat
 scoreboard objectives add bldp.crafted.jungle_door minecraft.crafted:jungle_door
+scoreboard objectives add bldp.crafted.jungle_explorer_map minecraft.crafted:jungle_explorer_map
 scoreboard objectives add bldp.crafted.jungle_fence minecraft.crafted:jungle_fence
 scoreboard objectives add bldp.crafted.jungle_fence_gate minecraft.crafted:jungle_fence_gate
 scoreboard objectives add bldp.crafted.jungle_hanging_sign minecraft.crafted:jungle_hanging_sign
@@ -742,6 +761,8 @@ scoreboard objectives add bldp.crafted.light_blue_candle minecraft.crafted:light
 scoreboard objectives add bldp.crafted.light_blue_carpet minecraft.crafted:light_blue_carpet
 scoreboard objectives add bldp.crafted.light_blue_concrete minecraft.crafted:light_blue_concrete
 scoreboard objectives add bldp.crafted.light_blue_concrete_powder minecraft.crafted:light_blue_concrete_powder
+scoreboard objectives add bldp.crafted.light_blue_concrete_slab minecraft.crafted:light_blue_concrete_slab
+scoreboard objectives add bldp.crafted.light_blue_concrete_stairs minecraft.crafted:light_blue_concrete_stairs
 scoreboard objectives add bldp.crafted.light_blue_cushion minecraft.crafted:light_blue_cushion
 scoreboard objectives add bldp.crafted.light_blue_dye minecraft.crafted:light_blue_dye
 scoreboard objectives add bldp.crafted.light_blue_glazed_terracotta minecraft.crafted:light_blue_glazed_terracotta
@@ -760,6 +781,8 @@ scoreboard objectives add bldp.crafted.light_gray_candle minecraft.crafted:light
 scoreboard objectives add bldp.crafted.light_gray_carpet minecraft.crafted:light_gray_carpet
 scoreboard objectives add bldp.crafted.light_gray_concrete minecraft.crafted:light_gray_concrete
 scoreboard objectives add bldp.crafted.light_gray_concrete_powder minecraft.crafted:light_gray_concrete_powder
+scoreboard objectives add bldp.crafted.light_gray_concrete_slab minecraft.crafted:light_gray_concrete_slab
+scoreboard objectives add bldp.crafted.light_gray_concrete_stairs minecraft.crafted:light_gray_concrete_stairs
 scoreboard objectives add bldp.crafted.light_gray_cushion minecraft.crafted:light_gray_cushion
 scoreboard objectives add bldp.crafted.light_gray_dye minecraft.crafted:light_gray_dye
 scoreboard objectives add bldp.crafted.light_gray_glazed_terracotta minecraft.crafted:light_gray_glazed_terracotta
@@ -783,6 +806,8 @@ scoreboard objectives add bldp.crafted.lime_candle minecraft.crafted:lime_candle
 scoreboard objectives add bldp.crafted.lime_carpet minecraft.crafted:lime_carpet
 scoreboard objectives add bldp.crafted.lime_concrete minecraft.crafted:lime_concrete
 scoreboard objectives add bldp.crafted.lime_concrete_powder minecraft.crafted:lime_concrete_powder
+scoreboard objectives add bldp.crafted.lime_concrete_slab minecraft.crafted:lime_concrete_slab
+scoreboard objectives add bldp.crafted.lime_concrete_stairs minecraft.crafted:lime_concrete_stairs
 scoreboard objectives add bldp.crafted.lime_cushion minecraft.crafted:lime_cushion
 scoreboard objectives add bldp.crafted.lime_dye minecraft.crafted:lime_dye
 scoreboard objectives add bldp.crafted.lime_glazed_terracotta minecraft.crafted:lime_glazed_terracotta
@@ -806,6 +831,8 @@ scoreboard objectives add bldp.crafted.magenta_candle minecraft.crafted:magenta_
 scoreboard objectives add bldp.crafted.magenta_carpet minecraft.crafted:magenta_carpet
 scoreboard objectives add bldp.crafted.magenta_concrete minecraft.crafted:magenta_concrete
 scoreboard objectives add bldp.crafted.magenta_concrete_powder minecraft.crafted:magenta_concrete_powder
+scoreboard objectives add bldp.crafted.magenta_concrete_slab minecraft.crafted:magenta_concrete_slab
+scoreboard objectives add bldp.crafted.magenta_concrete_stairs minecraft.crafted:magenta_concrete_stairs
 scoreboard objectives add bldp.crafted.magenta_cushion minecraft.crafted:magenta_cushion
 scoreboard objectives add bldp.crafted.magenta_dye minecraft.crafted:magenta_dye
 scoreboard objectives add bldp.crafted.magenta_glazed_terracotta minecraft.crafted:magenta_glazed_terracotta
@@ -946,6 +973,7 @@ scoreboard objectives add bldp.crafted.oak_trapdoor minecraft.crafted:oak_trapdo
 scoreboard objectives add bldp.crafted.oak_wood minecraft.crafted:oak_wood
 scoreboard objectives add bldp.crafted.observer minecraft.crafted:observer
 scoreboard objectives add bldp.crafted.obsidian minecraft.crafted:obsidian
+scoreboard objectives add bldp.crafted.ocean_explorer_map minecraft.crafted:ocean_explorer_map
 scoreboard objectives add bldp.crafted.ocelot_spawn_egg minecraft.crafted:ocelot_spawn_egg
 scoreboard objectives add bldp.crafted.ochre_froglight minecraft.crafted:ochre_froglight
 scoreboard objectives add bldp.crafted.ominous_bottle minecraft.crafted:ominous_bottle
@@ -958,6 +986,8 @@ scoreboard objectives add bldp.crafted.orange_candle minecraft.crafted:orange_ca
 scoreboard objectives add bldp.crafted.orange_carpet minecraft.crafted:orange_carpet
 scoreboard objectives add bldp.crafted.orange_concrete minecraft.crafted:orange_concrete
 scoreboard objectives add bldp.crafted.orange_concrete_powder minecraft.crafted:orange_concrete_powder
+scoreboard objectives add bldp.crafted.orange_concrete_slab minecraft.crafted:orange_concrete_slab
+scoreboard objectives add bldp.crafted.orange_concrete_stairs minecraft.crafted:orange_concrete_stairs
 scoreboard objectives add bldp.crafted.orange_cushion minecraft.crafted:orange_cushion
 scoreboard objectives add bldp.crafted.orange_dye minecraft.crafted:orange_dye
 scoreboard objectives add bldp.crafted.orange_glazed_terracotta minecraft.crafted:orange_glazed_terracotta
@@ -1033,6 +1063,8 @@ scoreboard objectives add bldp.crafted.pink_candle minecraft.crafted:pink_candle
 scoreboard objectives add bldp.crafted.pink_carpet minecraft.crafted:pink_carpet
 scoreboard objectives add bldp.crafted.pink_concrete minecraft.crafted:pink_concrete
 scoreboard objectives add bldp.crafted.pink_concrete_powder minecraft.crafted:pink_concrete_powder
+scoreboard objectives add bldp.crafted.pink_concrete_slab minecraft.crafted:pink_concrete_slab
+scoreboard objectives add bldp.crafted.pink_concrete_stairs minecraft.crafted:pink_concrete_stairs
 scoreboard objectives add bldp.crafted.pink_cushion minecraft.crafted:pink_cushion
 scoreboard objectives add bldp.crafted.pink_dye minecraft.crafted:pink_dye
 scoreboard objectives add bldp.crafted.pink_glazed_terracotta minecraft.crafted:pink_glazed_terracotta
@@ -1049,6 +1081,7 @@ scoreboard objectives add bldp.crafted.pink_wool_stairs minecraft.crafted:pink_w
 scoreboard objectives add bldp.crafted.piston minecraft.crafted:piston
 scoreboard objectives add bldp.crafted.pitcher_plant minecraft.crafted:pitcher_plant
 scoreboard objectives add bldp.crafted.pitcher_pod minecraft.crafted:pitcher_pod
+scoreboard objectives add bldp.crafted.plains_village_map minecraft.crafted:plains_village_map
 scoreboard objectives add bldp.crafted.player_head minecraft.crafted:player_head
 scoreboard objectives add bldp.crafted.plenty_pottery_sherd minecraft.crafted:plenty_pottery_sherd
 scoreboard objectives add bldp.crafted.podzol minecraft.crafted:podzol
@@ -1139,6 +1172,8 @@ scoreboard objectives add bldp.crafted.purple_candle minecraft.crafted:purple_ca
 scoreboard objectives add bldp.crafted.purple_carpet minecraft.crafted:purple_carpet
 scoreboard objectives add bldp.crafted.purple_concrete minecraft.crafted:purple_concrete
 scoreboard objectives add bldp.crafted.purple_concrete_powder minecraft.crafted:purple_concrete_powder
+scoreboard objectives add bldp.crafted.purple_concrete_slab minecraft.crafted:purple_concrete_slab
+scoreboard objectives add bldp.crafted.purple_concrete_stairs minecraft.crafted:purple_concrete_stairs
 scoreboard objectives add bldp.crafted.purple_cushion minecraft.crafted:purple_cushion
 scoreboard objectives add bldp.crafted.purple_dye minecraft.crafted:purple_dye
 scoreboard objectives add bldp.crafted.purple_glazed_terracotta minecraft.crafted:purple_glazed_terracotta
@@ -1182,6 +1217,8 @@ scoreboard objectives add bldp.crafted.red_candle minecraft.crafted:red_candle
 scoreboard objectives add bldp.crafted.red_carpet minecraft.crafted:red_carpet
 scoreboard objectives add bldp.crafted.red_concrete minecraft.crafted:red_concrete
 scoreboard objectives add bldp.crafted.red_concrete_powder minecraft.crafted:red_concrete_powder
+scoreboard objectives add bldp.crafted.red_concrete_slab minecraft.crafted:red_concrete_slab
+scoreboard objectives add bldp.crafted.red_concrete_stairs minecraft.crafted:red_concrete_stairs
 scoreboard objectives add bldp.crafted.red_cushion minecraft.crafted:red_cushion
 scoreboard objectives add bldp.crafted.red_dye minecraft.crafted:red_dye
 scoreboard objectives add bldp.crafted.red_glazed_terracotta minecraft.crafted:red_glazed_terracotta
@@ -1236,6 +1273,7 @@ scoreboard objectives add bldp.crafted.sandstone minecraft.crafted:sandstone
 scoreboard objectives add bldp.crafted.sandstone_slab minecraft.crafted:sandstone_slab
 scoreboard objectives add bldp.crafted.sandstone_stairs minecraft.crafted:sandstone_stairs
 scoreboard objectives add bldp.crafted.sandstone_wall minecraft.crafted:sandstone_wall
+scoreboard objectives add bldp.crafted.savanna_village_map minecraft.crafted:savanna_village_map
 scoreboard objectives add bldp.crafted.scaffolding minecraft.crafted:scaffolding
 scoreboard objectives add bldp.crafted.scrape_pottery_sherd minecraft.crafted:scrape_pottery_sherd
 scoreboard objectives add bldp.crafted.sculk minecraft.crafted:sculk
@@ -1294,6 +1332,7 @@ scoreboard objectives add bldp.crafted.snow minecraft.crafted:snow
 scoreboard objectives add bldp.crafted.snow_block minecraft.crafted:snow_block
 scoreboard objectives add bldp.crafted.snow_golem_spawn_egg minecraft.crafted:snow_golem_spawn_egg
 scoreboard objectives add bldp.crafted.snowball minecraft.crafted:snowball
+scoreboard objectives add bldp.crafted.snowy_village_map minecraft.crafted:snowy_village_map
 scoreboard objectives add bldp.crafted.soul_campfire minecraft.crafted:soul_campfire
 scoreboard objectives add bldp.crafted.soul_lantern minecraft.crafted:soul_lantern
 scoreboard objectives add bldp.crafted.soul_sand minecraft.crafted:soul_sand
@@ -1393,9 +1432,11 @@ scoreboard objectives add bldp.crafted.sunflower minecraft.crafted:sunflower
 scoreboard objectives add bldp.crafted.suspicious_gravel minecraft.crafted:suspicious_gravel
 scoreboard objectives add bldp.crafted.suspicious_sand minecraft.crafted:suspicious_sand
 scoreboard objectives add bldp.crafted.suspicious_stew minecraft.crafted:suspicious_stew
+scoreboard objectives add bldp.crafted.swamp_explorer_map minecraft.crafted:swamp_explorer_map
 scoreboard objectives add bldp.crafted.sweet_berries minecraft.crafted:sweet_berries
 scoreboard objectives add bldp.crafted.tadpole_bucket minecraft.crafted:tadpole_bucket
 scoreboard objectives add bldp.crafted.tadpole_spawn_egg minecraft.crafted:tadpole_spawn_egg
+scoreboard objectives add bldp.crafted.taiga_village_map minecraft.crafted:taiga_village_map
 scoreboard objectives add bldp.crafted.tall_dry_grass minecraft.crafted:tall_dry_grass
 scoreboard objectives add bldp.crafted.tall_grass minecraft.crafted:tall_grass
 scoreboard objectives add bldp.crafted.target minecraft.crafted:target
@@ -1413,6 +1454,7 @@ scoreboard objectives add bldp.crafted.torchflower_seeds minecraft.crafted:torch
 scoreboard objectives add bldp.crafted.totem_of_undying minecraft.crafted:totem_of_undying
 scoreboard objectives add bldp.crafted.trader_llama_spawn_egg minecraft.crafted:trader_llama_spawn_egg
 scoreboard objectives add bldp.crafted.trapped_chest minecraft.crafted:trapped_chest
+scoreboard objectives add bldp.crafted.trial_explorer_map minecraft.crafted:trial_explorer_map
 scoreboard objectives add bldp.crafted.trial_key minecraft.crafted:trial_key
 scoreboard objectives add bldp.crafted.trial_spawner minecraft.crafted:trial_spawner
 scoreboard objectives add bldp.crafted.trident minecraft.crafted:trident
@@ -1446,6 +1488,7 @@ scoreboard objectives add bldp.crafted.vine minecraft.crafted:vine
 scoreboard objectives add bldp.crafted.wandering_trader_spawn_egg minecraft.crafted:wandering_trader_spawn_egg
 scoreboard objectives add bldp.crafted.ward_armor_trim_smithing_template minecraft.crafted:ward_armor_trim_smithing_template
 scoreboard objectives add bldp.crafted.warden_spawn_egg minecraft.crafted:warden_spawn_egg
+scoreboard objectives add bldp.crafted.warm_ocean_ruins_map minecraft.crafted:warm_ocean_ruins_map
 scoreboard objectives add bldp.crafted.warped_button minecraft.crafted:warped_button
 scoreboard objectives add bldp.crafted.warped_door minecraft.crafted:warped_door
 scoreboard objectives add bldp.crafted.warped_fence minecraft.crafted:warped_fence
@@ -1553,6 +1596,8 @@ scoreboard objectives add bldp.crafted.white_candle minecraft.crafted:white_cand
 scoreboard objectives add bldp.crafted.white_carpet minecraft.crafted:white_carpet
 scoreboard objectives add bldp.crafted.white_concrete minecraft.crafted:white_concrete
 scoreboard objectives add bldp.crafted.white_concrete_powder minecraft.crafted:white_concrete_powder
+scoreboard objectives add bldp.crafted.white_concrete_slab minecraft.crafted:white_concrete_slab
+scoreboard objectives add bldp.crafted.white_concrete_stairs minecraft.crafted:white_concrete_stairs
 scoreboard objectives add bldp.crafted.white_cushion minecraft.crafted:white_cushion
 scoreboard objectives add bldp.crafted.white_dye minecraft.crafted:white_dye
 scoreboard objectives add bldp.crafted.white_glazed_terracotta minecraft.crafted:white_glazed_terracotta
@@ -1581,6 +1626,7 @@ scoreboard objectives add bldp.crafted.wooden_pickaxe minecraft.crafted:wooden_p
 scoreboard objectives add bldp.crafted.wooden_shovel minecraft.crafted:wooden_shovel
 scoreboard objectives add bldp.crafted.wooden_spear minecraft.crafted:wooden_spear
 scoreboard objectives add bldp.crafted.wooden_sword minecraft.crafted:wooden_sword
+scoreboard objectives add bldp.crafted.woodland_explorer_map minecraft.crafted:woodland_explorer_map
 scoreboard objectives add bldp.crafted.writable_book minecraft.crafted:writable_book
 scoreboard objectives add bldp.crafted.written_book minecraft.crafted:written_book
 scoreboard objectives add bldp.crafted.yellow_banner minecraft.crafted:yellow_banner
@@ -1590,6 +1636,8 @@ scoreboard objectives add bldp.crafted.yellow_candle minecraft.crafted:yellow_ca
 scoreboard objectives add bldp.crafted.yellow_carpet minecraft.crafted:yellow_carpet
 scoreboard objectives add bldp.crafted.yellow_concrete minecraft.crafted:yellow_concrete
 scoreboard objectives add bldp.crafted.yellow_concrete_powder minecraft.crafted:yellow_concrete_powder
+scoreboard objectives add bldp.crafted.yellow_concrete_slab minecraft.crafted:yellow_concrete_slab
+scoreboard objectives add bldp.crafted.yellow_concrete_stairs minecraft.crafted:yellow_concrete_stairs
 scoreboard objectives add bldp.crafted.yellow_cushion minecraft.crafted:yellow_cushion
 scoreboard objectives add bldp.crafted.yellow_dye minecraft.crafted:yellow_dye
 scoreboard objectives add bldp.crafted.yellow_glazed_terracotta minecraft.crafted:yellow_glazed_terracotta

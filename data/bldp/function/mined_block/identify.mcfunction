@@ -89,6 +89,8 @@ execute if score @s bldp.mined.black_candle_cake matches 1.. run data modify sto
 execute if score @s bldp.mined.black_carpet matches 1.. run data modify storage bldp:mined_block out set value black_carpet
 execute if score @s bldp.mined.black_concrete matches 1.. run data modify storage bldp:mined_block out set value black_concrete
 execute if score @s bldp.mined.black_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value black_concrete_powder
+execute if score @s bldp.mined.black_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value black_concrete_slab
+execute if score @s bldp.mined.black_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value black_concrete_stairs
 execute if score @s bldp.mined.black_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value black_glazed_terracotta
 execute if score @s bldp.mined.black_shulker_box matches 1.. run data modify storage bldp:mined_block out set value black_shulker_box
 execute if score @s bldp.mined.black_stained_glass matches 1.. run data modify storage bldp:mined_block out set value black_stained_glass
@@ -110,6 +112,8 @@ execute if score @s bldp.mined.blue_candle_cake matches 1.. run data modify stor
 execute if score @s bldp.mined.blue_carpet matches 1.. run data modify storage bldp:mined_block out set value blue_carpet
 execute if score @s bldp.mined.blue_concrete matches 1.. run data modify storage bldp:mined_block out set value blue_concrete
 execute if score @s bldp.mined.blue_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value blue_concrete_powder
+execute if score @s bldp.mined.blue_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value blue_concrete_slab
+execute if score @s bldp.mined.blue_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value blue_concrete_stairs
 execute if score @s bldp.mined.blue_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value blue_glazed_terracotta
 execute if score @s bldp.mined.blue_ice matches 1.. run data modify storage bldp:mined_block out set value blue_ice
 execute if score @s bldp.mined.blue_orchid matches 1.. run data modify storage bldp:mined_block out set value blue_orchid
@@ -139,6 +143,8 @@ execute if score @s bldp.mined.brown_candle_cake matches 1.. run data modify sto
 execute if score @s bldp.mined.brown_carpet matches 1.. run data modify storage bldp:mined_block out set value brown_carpet
 execute if score @s bldp.mined.brown_concrete matches 1.. run data modify storage bldp:mined_block out set value brown_concrete
 execute if score @s bldp.mined.brown_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value brown_concrete_powder
+execute if score @s bldp.mined.brown_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value brown_concrete_slab
+execute if score @s bldp.mined.brown_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value brown_concrete_stairs
 execute if score @s bldp.mined.brown_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value brown_glazed_terracotta
 execute if score @s bldp.mined.brown_mushroom matches 1.. run data modify storage bldp:mined_block out set value brown_mushroom
 execute if score @s bldp.mined.brown_mushroom_block matches 1.. run data modify storage bldp:mined_block out set value brown_mushroom_block
@@ -294,6 +300,8 @@ execute if score @s bldp.mined.cyan_candle_cake matches 1.. run data modify stor
 execute if score @s bldp.mined.cyan_carpet matches 1.. run data modify storage bldp:mined_block out set value cyan_carpet
 execute if score @s bldp.mined.cyan_concrete matches 1.. run data modify storage bldp:mined_block out set value cyan_concrete
 execute if score @s bldp.mined.cyan_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value cyan_concrete_powder
+execute if score @s bldp.mined.cyan_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value cyan_concrete_slab
+execute if score @s bldp.mined.cyan_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value cyan_concrete_stairs
 execute if score @s bldp.mined.cyan_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value cyan_glazed_terracotta
 execute if score @s bldp.mined.cyan_shulker_box matches 1.. run data modify storage bldp:mined_block out set value cyan_shulker_box
 execute if score @s bldp.mined.cyan_stained_glass matches 1.. run data modify storage bldp:mined_block out set value cyan_stained_glass
@@ -447,6 +455,8 @@ execute if score @s bldp.mined.gray_candle_cake matches 1.. run data modify stor
 execute if score @s bldp.mined.gray_carpet matches 1.. run data modify storage bldp:mined_block out set value gray_carpet
 execute if score @s bldp.mined.gray_concrete matches 1.. run data modify storage bldp:mined_block out set value gray_concrete
 execute if score @s bldp.mined.gray_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value gray_concrete_powder
+execute if score @s bldp.mined.gray_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value gray_concrete_slab
+execute if score @s bldp.mined.gray_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value gray_concrete_stairs
 execute if score @s bldp.mined.gray_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value gray_glazed_terracotta
 execute if score @s bldp.mined.gray_shulker_box matches 1.. run data modify storage bldp:mined_block out set value gray_shulker_box
 execute if score @s bldp.mined.gray_stained_glass matches 1.. run data modify storage bldp:mined_block out set value gray_stained_glass
@@ -463,6 +473,8 @@ execute if score @s bldp.mined.green_candle_cake matches 1.. run data modify sto
 execute if score @s bldp.mined.green_carpet matches 1.. run data modify storage bldp:mined_block out set value green_carpet
 execute if score @s bldp.mined.green_concrete matches 1.. run data modify storage bldp:mined_block out set value green_concrete
 execute if score @s bldp.mined.green_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value green_concrete_powder
+execute if score @s bldp.mined.green_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value green_concrete_slab
+execute if score @s bldp.mined.green_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value green_concrete_stairs
 execute if score @s bldp.mined.green_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value green_glazed_terracotta
 execute if score @s bldp.mined.green_shulker_box matches 1.. run data modify storage bldp:mined_block out set value green_shulker_box
 execute if score @s bldp.mined.green_stained_glass matches 1.. run data modify storage bldp:mined_block out set value green_stained_glass
@@ -540,6 +552,8 @@ execute if score @s bldp.mined.light_blue_candle_cake matches 1.. run data modif
 execute if score @s bldp.mined.light_blue_carpet matches 1.. run data modify storage bldp:mined_block out set value light_blue_carpet
 execute if score @s bldp.mined.light_blue_concrete matches 1.. run data modify storage bldp:mined_block out set value light_blue_concrete
 execute if score @s bldp.mined.light_blue_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value light_blue_concrete_powder
+execute if score @s bldp.mined.light_blue_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value light_blue_concrete_slab
+execute if score @s bldp.mined.light_blue_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value light_blue_concrete_stairs
 execute if score @s bldp.mined.light_blue_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value light_blue_glazed_terracotta
 execute if score @s bldp.mined.light_blue_shulker_box matches 1.. run data modify storage bldp:mined_block out set value light_blue_shulker_box
 execute if score @s bldp.mined.light_blue_stained_glass matches 1.. run data modify storage bldp:mined_block out set value light_blue_stained_glass
@@ -556,6 +570,8 @@ execute if score @s bldp.mined.light_gray_candle_cake matches 1.. run data modif
 execute if score @s bldp.mined.light_gray_carpet matches 1.. run data modify storage bldp:mined_block out set value light_gray_carpet
 execute if score @s bldp.mined.light_gray_concrete matches 1.. run data modify storage bldp:mined_block out set value light_gray_concrete
 execute if score @s bldp.mined.light_gray_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value light_gray_concrete_powder
+execute if score @s bldp.mined.light_gray_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value light_gray_concrete_slab
+execute if score @s bldp.mined.light_gray_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value light_gray_concrete_stairs
 execute if score @s bldp.mined.light_gray_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value light_gray_glazed_terracotta
 execute if score @s bldp.mined.light_gray_shulker_box matches 1.. run data modify storage bldp:mined_block out set value light_gray_shulker_box
 execute if score @s bldp.mined.light_gray_stained_glass matches 1.. run data modify storage bldp:mined_block out set value light_gray_stained_glass
@@ -577,6 +593,8 @@ execute if score @s bldp.mined.lime_candle_cake matches 1.. run data modify stor
 execute if score @s bldp.mined.lime_carpet matches 1.. run data modify storage bldp:mined_block out set value lime_carpet
 execute if score @s bldp.mined.lime_concrete matches 1.. run data modify storage bldp:mined_block out set value lime_concrete
 execute if score @s bldp.mined.lime_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value lime_concrete_powder
+execute if score @s bldp.mined.lime_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value lime_concrete_slab
+execute if score @s bldp.mined.lime_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value lime_concrete_stairs
 execute if score @s bldp.mined.lime_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value lime_glazed_terracotta
 execute if score @s bldp.mined.lime_shulker_box matches 1.. run data modify storage bldp:mined_block out set value lime_shulker_box
 execute if score @s bldp.mined.lime_stained_glass matches 1.. run data modify storage bldp:mined_block out set value lime_stained_glass
@@ -595,6 +613,8 @@ execute if score @s bldp.mined.magenta_candle_cake matches 1.. run data modify s
 execute if score @s bldp.mined.magenta_carpet matches 1.. run data modify storage bldp:mined_block out set value magenta_carpet
 execute if score @s bldp.mined.magenta_concrete matches 1.. run data modify storage bldp:mined_block out set value magenta_concrete
 execute if score @s bldp.mined.magenta_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value magenta_concrete_powder
+execute if score @s bldp.mined.magenta_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value magenta_concrete_slab
+execute if score @s bldp.mined.magenta_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value magenta_concrete_stairs
 execute if score @s bldp.mined.magenta_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value magenta_glazed_terracotta
 execute if score @s bldp.mined.magenta_shulker_box matches 1.. run data modify storage bldp:mined_block out set value magenta_shulker_box
 execute if score @s bldp.mined.magenta_stained_glass matches 1.. run data modify storage bldp:mined_block out set value magenta_stained_glass
@@ -689,6 +709,8 @@ execute if score @s bldp.mined.orange_candle_cake matches 1.. run data modify st
 execute if score @s bldp.mined.orange_carpet matches 1.. run data modify storage bldp:mined_block out set value orange_carpet
 execute if score @s bldp.mined.orange_concrete matches 1.. run data modify storage bldp:mined_block out set value orange_concrete
 execute if score @s bldp.mined.orange_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value orange_concrete_powder
+execute if score @s bldp.mined.orange_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value orange_concrete_slab
+execute if score @s bldp.mined.orange_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value orange_concrete_stairs
 execute if score @s bldp.mined.orange_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value orange_glazed_terracotta
 execute if score @s bldp.mined.orange_poplar_leaves matches 1.. run data modify storage bldp:mined_block out set value orange_poplar_leaves
 execute if score @s bldp.mined.orange_shulker_box matches 1.. run data modify storage bldp:mined_block out set value orange_shulker_box
@@ -751,6 +773,8 @@ execute if score @s bldp.mined.pink_candle_cake matches 1.. run data modify stor
 execute if score @s bldp.mined.pink_carpet matches 1.. run data modify storage bldp:mined_block out set value pink_carpet
 execute if score @s bldp.mined.pink_concrete matches 1.. run data modify storage bldp:mined_block out set value pink_concrete
 execute if score @s bldp.mined.pink_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value pink_concrete_powder
+execute if score @s bldp.mined.pink_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value pink_concrete_slab
+execute if score @s bldp.mined.pink_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value pink_concrete_stairs
 execute if score @s bldp.mined.pink_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value pink_glazed_terracotta
 execute if score @s bldp.mined.pink_petals matches 1.. run data modify storage bldp:mined_block out set value pink_petals
 execute if score @s bldp.mined.pink_shulker_box matches 1.. run data modify storage bldp:mined_block out set value pink_shulker_box
@@ -884,6 +908,8 @@ execute if score @s bldp.mined.purple_candle_cake matches 1.. run data modify st
 execute if score @s bldp.mined.purple_carpet matches 1.. run data modify storage bldp:mined_block out set value purple_carpet
 execute if score @s bldp.mined.purple_concrete matches 1.. run data modify storage bldp:mined_block out set value purple_concrete
 execute if score @s bldp.mined.purple_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value purple_concrete_powder
+execute if score @s bldp.mined.purple_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value purple_concrete_slab
+execute if score @s bldp.mined.purple_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value purple_concrete_stairs
 execute if score @s bldp.mined.purple_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value purple_glazed_terracotta
 execute if score @s bldp.mined.purple_shulker_box matches 1.. run data modify storage bldp:mined_block out set value purple_shulker_box
 execute if score @s bldp.mined.purple_stained_glass matches 1.. run data modify storage bldp:mined_block out set value purple_stained_glass
@@ -913,6 +939,8 @@ execute if score @s bldp.mined.red_candle_cake matches 1.. run data modify stora
 execute if score @s bldp.mined.red_carpet matches 1.. run data modify storage bldp:mined_block out set value red_carpet
 execute if score @s bldp.mined.red_concrete matches 1.. run data modify storage bldp:mined_block out set value red_concrete
 execute if score @s bldp.mined.red_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value red_concrete_powder
+execute if score @s bldp.mined.red_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value red_concrete_slab
+execute if score @s bldp.mined.red_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value red_concrete_stairs
 execute if score @s bldp.mined.red_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value red_glazed_terracotta
 execute if score @s bldp.mined.red_mushroom matches 1.. run data modify storage bldp:mined_block out set value red_mushroom
 execute if score @s bldp.mined.red_mushroom_block matches 1.. run data modify storage bldp:mined_block out set value red_mushroom_block
@@ -1220,6 +1248,8 @@ execute if score @s bldp.mined.white_candle_cake matches 1.. run data modify sto
 execute if score @s bldp.mined.white_carpet matches 1.. run data modify storage bldp:mined_block out set value white_carpet
 execute if score @s bldp.mined.white_concrete matches 1.. run data modify storage bldp:mined_block out set value white_concrete
 execute if score @s bldp.mined.white_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value white_concrete_powder
+execute if score @s bldp.mined.white_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value white_concrete_slab
+execute if score @s bldp.mined.white_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value white_concrete_stairs
 execute if score @s bldp.mined.white_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value white_glazed_terracotta
 execute if score @s bldp.mined.white_shulker_box matches 1.. run data modify storage bldp:mined_block out set value white_shulker_box
 execute if score @s bldp.mined.white_stained_glass matches 1.. run data modify storage bldp:mined_block out set value white_stained_glass
@@ -1241,6 +1271,8 @@ execute if score @s bldp.mined.yellow_candle_cake matches 1.. run data modify st
 execute if score @s bldp.mined.yellow_carpet matches 1.. run data modify storage bldp:mined_block out set value yellow_carpet
 execute if score @s bldp.mined.yellow_concrete matches 1.. run data modify storage bldp:mined_block out set value yellow_concrete
 execute if score @s bldp.mined.yellow_concrete_powder matches 1.. run data modify storage bldp:mined_block out set value yellow_concrete_powder
+execute if score @s bldp.mined.yellow_concrete_slab matches 1.. run data modify storage bldp:mined_block out set value yellow_concrete_slab
+execute if score @s bldp.mined.yellow_concrete_stairs matches 1.. run data modify storage bldp:mined_block out set value yellow_concrete_stairs
 execute if score @s bldp.mined.yellow_glazed_terracotta matches 1.. run data modify storage bldp:mined_block out set value yellow_glazed_terracotta
 execute if score @s bldp.mined.yellow_poplar_leaves matches 1.. run data modify storage bldp:mined_block out set value yellow_poplar_leaves
 execute if score @s bldp.mined.yellow_shulker_box matches 1.. run data modify storage bldp:mined_block out set value yellow_shulker_box
