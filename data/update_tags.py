@@ -1,9 +1,23 @@
-import os, urllib.request, json, requests, re
+import os, urllib.request, json, requests, re, shutil, sys
 from pathlib import Path
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-DEBUG = True
+DEBUG = False
+
+if not Path.cwd().name == "data":
+    print("Working directory not named 'data'! bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+    sys.exit()
+
+if Path("bldp/tags/block/update").exists():
+    shutil.rmtree("bldp/tags/block/update", ignore_errors=True)
+    print("--Removed existing block tags")
+if Path("bldp/tags/item/update").exists():
+    shutil.rmtree("bldp/tags/item/update", ignore_errors=True)
+    print("--Removed existing item tags")
+if Path("bldp/tags/entity_tag/update").exists():
+    shutil.rmtree("bldp/tags/entity_tag/update", ignore_errors=True)
+    print("--Removed existing entity_type tags")
 
 print("--Grabbing version manifest")
 version_manifest = json.load(urllib.request.urlopen("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"))

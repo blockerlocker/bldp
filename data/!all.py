@@ -15,6 +15,10 @@ abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
 os.chdir(dname)
 
+if not Path.cwd().name == "data":
+    print("Working directory not named 'data'! bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+    sys.exit()
+
 def main():
     current_path = Path(dname)
 

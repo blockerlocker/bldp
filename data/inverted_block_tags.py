@@ -1,8 +1,5 @@
-import requests
-import os
-import json
+import requests, os, json, sys, shutil
 from pathlib import Path
-import sys
 
 
 if len(sys.argv) > 1:
@@ -12,9 +9,15 @@ else:
     MCVERSION = "26.3-snapshot-8"
 
 
-abspath = os.path.abspath(__file__)
-dname = os.path.dirname(abspath)
-os.chdir(dname)
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+if not Path.cwd().name == "data":
+    print("Working directory not named 'data'! bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+    sys.exit()
+
+if Path("bldp/tags/block/inverted").exists():
+    shutil.rmtree("bldp/tags/block/inverted", ignore_errors=True)
+    print("--Removed existing block tags")
 
 def get_block_list():
     block_list_response = requests.get("https://raw.githubusercontent.com/misode/mcmeta/"+MCVERSION+"-registries/block/data.json")
