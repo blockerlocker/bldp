@@ -25,6 +25,7 @@ def main():
 
     for file in current_path.iterdir():
         if file.is_file() and file.suffix.lower() == ".py" and not file.name == "!all.py":
+            print(f"-Running module {Path(file).name}")
             subprocess.run([sys.executable, file, MCVERSION])
 
 if __name__ == "__main__":
