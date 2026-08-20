@@ -1,1 +1,0 @@
-$execute store result storage bldp:temp all.random.value int 1 run random value $(x)..$(y)
