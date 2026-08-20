@@ -6,3 +6,4 @@ execute unless data storage bldp:registry all.mobs run function bldp:registry/mo
 execute unless data storage bldp:registry all.non_mob_entities run function bldp:registry/non_mob_entities
 execute unless data storage bldp:icon all.item run function bldp:icon/item
 execute unless data storage bldp:registry all.block_placing_items run function bldp:registry/block_placing_items
+scoreboard objectives add operator dummy
