@@ -70,7 +70,7 @@ def append_to_load_tag(path,append_value):
 def main():
     string_to_file("$execute store result storage bldp:temp all.random.value int 1 run random value $(x)..$(y)","bldp/function/func/random","value.mcfunction")
     string_to_file("data remove storage bldp:array_random out\nexecute store result score #bldp_array_random operator if data storage bldp:array_random in[]\ndata modify storage bldp:temp all.random.x set value 0\nexecute store result storage bldp:temp all.random.y int 1 run scoreboard players remove #bldp_array_random operator 1\nfunction bldp:func/random/value with storage bldp:temp all.random\nfunction bldp:func/array/random/commit with storage bldp:temp all.random\ndata remove storage bldp:array_random in\ndata remove storage bldp:temp all","bldp/function/func/array/random","init.mcfunction")
-    string_to_file("$data modify storage bldp:array_random out set from storage bldp:array_random in[$(value)]","bldp/function/func/array/random","commit.mcfunction")
+    string_to_file("$data modify storage bldp:array_random out set from storage bldp:array_random in[$(value)]\ndata modify storage bldp:array_random index set from storage bldp:temp all.random.value","bldp/function/func/array/random","commit.mcfunction")
     append_to_bldp_load("scoreboard objectives add operator dummy")
 
     if Path("bldp/function/registry").is_dir():
