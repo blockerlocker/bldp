@@ -26,6 +26,18 @@ def string_to_file(string,path,file_name):
     with open(path+file_name, "w", encoding="utf-8") as output_file:
         output_file.write(string)
 
+def json_to_file(json_object,path,file_name):
+    Path(path).mkdir(parents=True, exist_ok=True)
+
+    if not path[-2:-1] in ["/", "\\"]:
+        path += "/"
+
+    if not file_name[-5:] == ".json":
+            file_name += ".json"
+
+    with open(f"{path}{file_name}", "w", encoding="utf-8") as output_file:
+        json.dump(json_object,output_file,indent=4)
+
 def append_to_bldp_load(command):
     if Path("bldp/function/main/load.mcfunction").is_file():
         with open("bldp/function/main/load.mcfunction", "r", encoding="utf-8") as bldp_load:

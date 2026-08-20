@@ -1,2 +1,3 @@
 data/debug/
 .vscode/
+__pycache__/

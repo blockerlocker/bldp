@@ -1,4 +1,4 @@
-import requests, os, json, sys, shutil, urllib.request, re
+import os, sys, urllib.request
 from pathlib import Path
 
 
@@ -18,7 +18,7 @@ if not Path.cwd().name == "data":
 
 if not Path("bldp.py").is_file():
     with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/!all.py").read().decode('utf-8'))
+        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
 
 import bldp
 
