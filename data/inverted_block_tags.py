@@ -6,13 +6,14 @@ if len(sys.argv) > 1:
     MCVERSION = sys.argv[1]
 else:
 #### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "26.3-snapshot-8"
+    MCVERSION = "26.3-snapshot-9"
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 if not Path.cwd().name == "data":
     print("Working directory not named 'data'! bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+    input("Press Enter to exit program...")
     sys.exit()
 
 if Path("bldp/tags/block/inverted").exists():

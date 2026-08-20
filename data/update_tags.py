@@ -7,17 +7,18 @@ DEBUG = False
 
 if not Path.cwd().name == "data":
     print("Working directory not named 'data'! bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+    input("Press Enter to exit program...")
     sys.exit()
 
-if Path("bldp/tags/block/update").exists():
-    shutil.rmtree("bldp/tags/block/update", ignore_errors=True)
-    print("--Removed existing block tags")
-if Path("bldp/tags/item/update").exists():
-    shutil.rmtree("bldp/tags/item/update", ignore_errors=True)
-    print("--Removed existing item tags")
-if Path("bldp/tags/entity_type/update").exists():
-    shutil.rmtree("bldp/tags/entity_type/update", ignore_errors=True)
-    print("--Removed existing entity_type tags")
+def remove_path(path):
+    if Path(path).exists():
+        if Path(path).is_dir(): shutil.rmtree(path,ignore_errors=True)
+        elif Path(path).is_file(): os.remove(path)
+        print(f"--Removed {path}")
+
+remove_path("bldp/tags/block/update")
+remove_path("bldp/tags/item/update")
+remove_path("bldp/tags/entity_type/update")
 
 print("--Grabbing version manifest")
 version_manifest = json.load(urllib.request.urlopen("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"))

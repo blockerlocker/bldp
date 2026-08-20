@@ -2,6 +2,7 @@
     "values": [
         "bldp:crafted_item/load",
         "bldp:mined_block/load",
-        "bldp:picked_up_item/load"
+        "bldp:picked_up_item/load",
+        "bldp:main/load"
     ]
 }

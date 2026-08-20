@@ -6,21 +6,24 @@ if len(sys.argv) > 1:
     MCVERSION = sys.argv[1]
 else:
 #### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "26.3-snapshot-8"
+    MCVERSION = "26.3-snapshot-9"
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 if not Path.cwd().name == "data":
     print("Working directory not named 'data'! bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+    input("Press Enter to exit program...")
     sys.exit()
 
-if Path("bldp/function/crafted_item").exists():
-    shutil.rmtree("bldp/function/crafted_item", ignore_errors=True)
-    print("--Removed existing functions")
-if Path("bldp/predicate/crafted_item.json").exists():
-    os.remove("bldp/predicate/crafted_item.json")
-    print("--Removed existing predicate")
+def remove_path(path):
+    if Path(path).exists():
+        if Path(path).is_dir(): shutil.rmtree(path,ignore_errors=True)
+        elif Path(path).is_file(): os.remove(path)
+        print(f"--Removed {path}")
+
+remove_path("bldp/function/crafted_item")
+remove_path("bldp/predicate/crafted_item.json")
 
 def get_item_list():
     item_list_response = requests.get("https://raw.githubusercontent.com/misode/mcmeta/"+MCVERSION+"-registries/item/data.json")
