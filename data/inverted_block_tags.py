@@ -1,4 +1,4 @@
-import requests, os, json, sys, shutil
+import os, json, sys, urllib.request
 from pathlib import Path
 
 
@@ -16,32 +16,21 @@ if not Path.cwd().name == "data":
     input("Press Enter to exit program...")
     sys.exit()
 
-if Path("bldp/tags/block/inverted").exists():
-    shutil.rmtree("bldp/tags/block/inverted", ignore_errors=True)
-    print("--Removed existing block tags")
+if not Path("bldp.py").is_file():
+    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
+        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
 
-def get_block_list():
-    block_list_response = requests.get("https://raw.githubusercontent.com/misode/mcmeta/"+MCVERSION+"-registries/block/data.json")
-        
-    if block_list_response.status_code == 200:
-        return(block_list_response.json())
-    else:
-        print(f"Failed to grab directory!")
+import bldp
 
-def generate_inverted_block_tags(block_list):
-    for block in block_list:
-        tag_template = {"values":[]}
+bldp.remove_path("bldp/tags/block/inverted")
 
-        tag_template["values"] = [other_block for other_block in block_list if other_block != block]
+block_list = bldp.get_registry_data(MCVERSION,"block")
+for block in block_list:
+    tag_template = {"values":[]}
+
+    tag_template["values"] = [other_block for other_block in block_list if other_block != block]
+
+    Path("bldp/tags/block/inverted/").mkdir(parents=True, exist_ok=True)
     
-        Path("bldp/tags/block/inverted/").mkdir(parents=True, exist_ok=True)
-        
-        with open(f"bldp/tags/block/inverted/{block}.json", "w") as output_file:
-            json.dump(tag_template,output_file,indent=4)
-
-def main():
-    block_list = get_block_list()
-    generate_inverted_block_tags(block_list)
-
-if __name__ == "__main__":
-    main()
+    with open(f"bldp/tags/block/inverted/{block}.json", "w") as output_file:
+        json.dump(tag_template,output_file,indent=4)

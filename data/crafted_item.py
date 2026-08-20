@@ -1,4 +1,4 @@
-import requests, os, json, sys, shutil
+import os, json, sys, urllib.request
 from pathlib import Path
 
 
@@ -16,22 +16,14 @@ if not Path.cwd().name == "data":
     input("Press Enter to exit program...")
     sys.exit()
 
-def remove_path(path):
-    if Path(path).exists():
-        if Path(path).is_dir(): shutil.rmtree(path,ignore_errors=True)
-        elif Path(path).is_file(): os.remove(path)
-        print(f"--Removed {path}")
+if not Path("bldp.py").is_file():
+    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
+        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
 
-remove_path("bldp/function/crafted_item")
-remove_path("bldp/predicate/crafted_item.json")
+import bldp
 
-def get_item_list():
-    item_list_response = requests.get("https://raw.githubusercontent.com/misode/mcmeta/"+MCVERSION+"-registries/item/data.json")
-        
-    if item_list_response.status_code == 200:
-        return(item_list_response.json())
-    else:
-        print(f"Failed to grab directory!")
+bldp.remove_path("bldp/function/crafted_item")
+bldp.remove_path("bldp/predicate/crafted_item.json")
 
 def generate_predicate(item_list):
     predicate_template = {
@@ -86,7 +78,7 @@ def append_to_load(path,append_value):
             json.dump(new_load,new_load_json,indent=4)
 
 def main():
-    item_list = get_item_list()
+    item_list = bldp.get_registry_data(MCVERSION,"item")
     generate_predicate(item_list)
     generate_line_per_item(item_list,"scoreboard objectives add bldp.crafted.%(item) minecraft.crafted:%(item)","bldp/function/crafted_item/","load.mcfunction")
     generate_line_per_item(item_list,"scoreboard players reset @s bldp.crafted.%(item)","bldp/function/crafted_item/","reset.mcfunction")

@@ -1,4 +1,4 @@
-import requests, os, json, sys, shutil, urllib.request, re
+import requests, os, json, shutil
 from pathlib import Path
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -38,35 +38,40 @@ def json_to_file(json_object,path,file_name):
     with open(f"{path}{file_name}", "w", encoding="utf-8") as output_file:
         json.dump(json_object,output_file,indent=4)
 
-def append_to_bldp_load(command):
-    if Path("bldp/function/main/load.mcfunction").is_file():
-        with open("bldp/function/main/load.mcfunction", "r", encoding="utf-8") as bldp_load:
-            bldp_load_contents = bldp_load.read()
-
-            if not command in bldp_load_contents:
-                bldp_load_contents += f"\n{command}"
-                with open("bldp/function/main/load.mcfunction", "w", encoding="utf-8") as new_bldp_load:
-                    new_bldp_load.write(bldp_load_contents)
-    else:
-        string_to_file(command,"bldp/function/main","load.mcfunction")
-
-def append_to_load_tag(path,append_value):
+def mcfunction_append(path,function,command):
     if not path[-2:-1] in ["/", "\\"]:
-        file_path = f"{path}/load.json"
+        file_path = f"{path}/{function}.mcfunction"
     else:
-        file_path = f"{path}load.json"
+        file_path = f"{path}{function}.mcfunction"
+
+    if Path(file_path).is_file():
+        with open(file_path, "r", encoding="utf-8") as mcfunction:
+            mcfunction_contents = mcfunction.read()
+
+            if not command in mcfunction_contents:
+                mcfunction_contents += f"\n{command}"
+                with open(file_path, "w", encoding="utf-8") as new_mcfunction:
+                    new_mcfunction.write(mcfunction_contents)
+    else:
+        string_to_file(command,path,f"{function}.mcfunction")
+
+def tag_append(path,tag,append_value):
+    if not path[-2:-1] in ["/", "\\"]:
+        file_path = f"{path}/{tag}.json"
+    else:
+        file_path = f"{path}{tag}.json"
     
     if Path(file_path).is_file():
-        with open(file_path, "r", encoding="utf-8") as load_json:
-            new_load = json.load(load_json)
-            if not append_value in new_load["values"]:
-                new_load["values"].append(append_value)
-                with open(file_path, "w") as new_load_json:
-                    json.dump(new_load,new_load_json,indent=4)
+        with open(file_path, "r", encoding="utf-8") as tag_json:
+            new_tag = json.load(tag_json)
+            if not append_value in new_tag["values"]:
+                new_tag["values"].append(append_value)
+                with open(file_path, "w") as new_tag_json:
+                    json.dump(new_tag,new_tag_json,indent=4)
     else:
         Path(path).mkdir(parents=True, exist_ok=True)
 
-        new_load = {"values":[append_value]}
+        new_tag = {"values":[append_value]}
 
-        with open(file_path, "w") as new_load_json:
-            json.dump(new_load,new_load_json,indent=4)
+        with open(file_path, "w") as new_tag_json:
+            json.dump(new_tag,new_tag_json,indent=4)
