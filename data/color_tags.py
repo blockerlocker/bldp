@@ -98,6 +98,7 @@ override_map = {
     "ice": "light_blue",
     "packed_ice": "light_blue",
     "blue_ice": "light_blue",
+    "dandelion": "yellow",
     "poppy": "red",
     "seagrass": "lime",
     "tall_seagrass": "lime",
