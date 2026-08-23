@@ -42,6 +42,8 @@ override_map = {
     "acacia_leaves": "lime",
     "spruce_leaves": "green",
     "dark_oak_leaves": "green",
+    "jungle_leaves": "green",
+    "mangrove_leaves": "lime",
     "cherry_leaves": "pink",
     "dirt": "brown",
     "dirt_path": "yellow",
