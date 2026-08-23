@@ -14,6 +14,7 @@ These generators are powered using the automatically generated and version-contr
 | data_registries | Adds several registries accessible via `data get storage bldp:registry` and item/entity/block tags. Includes lists for every item, block, entity, and biome, as well as for all block-placing items, all mobs, and all non-mob entities. |
 | item_icons | A dictionary that matches item ids with a sprite text component. You can easily retrieve the icon with the text component `{storage:"bldp:icon",nbt:"all.item[{id:<item_id>}].icon",interpret:true}` |
 | random_array | Functions for getting a random value from an array. Will always output to `storage bldp:array_random out`. Functions start with `function bldp:func/random/` and rely on the registries from the data_registries module. You can copy the format to get a random value from any array. |
+| color_ags | Block tags that attempt to sort every block in the game into the 16 Minecraft color categories. Not perfectly accurate at the moment, but close enough. Tags are in the format `#bldp:color/<color>` |
 | inverted_block_tags | Creates block tags for every block in the game, which each contain every OTHER block in the game besides the one named. I thought this would be useful for `execute unless blocks` but I forgot how that actually works, so I have no idea what the application is for this right now lol. |
 
 ## Manually Defined Resources
