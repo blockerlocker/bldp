@@ -1,4 +1,4 @@
-import os, urllib.request, json, requests, re, shutil, sys
+import os, urllib.request, json, requests, re, sys
 from pathlib import Path
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -10,15 +10,15 @@ if not Path.cwd().name == "data":
     input("Press Enter to exit program...")
     sys.exit()
 
-def remove_path(path):
-    if Path(path).exists():
-        if Path(path).is_dir(): shutil.rmtree(path,ignore_errors=True)
-        elif Path(path).is_file(): os.remove(path)
-        print(f"--Removed {path}")
+if not Path("bldp.py").is_file():
+    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
+        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
 
-remove_path("bldp/tags/block/update")
-remove_path("bldp/tags/item/update")
-remove_path("bldp/tags/entity_type/update")
+import bldp
+
+bldp.remove_path("bldp/tags/item/update")
+bldp.remove_path("bldp/tags/block/update")
+bldp.remove_path("bldp/tags/entity_type/update")
 
 print("--Grabbing version manifest")
 version_manifest = json.load(urllib.request.urlopen("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"))

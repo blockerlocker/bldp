@@ -4,6 +4,15 @@ from PIL import Image
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+def get_version(mcversion):
+    version_manifest = json.load(urllib.request.urlopen("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"))
+    if mcversion == "latest-release":
+        return version_manifest["latest"]["release"]
+    elif mcversion == "latest-snapshot":
+        return version_manifest["latest"]["snapshot"]
+    else:
+        return mcversion
+
 def get_registry_data(mcversion,registry):
     registry_response = urllib.request.urlopen(f"https://raw.githubusercontent.com/misode/mcmeta/{mcversion}-registries/{registry}/data.json")
     return(json.load(registry_response))

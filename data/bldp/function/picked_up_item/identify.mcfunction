@@ -205,6 +205,7 @@ execute if score @s bldp.picked_up.bundle matches 1.. run data modify storage bl
 execute if score @s bldp.picked_up.buried_ancient_city_map matches 1.. run data modify storage bldp:picked_up_item out set value buried_ancient_city_map
 execute if score @s bldp.picked_up.buried_mineshaft_map matches 1.. run data modify storage bldp:picked_up_item out set value buried_mineshaft_map
 execute if score @s bldp.picked_up.buried_treasure_map matches 1.. run data modify storage bldp:picked_up_item out set value buried_treasure_map
+execute if score @s bldp.picked_up.buried_trial_chambers_map matches 1.. run data modify storage bldp:picked_up_item out set value buried_trial_chambers_map
 execute if score @s bldp.picked_up.burn_pottery_sherd matches 1.. run data modify storage bldp:picked_up_item out set value burn_pottery_sherd
 execute if score @s bldp.picked_up.bush matches 1.. run data modify storage bldp:picked_up_item out set value bush
 execute if score @s bldp.picked_up.cactus matches 1.. run data modify storage bldp:picked_up_item out set value cactus
@@ -718,7 +719,6 @@ execute if score @s bldp.picked_up.jungle_boat matches 1.. run data modify stora
 execute if score @s bldp.picked_up.jungle_button matches 1.. run data modify storage bldp:picked_up_item out set value jungle_button
 execute if score @s bldp.picked_up.jungle_chest_boat matches 1.. run data modify storage bldp:picked_up_item out set value jungle_chest_boat
 execute if score @s bldp.picked_up.jungle_door matches 1.. run data modify storage bldp:picked_up_item out set value jungle_door
-execute if score @s bldp.picked_up.jungle_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value jungle_explorer_map
 execute if score @s bldp.picked_up.jungle_fence matches 1.. run data modify storage bldp:picked_up_item out set value jungle_fence
 execute if score @s bldp.picked_up.jungle_fence_gate matches 1.. run data modify storage bldp:picked_up_item out set value jungle_fence_gate
 execute if score @s bldp.picked_up.jungle_hanging_sign matches 1.. run data modify storage bldp:picked_up_item out set value jungle_hanging_sign
@@ -726,6 +726,7 @@ execute if score @s bldp.picked_up.jungle_leaves matches 1.. run data modify sto
 execute if score @s bldp.picked_up.jungle_log matches 1.. run data modify storage bldp:picked_up_item out set value jungle_log
 execute if score @s bldp.picked_up.jungle_planks matches 1.. run data modify storage bldp:picked_up_item out set value jungle_planks
 execute if score @s bldp.picked_up.jungle_pressure_plate matches 1.. run data modify storage bldp:picked_up_item out set value jungle_pressure_plate
+execute if score @s bldp.picked_up.jungle_pyramid_map matches 1.. run data modify storage bldp:picked_up_item out set value jungle_pyramid_map
 execute if score @s bldp.picked_up.jungle_sapling matches 1.. run data modify storage bldp:picked_up_item out set value jungle_sapling
 execute if score @s bldp.picked_up.jungle_shelf matches 1.. run data modify storage bldp:picked_up_item out set value jungle_shelf
 execute if score @s bldp.picked_up.jungle_sign matches 1.. run data modify storage bldp:picked_up_item out set value jungle_sign
@@ -973,7 +974,7 @@ execute if score @s bldp.picked_up.oak_trapdoor matches 1.. run data modify stor
 execute if score @s bldp.picked_up.oak_wood matches 1.. run data modify storage bldp:picked_up_item out set value oak_wood
 execute if score @s bldp.picked_up.observer matches 1.. run data modify storage bldp:picked_up_item out set value observer
 execute if score @s bldp.picked_up.obsidian matches 1.. run data modify storage bldp:picked_up_item out set value obsidian
-execute if score @s bldp.picked_up.ocean_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value ocean_explorer_map
+execute if score @s bldp.picked_up.ocean_monument_map matches 1.. run data modify storage bldp:picked_up_item out set value ocean_monument_map
 execute if score @s bldp.picked_up.ocelot_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value ocelot_spawn_egg
 execute if score @s bldp.picked_up.ochre_froglight matches 1.. run data modify storage bldp:picked_up_item out set value ochre_froglight
 execute if score @s bldp.picked_up.ominous_bottle matches 1.. run data modify storage bldp:picked_up_item out set value ominous_bottle
@@ -1432,7 +1433,7 @@ execute if score @s bldp.picked_up.sunflower matches 1.. run data modify storage
 execute if score @s bldp.picked_up.suspicious_gravel matches 1.. run data modify storage bldp:picked_up_item out set value suspicious_gravel
 execute if score @s bldp.picked_up.suspicious_sand matches 1.. run data modify storage bldp:picked_up_item out set value suspicious_sand
 execute if score @s bldp.picked_up.suspicious_stew matches 1.. run data modify storage bldp:picked_up_item out set value suspicious_stew
-execute if score @s bldp.picked_up.swamp_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value swamp_explorer_map
+execute if score @s bldp.picked_up.swamp_hut_map matches 1.. run data modify storage bldp:picked_up_item out set value swamp_hut_map
 execute if score @s bldp.picked_up.sweet_berries matches 1.. run data modify storage bldp:picked_up_item out set value sweet_berries
 execute if score @s bldp.picked_up.tadpole_bucket matches 1.. run data modify storage bldp:picked_up_item out set value tadpole_bucket
 execute if score @s bldp.picked_up.tadpole_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value tadpole_spawn_egg
@@ -1454,7 +1455,6 @@ execute if score @s bldp.picked_up.torchflower_seeds matches 1.. run data modify
 execute if score @s bldp.picked_up.totem_of_undying matches 1.. run data modify storage bldp:picked_up_item out set value totem_of_undying
 execute if score @s bldp.picked_up.trader_llama_spawn_egg matches 1.. run data modify storage bldp:picked_up_item out set value trader_llama_spawn_egg
 execute if score @s bldp.picked_up.trapped_chest matches 1.. run data modify storage bldp:picked_up_item out set value trapped_chest
-execute if score @s bldp.picked_up.trial_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value trial_explorer_map
 execute if score @s bldp.picked_up.trial_key matches 1.. run data modify storage bldp:picked_up_item out set value trial_key
 execute if score @s bldp.picked_up.trial_spawner matches 1.. run data modify storage bldp:picked_up_item out set value trial_spawner
 execute if score @s bldp.picked_up.trident matches 1.. run data modify storage bldp:picked_up_item out set value trident
@@ -1626,7 +1626,7 @@ execute if score @s bldp.picked_up.wooden_pickaxe matches 1.. run data modify st
 execute if score @s bldp.picked_up.wooden_shovel matches 1.. run data modify storage bldp:picked_up_item out set value wooden_shovel
 execute if score @s bldp.picked_up.wooden_spear matches 1.. run data modify storage bldp:picked_up_item out set value wooden_spear
 execute if score @s bldp.picked_up.wooden_sword matches 1.. run data modify storage bldp:picked_up_item out set value wooden_sword
-execute if score @s bldp.picked_up.woodland_explorer_map matches 1.. run data modify storage bldp:picked_up_item out set value woodland_explorer_map
+execute if score @s bldp.picked_up.woodland_mansion_map matches 1.. run data modify storage bldp:picked_up_item out set value woodland_mansion_map
 execute if score @s bldp.picked_up.writable_book matches 1.. run data modify storage bldp:picked_up_item out set value writable_book
 execute if score @s bldp.picked_up.written_book matches 1.. run data modify storage bldp:picked_up_item out set value written_book
 execute if score @s bldp.picked_up.yellow_banner matches 1.. run data modify storage bldp:picked_up_item out set value yellow_banner

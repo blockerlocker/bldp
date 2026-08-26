@@ -1859,6 +1859,15 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.picked_up.buried_trial_chambers_map": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.picked_up.burn_pottery_sherd": {
                     "min": 1
                 }
@@ -6476,15 +6485,6 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-                "bldp.picked_up.jungle_explorer_map": {
-                    "min": 1
-                }
-            }
-        },
-        {
-            "type": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
                 "bldp.picked_up.jungle_fence": {
                     "min": 1
                 }
@@ -6540,6 +6540,15 @@
             "entity": "this",
             "scores": {
                 "bldp.picked_up.jungle_pressure_plate": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.picked_up.jungle_pyramid_map": {
                     "min": 1
                 }
             }
@@ -8771,7 +8780,7 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-                "bldp.picked_up.ocean_explorer_map": {
+                "bldp.picked_up.ocean_monument_map": {
                     "min": 1
                 }
             }
@@ -12902,7 +12911,7 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-                "bldp.picked_up.swamp_explorer_map": {
+                "bldp.picked_up.swamp_hut_map": {
                     "min": 1
                 }
             }
@@ -13092,15 +13101,6 @@
             "entity": "this",
             "scores": {
                 "bldp.picked_up.trapped_chest": {
-                    "min": 1
-                }
-            }
-        },
-        {
-            "type": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-                "bldp.picked_up.trial_explorer_map": {
                     "min": 1
                 }
             }
@@ -14648,7 +14648,7 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-                "bldp.picked_up.woodland_explorer_map": {
+                "bldp.picked_up.woodland_mansion_map": {
                     "min": 1
                 }
             }

@@ -8,11 +8,10 @@
         "blue_concrete_stairs",
         "blue_glazed_terracotta",
         "blue_shulker_box",
-        "blue_stained_glass_pane",
         "blue_wool",
         "blue_wool_slab",
         "blue_wool_stairs",
-        "tube_coral_fan",
-        "tube_coral_wall_fan"
+        "lapis_block",
+        "water"
     ]
 }

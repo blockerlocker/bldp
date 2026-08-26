@@ -1,5 +1,6 @@
 {
     "values": [
+        "calibrated_sculk_sensor",
         "cyan_candle",
         "cyan_carpet",
         "cyan_concrete",
@@ -8,16 +9,19 @@
         "cyan_concrete_stairs",
         "cyan_glazed_terracotta",
         "cyan_shulker_box",
-        "cyan_stained_glass_pane",
         "cyan_wool",
         "cyan_wool_slab",
         "cyan_wool_stairs",
-        "lapis_block",
+        "nether_sprouts",
         "oxidized_copper_bars",
         "oxidized_copper_chain",
-        "oxidized_copper_lantern",
+        "potted_warped_roots",
+        "sculk_sensor",
+        "soul_lantern",
         "stripped_warped_hyphae",
         "stripped_warped_stem",
+        "twisting_vines",
+        "twisting_vines_plant",
         "warped_button",
         "warped_door",
         "warped_fence",
@@ -25,15 +29,16 @@
         "warped_hanging_sign",
         "warped_planks",
         "warped_pressure_plate",
+        "warped_roots",
         "warped_shelf",
         "warped_sign",
         "warped_slab",
         "warped_stairs",
+        "warped_trapdoor",
         "warped_wall_hanging_sign",
         "warped_wall_sign",
         "warped_wart_block",
         "waxed_oxidized_copper_bars",
-        "waxed_oxidized_copper_chain",
-        "waxed_oxidized_copper_lantern"
+        "waxed_oxidized_copper_chain"
     ]
 }

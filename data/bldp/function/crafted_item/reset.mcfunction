@@ -204,6 +204,7 @@ scoreboard players reset @s bldp.crafted.bundle
 scoreboard players reset @s bldp.crafted.buried_ancient_city_map
 scoreboard players reset @s bldp.crafted.buried_mineshaft_map
 scoreboard players reset @s bldp.crafted.buried_treasure_map
+scoreboard players reset @s bldp.crafted.buried_trial_chambers_map
 scoreboard players reset @s bldp.crafted.burn_pottery_sherd
 scoreboard players reset @s bldp.crafted.bush
 scoreboard players reset @s bldp.crafted.cactus
@@ -717,7 +718,6 @@ scoreboard players reset @s bldp.crafted.jungle_boat
 scoreboard players reset @s bldp.crafted.jungle_button
 scoreboard players reset @s bldp.crafted.jungle_chest_boat
 scoreboard players reset @s bldp.crafted.jungle_door
-scoreboard players reset @s bldp.crafted.jungle_explorer_map
 scoreboard players reset @s bldp.crafted.jungle_fence
 scoreboard players reset @s bldp.crafted.jungle_fence_gate
 scoreboard players reset @s bldp.crafted.jungle_hanging_sign
@@ -725,6 +725,7 @@ scoreboard players reset @s bldp.crafted.jungle_leaves
 scoreboard players reset @s bldp.crafted.jungle_log
 scoreboard players reset @s bldp.crafted.jungle_planks
 scoreboard players reset @s bldp.crafted.jungle_pressure_plate
+scoreboard players reset @s bldp.crafted.jungle_pyramid_map
 scoreboard players reset @s bldp.crafted.jungle_sapling
 scoreboard players reset @s bldp.crafted.jungle_shelf
 scoreboard players reset @s bldp.crafted.jungle_sign
@@ -972,7 +973,7 @@ scoreboard players reset @s bldp.crafted.oak_trapdoor
 scoreboard players reset @s bldp.crafted.oak_wood
 scoreboard players reset @s bldp.crafted.observer
 scoreboard players reset @s bldp.crafted.obsidian
-scoreboard players reset @s bldp.crafted.ocean_explorer_map
+scoreboard players reset @s bldp.crafted.ocean_monument_map
 scoreboard players reset @s bldp.crafted.ocelot_spawn_egg
 scoreboard players reset @s bldp.crafted.ochre_froglight
 scoreboard players reset @s bldp.crafted.ominous_bottle
@@ -1431,7 +1432,7 @@ scoreboard players reset @s bldp.crafted.sunflower
 scoreboard players reset @s bldp.crafted.suspicious_gravel
 scoreboard players reset @s bldp.crafted.suspicious_sand
 scoreboard players reset @s bldp.crafted.suspicious_stew
-scoreboard players reset @s bldp.crafted.swamp_explorer_map
+scoreboard players reset @s bldp.crafted.swamp_hut_map
 scoreboard players reset @s bldp.crafted.sweet_berries
 scoreboard players reset @s bldp.crafted.tadpole_bucket
 scoreboard players reset @s bldp.crafted.tadpole_spawn_egg
@@ -1453,7 +1454,6 @@ scoreboard players reset @s bldp.crafted.torchflower_seeds
 scoreboard players reset @s bldp.crafted.totem_of_undying
 scoreboard players reset @s bldp.crafted.trader_llama_spawn_egg
 scoreboard players reset @s bldp.crafted.trapped_chest
-scoreboard players reset @s bldp.crafted.trial_explorer_map
 scoreboard players reset @s bldp.crafted.trial_key
 scoreboard players reset @s bldp.crafted.trial_spawner
 scoreboard players reset @s bldp.crafted.trident
@@ -1625,7 +1625,7 @@ scoreboard players reset @s bldp.crafted.wooden_pickaxe
 scoreboard players reset @s bldp.crafted.wooden_shovel
 scoreboard players reset @s bldp.crafted.wooden_spear
 scoreboard players reset @s bldp.crafted.wooden_sword
-scoreboard players reset @s bldp.crafted.woodland_explorer_map
+scoreboard players reset @s bldp.crafted.woodland_mansion_map
 scoreboard players reset @s bldp.crafted.writable_book
 scoreboard players reset @s bldp.crafted.written_book
 scoreboard players reset @s bldp.crafted.yellow_banner

@@ -205,6 +205,7 @@ scoreboard players reset @s bldp.picked_up.bundle
 scoreboard players reset @s bldp.picked_up.buried_ancient_city_map
 scoreboard players reset @s bldp.picked_up.buried_mineshaft_map
 scoreboard players reset @s bldp.picked_up.buried_treasure_map
+scoreboard players reset @s bldp.picked_up.buried_trial_chambers_map
 scoreboard players reset @s bldp.picked_up.burn_pottery_sherd
 scoreboard players reset @s bldp.picked_up.bush
 scoreboard players reset @s bldp.picked_up.cactus
@@ -718,7 +719,6 @@ scoreboard players reset @s bldp.picked_up.jungle_boat
 scoreboard players reset @s bldp.picked_up.jungle_button
 scoreboard players reset @s bldp.picked_up.jungle_chest_boat
 scoreboard players reset @s bldp.picked_up.jungle_door
-scoreboard players reset @s bldp.picked_up.jungle_explorer_map
 scoreboard players reset @s bldp.picked_up.jungle_fence
 scoreboard players reset @s bldp.picked_up.jungle_fence_gate
 scoreboard players reset @s bldp.picked_up.jungle_hanging_sign
@@ -726,6 +726,7 @@ scoreboard players reset @s bldp.picked_up.jungle_leaves
 scoreboard players reset @s bldp.picked_up.jungle_log
 scoreboard players reset @s bldp.picked_up.jungle_planks
 scoreboard players reset @s bldp.picked_up.jungle_pressure_plate
+scoreboard players reset @s bldp.picked_up.jungle_pyramid_map
 scoreboard players reset @s bldp.picked_up.jungle_sapling
 scoreboard players reset @s bldp.picked_up.jungle_shelf
 scoreboard players reset @s bldp.picked_up.jungle_sign
@@ -973,7 +974,7 @@ scoreboard players reset @s bldp.picked_up.oak_trapdoor
 scoreboard players reset @s bldp.picked_up.oak_wood
 scoreboard players reset @s bldp.picked_up.observer
 scoreboard players reset @s bldp.picked_up.obsidian
-scoreboard players reset @s bldp.picked_up.ocean_explorer_map
+scoreboard players reset @s bldp.picked_up.ocean_monument_map
 scoreboard players reset @s bldp.picked_up.ocelot_spawn_egg
 scoreboard players reset @s bldp.picked_up.ochre_froglight
 scoreboard players reset @s bldp.picked_up.ominous_bottle
@@ -1432,7 +1433,7 @@ scoreboard players reset @s bldp.picked_up.sunflower
 scoreboard players reset @s bldp.picked_up.suspicious_gravel
 scoreboard players reset @s bldp.picked_up.suspicious_sand
 scoreboard players reset @s bldp.picked_up.suspicious_stew
-scoreboard players reset @s bldp.picked_up.swamp_explorer_map
+scoreboard players reset @s bldp.picked_up.swamp_hut_map
 scoreboard players reset @s bldp.picked_up.sweet_berries
 scoreboard players reset @s bldp.picked_up.tadpole_bucket
 scoreboard players reset @s bldp.picked_up.tadpole_spawn_egg
@@ -1454,7 +1455,6 @@ scoreboard players reset @s bldp.picked_up.torchflower_seeds
 scoreboard players reset @s bldp.picked_up.totem_of_undying
 scoreboard players reset @s bldp.picked_up.trader_llama_spawn_egg
 scoreboard players reset @s bldp.picked_up.trapped_chest
-scoreboard players reset @s bldp.picked_up.trial_explorer_map
 scoreboard players reset @s bldp.picked_up.trial_key
 scoreboard players reset @s bldp.picked_up.trial_spawner
 scoreboard players reset @s bldp.picked_up.trident
@@ -1626,7 +1626,7 @@ scoreboard players reset @s bldp.picked_up.wooden_pickaxe
 scoreboard players reset @s bldp.picked_up.wooden_shovel
 scoreboard players reset @s bldp.picked_up.wooden_spear
 scoreboard players reset @s bldp.picked_up.wooden_sword
-scoreboard players reset @s bldp.picked_up.woodland_explorer_map
+scoreboard players reset @s bldp.picked_up.woodland_mansion_map
 scoreboard players reset @s bldp.picked_up.writable_book
 scoreboard players reset @s bldp.picked_up.written_book
 scoreboard players reset @s bldp.picked_up.yellow_banner

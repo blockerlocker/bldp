@@ -1,4 +1,4 @@
-import requests, os, json, sys, shutil
+import requests, os, json, sys, urllib.request
 from pathlib import Path
 
 
@@ -6,7 +6,7 @@ if len(sys.argv) > 1:
     MCVERSION = sys.argv[1]
 else:
 #### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "26.3-snapshot-9"
+    MCVERSION = "latest-snapshot"
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -16,14 +16,16 @@ if not Path.cwd().name == "data":
     input("Press Enter to exit program...")
     sys.exit()
 
-def remove_path(path):
-    if Path(path).exists():
-        if Path(path).is_dir(): shutil.rmtree(path,ignore_errors=True)
-        elif Path(path).is_file(): os.remove(path)
-        print(f"--Removed {path}")
+if not Path("bldp.py").is_file():
+    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
+        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
 
-remove_path("bldp/function/mined_block")
-remove_path("bldp/predicate/mined_block.json")
+import bldp
+
+MCVERSION = bldp.get_version(MCVERSION)
+
+bldp.remove_path("bldp/function/mined_block")
+bldp.remove_path("bldp/predicate/mined_block.json")
 
 def get_block_list():
     block_list_response = requests.get("https://raw.githubusercontent.com/misode/mcmeta/"+MCVERSION+"-registries/block/data.json")

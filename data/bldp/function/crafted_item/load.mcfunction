@@ -204,6 +204,7 @@ scoreboard objectives add bldp.crafted.bundle minecraft.crafted:bundle
 scoreboard objectives add bldp.crafted.buried_ancient_city_map minecraft.crafted:buried_ancient_city_map
 scoreboard objectives add bldp.crafted.buried_mineshaft_map minecraft.crafted:buried_mineshaft_map
 scoreboard objectives add bldp.crafted.buried_treasure_map minecraft.crafted:buried_treasure_map
+scoreboard objectives add bldp.crafted.buried_trial_chambers_map minecraft.crafted:buried_trial_chambers_map
 scoreboard objectives add bldp.crafted.burn_pottery_sherd minecraft.crafted:burn_pottery_sherd
 scoreboard objectives add bldp.crafted.bush minecraft.crafted:bush
 scoreboard objectives add bldp.crafted.cactus minecraft.crafted:cactus
@@ -717,7 +718,6 @@ scoreboard objectives add bldp.crafted.jungle_boat minecraft.crafted:jungle_boat
 scoreboard objectives add bldp.crafted.jungle_button minecraft.crafted:jungle_button
 scoreboard objectives add bldp.crafted.jungle_chest_boat minecraft.crafted:jungle_chest_boat
 scoreboard objectives add bldp.crafted.jungle_door minecraft.crafted:jungle_door
-scoreboard objectives add bldp.crafted.jungle_explorer_map minecraft.crafted:jungle_explorer_map
 scoreboard objectives add bldp.crafted.jungle_fence minecraft.crafted:jungle_fence
 scoreboard objectives add bldp.crafted.jungle_fence_gate minecraft.crafted:jungle_fence_gate
 scoreboard objectives add bldp.crafted.jungle_hanging_sign minecraft.crafted:jungle_hanging_sign
@@ -725,6 +725,7 @@ scoreboard objectives add bldp.crafted.jungle_leaves minecraft.crafted:jungle_le
 scoreboard objectives add bldp.crafted.jungle_log minecraft.crafted:jungle_log
 scoreboard objectives add bldp.crafted.jungle_planks minecraft.crafted:jungle_planks
 scoreboard objectives add bldp.crafted.jungle_pressure_plate minecraft.crafted:jungle_pressure_plate
+scoreboard objectives add bldp.crafted.jungle_pyramid_map minecraft.crafted:jungle_pyramid_map
 scoreboard objectives add bldp.crafted.jungle_sapling minecraft.crafted:jungle_sapling
 scoreboard objectives add bldp.crafted.jungle_shelf minecraft.crafted:jungle_shelf
 scoreboard objectives add bldp.crafted.jungle_sign minecraft.crafted:jungle_sign
@@ -972,7 +973,7 @@ scoreboard objectives add bldp.crafted.oak_trapdoor minecraft.crafted:oak_trapdo
 scoreboard objectives add bldp.crafted.oak_wood minecraft.crafted:oak_wood
 scoreboard objectives add bldp.crafted.observer minecraft.crafted:observer
 scoreboard objectives add bldp.crafted.obsidian minecraft.crafted:obsidian
-scoreboard objectives add bldp.crafted.ocean_explorer_map minecraft.crafted:ocean_explorer_map
+scoreboard objectives add bldp.crafted.ocean_monument_map minecraft.crafted:ocean_monument_map
 scoreboard objectives add bldp.crafted.ocelot_spawn_egg minecraft.crafted:ocelot_spawn_egg
 scoreboard objectives add bldp.crafted.ochre_froglight minecraft.crafted:ochre_froglight
 scoreboard objectives add bldp.crafted.ominous_bottle minecraft.crafted:ominous_bottle
@@ -1431,7 +1432,7 @@ scoreboard objectives add bldp.crafted.sunflower minecraft.crafted:sunflower
 scoreboard objectives add bldp.crafted.suspicious_gravel minecraft.crafted:suspicious_gravel
 scoreboard objectives add bldp.crafted.suspicious_sand minecraft.crafted:suspicious_sand
 scoreboard objectives add bldp.crafted.suspicious_stew minecraft.crafted:suspicious_stew
-scoreboard objectives add bldp.crafted.swamp_explorer_map minecraft.crafted:swamp_explorer_map
+scoreboard objectives add bldp.crafted.swamp_hut_map minecraft.crafted:swamp_hut_map
 scoreboard objectives add bldp.crafted.sweet_berries minecraft.crafted:sweet_berries
 scoreboard objectives add bldp.crafted.tadpole_bucket minecraft.crafted:tadpole_bucket
 scoreboard objectives add bldp.crafted.tadpole_spawn_egg minecraft.crafted:tadpole_spawn_egg
@@ -1453,7 +1454,6 @@ scoreboard objectives add bldp.crafted.torchflower_seeds minecraft.crafted:torch
 scoreboard objectives add bldp.crafted.totem_of_undying minecraft.crafted:totem_of_undying
 scoreboard objectives add bldp.crafted.trader_llama_spawn_egg minecraft.crafted:trader_llama_spawn_egg
 scoreboard objectives add bldp.crafted.trapped_chest minecraft.crafted:trapped_chest
-scoreboard objectives add bldp.crafted.trial_explorer_map minecraft.crafted:trial_explorer_map
 scoreboard objectives add bldp.crafted.trial_key minecraft.crafted:trial_key
 scoreboard objectives add bldp.crafted.trial_spawner minecraft.crafted:trial_spawner
 scoreboard objectives add bldp.crafted.trident minecraft.crafted:trident
@@ -1625,7 +1625,7 @@ scoreboard objectives add bldp.crafted.wooden_pickaxe minecraft.crafted:wooden_p
 scoreboard objectives add bldp.crafted.wooden_shovel minecraft.crafted:wooden_shovel
 scoreboard objectives add bldp.crafted.wooden_spear minecraft.crafted:wooden_spear
 scoreboard objectives add bldp.crafted.wooden_sword minecraft.crafted:wooden_sword
-scoreboard objectives add bldp.crafted.woodland_explorer_map minecraft.crafted:woodland_explorer_map
+scoreboard objectives add bldp.crafted.woodland_mansion_map minecraft.crafted:woodland_mansion_map
 scoreboard objectives add bldp.crafted.writable_book minecraft.crafted:writable_book
 scoreboard objectives add bldp.crafted.written_book minecraft.crafted:written_book
 scoreboard objectives add bldp.crafted.yellow_banner minecraft.crafted:yellow_banner

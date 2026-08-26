@@ -6,7 +6,7 @@ if len(sys.argv) > 1:
     MCVERSION = sys.argv[1]
 else:
 #### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "26.3-snapshot-9"
+    MCVERSION = "latest-snapshot"
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -21,6 +21,8 @@ if not Path("bldp.py").is_file():
         bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
 
 import bldp
+
+MCVERSION = bldp.get_version(MCVERSION)
 
 bldp.remove_path("bldp/function/func/array")
 bldp.remove_path("bldp/function/func/random")

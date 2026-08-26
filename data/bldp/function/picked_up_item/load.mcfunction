@@ -205,6 +205,7 @@ scoreboard objectives add bldp.picked_up.bundle minecraft.picked_up:bundle
 scoreboard objectives add bldp.picked_up.buried_ancient_city_map minecraft.picked_up:buried_ancient_city_map
 scoreboard objectives add bldp.picked_up.buried_mineshaft_map minecraft.picked_up:buried_mineshaft_map
 scoreboard objectives add bldp.picked_up.buried_treasure_map minecraft.picked_up:buried_treasure_map
+scoreboard objectives add bldp.picked_up.buried_trial_chambers_map minecraft.picked_up:buried_trial_chambers_map
 scoreboard objectives add bldp.picked_up.burn_pottery_sherd minecraft.picked_up:burn_pottery_sherd
 scoreboard objectives add bldp.picked_up.bush minecraft.picked_up:bush
 scoreboard objectives add bldp.picked_up.cactus minecraft.picked_up:cactus
@@ -718,7 +719,6 @@ scoreboard objectives add bldp.picked_up.jungle_boat minecraft.picked_up:jungle_
 scoreboard objectives add bldp.picked_up.jungle_button minecraft.picked_up:jungle_button
 scoreboard objectives add bldp.picked_up.jungle_chest_boat minecraft.picked_up:jungle_chest_boat
 scoreboard objectives add bldp.picked_up.jungle_door minecraft.picked_up:jungle_door
-scoreboard objectives add bldp.picked_up.jungle_explorer_map minecraft.picked_up:jungle_explorer_map
 scoreboard objectives add bldp.picked_up.jungle_fence minecraft.picked_up:jungle_fence
 scoreboard objectives add bldp.picked_up.jungle_fence_gate minecraft.picked_up:jungle_fence_gate
 scoreboard objectives add bldp.picked_up.jungle_hanging_sign minecraft.picked_up:jungle_hanging_sign
@@ -726,6 +726,7 @@ scoreboard objectives add bldp.picked_up.jungle_leaves minecraft.picked_up:jungl
 scoreboard objectives add bldp.picked_up.jungle_log minecraft.picked_up:jungle_log
 scoreboard objectives add bldp.picked_up.jungle_planks minecraft.picked_up:jungle_planks
 scoreboard objectives add bldp.picked_up.jungle_pressure_plate minecraft.picked_up:jungle_pressure_plate
+scoreboard objectives add bldp.picked_up.jungle_pyramid_map minecraft.picked_up:jungle_pyramid_map
 scoreboard objectives add bldp.picked_up.jungle_sapling minecraft.picked_up:jungle_sapling
 scoreboard objectives add bldp.picked_up.jungle_shelf minecraft.picked_up:jungle_shelf
 scoreboard objectives add bldp.picked_up.jungle_sign minecraft.picked_up:jungle_sign
@@ -973,7 +974,7 @@ scoreboard objectives add bldp.picked_up.oak_trapdoor minecraft.picked_up:oak_tr
 scoreboard objectives add bldp.picked_up.oak_wood minecraft.picked_up:oak_wood
 scoreboard objectives add bldp.picked_up.observer minecraft.picked_up:observer
 scoreboard objectives add bldp.picked_up.obsidian minecraft.picked_up:obsidian
-scoreboard objectives add bldp.picked_up.ocean_explorer_map minecraft.picked_up:ocean_explorer_map
+scoreboard objectives add bldp.picked_up.ocean_monument_map minecraft.picked_up:ocean_monument_map
 scoreboard objectives add bldp.picked_up.ocelot_spawn_egg minecraft.picked_up:ocelot_spawn_egg
 scoreboard objectives add bldp.picked_up.ochre_froglight minecraft.picked_up:ochre_froglight
 scoreboard objectives add bldp.picked_up.ominous_bottle minecraft.picked_up:ominous_bottle
@@ -1432,7 +1433,7 @@ scoreboard objectives add bldp.picked_up.sunflower minecraft.picked_up:sunflower
 scoreboard objectives add bldp.picked_up.suspicious_gravel minecraft.picked_up:suspicious_gravel
 scoreboard objectives add bldp.picked_up.suspicious_sand minecraft.picked_up:suspicious_sand
 scoreboard objectives add bldp.picked_up.suspicious_stew minecraft.picked_up:suspicious_stew
-scoreboard objectives add bldp.picked_up.swamp_explorer_map minecraft.picked_up:swamp_explorer_map
+scoreboard objectives add bldp.picked_up.swamp_hut_map minecraft.picked_up:swamp_hut_map
 scoreboard objectives add bldp.picked_up.sweet_berries minecraft.picked_up:sweet_berries
 scoreboard objectives add bldp.picked_up.tadpole_bucket minecraft.picked_up:tadpole_bucket
 scoreboard objectives add bldp.picked_up.tadpole_spawn_egg minecraft.picked_up:tadpole_spawn_egg
@@ -1454,7 +1455,6 @@ scoreboard objectives add bldp.picked_up.torchflower_seeds minecraft.picked_up:t
 scoreboard objectives add bldp.picked_up.totem_of_undying minecraft.picked_up:totem_of_undying
 scoreboard objectives add bldp.picked_up.trader_llama_spawn_egg minecraft.picked_up:trader_llama_spawn_egg
 scoreboard objectives add bldp.picked_up.trapped_chest minecraft.picked_up:trapped_chest
-scoreboard objectives add bldp.picked_up.trial_explorer_map minecraft.picked_up:trial_explorer_map
 scoreboard objectives add bldp.picked_up.trial_key minecraft.picked_up:trial_key
 scoreboard objectives add bldp.picked_up.trial_spawner minecraft.picked_up:trial_spawner
 scoreboard objectives add bldp.picked_up.trident minecraft.picked_up:trident
@@ -1626,7 +1626,7 @@ scoreboard objectives add bldp.picked_up.wooden_pickaxe minecraft.picked_up:wood
 scoreboard objectives add bldp.picked_up.wooden_shovel minecraft.picked_up:wooden_shovel
 scoreboard objectives add bldp.picked_up.wooden_spear minecraft.picked_up:wooden_spear
 scoreboard objectives add bldp.picked_up.wooden_sword minecraft.picked_up:wooden_sword
-scoreboard objectives add bldp.picked_up.woodland_explorer_map minecraft.picked_up:woodland_explorer_map
+scoreboard objectives add bldp.picked_up.woodland_mansion_map minecraft.picked_up:woodland_mansion_map
 scoreboard objectives add bldp.picked_up.writable_book minecraft.picked_up:writable_book
 scoreboard objectives add bldp.picked_up.written_book minecraft.picked_up:written_book
 scoreboard objectives add bldp.picked_up.yellow_banner minecraft.picked_up:yellow_banner

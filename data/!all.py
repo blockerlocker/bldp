@@ -1,14 +1,12 @@
-import os
+import os, sys, urllib.request, subprocess
 from pathlib import Path
-import sys
-import subprocess
 
 
 if len(sys.argv) > 1:
     MCVERSION = sys.argv[1]
 else:
 #### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "26.3-snapshot-9"
+    MCVERSION = "latest-snapshot"
 
 
 abspath = os.path.abspath(__file__)
@@ -20,13 +18,17 @@ if not Path.cwd().name == "data":
     input("Press Enter to exit program...")
     sys.exit()
 
-def main():
-    current_path = Path(dname)
+if not Path("bldp.py").is_file():
+    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
+        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
 
-    for file in current_path.iterdir():
-        if file.is_file() and file.suffix.lower() == ".py" and not file.name == "!all.py":
-            print(f"-Running module {Path(file).name}")
-            subprocess.run([sys.executable, file, MCVERSION])
+import bldp
 
-if __name__ == "__main__":
-    main()
+MCVERSION = bldp.get_version(MCVERSION)
+
+current_path = Path(dname)
+
+for file in current_path.iterdir():
+    if file.is_file() and file.suffix.lower() == ".py" and not file.name == "!all.py":
+        print(f"-Running module {Path(file).name}")
+        subprocess.run([sys.executable, file, MCVERSION])
