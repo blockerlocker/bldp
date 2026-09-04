@@ -14,7 +14,16 @@ if not Path("bldp.py").is_file():
 
 import bldp
 
-bldp.remove_path("bldp/function/registry/update/mcfunction")
+combine_non_release_versions = input("Combine preclassic, classic, alpha, and beta updates all into 1.0? (Respond yes or no)\n> ")
+if combine_non_release_versions.lower() in ["y","yes","okay","ok","k","1","true","tru","ye","yeah","alright","sure"]:
+    combine_non_release_versions = True
+else:
+    combine_non_release_versions = False
+
+bldp.remove_path("bldp/function/registry/updates.mcfunction")
+bldp.remove_path("bldp/function/registry/updates_with_items.mcfunction")
+bldp.remove_path("bldp/function/registry/updates_with_blocks.mcfunction")
+bldp.remove_path("bldp/function/registry/updates_with_entities.mcfunction")
 bldp.remove_path("bldp/tags/item/update")
 bldp.remove_path("bldp/tags/block/update")
 bldp.remove_path("bldp/tags/entity_type/update")
@@ -69,7 +78,7 @@ def modernize_id(item,registry):
     else:
         return(item)
 
-print("--Grabbing and modernizing lists for each version")
+print("--Grabbing and modernizing lists for each version. This may take a while...")
 for version in all_versions:
     version["item_list"] = get_registry_content_list(version["id"],"item")
     version["block_list"] = get_registry_content_list(version["id"],"block")
@@ -142,34 +151,34 @@ all_versions[scan_for_version("1.2.4")]["item_list"] = ["spruce_planks", "birch_
 all_versions[scan_for_version("1.2.1")]["item_list"] = ["jungle_log", "jungle_leaves", "jungle_sapling", "experience_bottle", "fire_charge", "ocelot_spawn_egg", "redstone_lamp", "chiseled_stone_bricks"]
 all_versions[scan_for_version("1.1")]["item_list"] = ["creeper_spawn_egg", "skeleton_spawn_egg", "spider_spawn_egg", "slime_spawn_egg", "ghast_spawn_egg", "zombified_piglin_spawn_egg", "enderman_spawn_egg", "cave_spider_spawn_egg", "silverfish_spawn_egg", "blaze_spawn_egg", "magma_cube_spawn_egg", "pig_spawn_egg", "sheep_spawn_egg", "cow_spawn_egg", "chicken_spawn_egg", "squid_spawn_egg", "wolf_spawn_egg", "mooshroom_spawn_egg", "villager_spawn_egg"]
 all_versions[scan_for_version("1.0")]["item_list"] = ["nether_bricks", "nether_brick_stairs", "nether_brick_fence", "nether_wart", "blaze_rod", "ghast_tear", "gold_nugget", "mycelium", "lily_pad", "blaze_powder", "magma_cream", "spider_eye", "fermented_spider_eye", "glass_bottle", "music_disc_blocks", "music_disc_chirp", "music_disc_far", "music_disc_mall", "music_disc_mellohi", "music_disc_stal", "music_disc_strad", "music_disc_ward", "music_disc_11", "ender_eye", "end_portal_frame", "cauldron", "enchanting_table", "brewing_stand", "potion", "splash_potion", "end_stone", "glistering_melon_slice", "dragon_egg"]
-all_versions.insert(0, {"id": "beta_1.8", "item_list": ["stone_bricks", "cracked_stone_bricks", "mossy_stone_bricks", "infested_stone", "infested_cobblestone", "infested_stone_bricks", "brick_slab", "stone_brick_slab", "brick_stairs", "stone_brick_stairs", "glass_pane", "iron_bars", "oak_fence_gate", "vine", "brown_mushroom_block", "red_mushroom_block", "mushroom_stem", "pumpkin_seeds", "melon_seeds", "melon", "melon_slice", "chicken", "cooked_chicken", "beef", "cooked_beef", "rotten_flesh", "ender_pearl"]})
-all_versions.insert(0, {"id": "beta_1.7", "item_list": ["piston", "sticky_piston", "shears"]})
-all_versions.insert(0, {"id": "beta_1.6", "item_list": ["dead_bush", "short_grass", "fern", "oak_trapdoor", "filled_map"]})
-all_versions.insert(0, {"id": "beta_1.5", "item_list": ["spruce_sapling", "birch_sapling", "powered_rail", "detector_rail", "cobweb"]})
-all_versions.insert(0, {"id": "beta_1.4", "item_list": ["cookie"]})
-all_versions.insert(0, {"id": "beta_1.3", "item_list": ["cobblestone_slab", "petrified_oak_slab", "sandstone_slab", "smooth_stone", "red_bed", "repeater"]})
-all_versions.insert(0, {"id": "beta_1.2", "item_list": ["brown_wool", "black_wool", "sugar", "cake", "dispenser", "note_block", "sandstone", "spruce_log", "spruce_leaves", "birch_log", "birch_leaves", "charcoal", "lapis_ore", "lapis_block", "bone", "bone_meal", "light_gray_dye", "gray_dye", "ink_sac", "cocoa_beans", "red_dye", "orange_dye", "yellow_dye", "lime_dye", "green_dye", "cyan_dye", "light_blue_dye", "lapis_lazuli", "purple_dye", "magenta_dye", "pink_dye"]})
-all_versions.insert(0, {"id": "alpha_v1.2.1", "item_list": ["netherrack", "soul_sand", "glowstone", "glowstone_dust", "carved_pumpkin", "jack_o_lantern", "clock", "cod", "cooked_cod"]})
-all_versions.insert(0, {"id": "alpha_v1.1.1", "item_list": ["fishing_rod"]})
-all_versions.insert(0, {"id": "alpha_v1.1.0", "item_list": ["compass"]})
-all_versions.insert(0, {"id": "alpha_v1.0.17", "item_list": ["oak_fence"]})
-all_versions.insert(0, {"id": "alpha_v1.0.14", "item_list": ["egg", "jukebox", "music_disc_13", "music_disc_cat", "furnace_minecart", "chest_minecart"]})
-all_versions.insert(0, {"id": "alpha_v1.0.11", "item_list": ["clay", "clay_ball", "sugar_cane", "paper", "book", "brick", "slime_ball"]})
-all_versions.insert(0, {"id": "alpha_v1.0.8", "item_list": ["leather", "milk_bucket"]})
-all_versions.insert(0, {"id": "alpha_v1.0.6", "item_list": ["cactus", "oak_boat"]})
-all_versions.insert(0, {"id": "alpha_v1.0.5", "item_list": ["snow_block", "snowball"]})
-all_versions.insert(0, {"id": "alpha_v1.0.4", "item_list": ["ice", "snow"]})
-all_versions.insert(0, {"id": "alpha_v1.0.1", "item_list": ["redstone_ore", "redstone", "redstone_torch", "oak_pressure_plate", "stone_pressure_plate", "stone_button", "lever", "iron_door"]})
-all_versions.insert(0, {"id": "infdev", "item_list": ["golden_apple", "ladder", "oak_sign", "oak_door", "bucket", "water_bucket", "lava_bucket", "rail", "minecart", "spawner", "saddle", "oak_stairs", "cobblestone_stairs"]})
-all_versions.insert(0, {"id": "indev", "item_list": ["farmland", "furnace", "wooden_hoe", "stone_hoe", "iron_hoe", "golden_hoe", "diamond_hoe", "bread", "wheat_seeds", "wheat", "porkchop", "cooked_porkchop", "flint", "golden_helmet", "golden_chestplate", "golden_leggings", "golden_boots", "diamond_helmet", "diamond_chestplate", "diamond_leggings", "diamond_boots", "painting"]})
-all_versions.insert(0, {"id": "indev_0.31", "item_list": ["torch", "chest", "diamond_ore", "diamond_block", "crafting_table", "leather_helmet", "leather_chestplate", "leather_leggings", "leather_boots", "chainmail_helmet", "chainmail_chestplate", "chainmail_leggings", "chainmail_boots", "iron_helmet", "iron_chestplate", "iron_leggings", "iron_boots", "apple", "iron_shovel", "iron_sword", "flint_and_steel", "iron_axe", "iron_pickaxe", "bow", "coal", "diamond", "gold_ingot", "iron_ingot", "wooden_sword", "wooden_axe", "wooden_pickaxe", "wooden_shovel", "stone_sword", "stone_axe", "stone_pickaxe", "stone_shovel", "diamond_sword", "diamond_axe", "diamond_pickaxe", "diamond_shovel", "stick", "golden_sword", "golden_axe", "golden_pickaxe", "golden_shovel", "bowl", "mushroom_stew", "gunpowder", "string", "feather"]})
-all_versions.insert(0, {"id": "classic_0.28", "item_list": ["obsidian"]})
-all_versions.insert(0, {"id": "classic_0.26_survival_test", "item_list": ["bookshelf", "bricks", "iron_block", "tnt", "mossy_cobblestone", "iron_block", "smooth_stone_slab"]})
-all_versions.insert(0, {"id": "classic_0.0.20a", "item_list": ["gold_block", "dandelion", "poppy", "red_mushroom", "brown_mushroom", "white_wool", "light_gray_wool", "gray_wool", "red_wool", "orange_wool", "yellow_wool", "lime_wool", "green_wool", "cyan_wool", "light_blue_wool", "blue_wool", "purple_wool", "magenta_wool", "pink_wool"]})
-all_versions.insert(0, {"id": "classic_0.0.19a", "item_list": ["glass", "sponge"]})
-all_versions.insert(0, {"id": "classic_0.0.14a", "item_list": ["sand", "gravel", "coal_ore", "iron_ore", "gold_ore", "oak_log", "oak_leaves"]})
-all_versions.insert(0, {"id": "classic_0.0.12a", "item_list": ["bedrock"]})
-all_versions.insert(0, {"id": "preclassic", "item_list": ["stone", "grass_block", "dirt", "oak_planks", "cobblestone", "oak_sapling"]})
+all_versions.append({"id": "beta_1.8", "item_list": ["stone_bricks", "cracked_stone_bricks", "mossy_stone_bricks", "infested_stone", "infested_cobblestone", "infested_stone_bricks", "brick_slab", "stone_brick_slab", "brick_stairs", "stone_brick_stairs", "glass_pane", "iron_bars", "oak_fence_gate", "vine", "brown_mushroom_block", "red_mushroom_block", "mushroom_stem", "pumpkin_seeds", "melon_seeds", "melon", "melon_slice", "chicken", "cooked_chicken", "beef", "cooked_beef", "rotten_flesh", "ender_pearl"]})
+all_versions.append({"id": "beta_1.7", "item_list": ["piston", "sticky_piston", "shears"]})
+all_versions.append({"id": "beta_1.6", "item_list": ["dead_bush", "short_grass", "fern", "oak_trapdoor", "filled_map"]})
+all_versions.append({"id": "beta_1.5", "item_list": ["spruce_sapling", "birch_sapling", "powered_rail", "detector_rail", "cobweb"]})
+all_versions.append({"id": "beta_1.4", "item_list": ["cookie"]})
+all_versions.append({"id": "beta_1.3", "item_list": ["cobblestone_slab", "petrified_oak_slab", "sandstone_slab", "smooth_stone", "red_bed", "repeater"]})
+all_versions.append({"id": "beta_1.2", "item_list": ["brown_wool", "black_wool", "sugar", "cake", "dispenser", "note_block", "sandstone", "spruce_log", "spruce_leaves", "birch_log", "birch_leaves", "charcoal", "lapis_ore", "lapis_block", "bone", "bone_meal", "light_gray_dye", "gray_dye", "ink_sac", "cocoa_beans", "red_dye", "orange_dye", "yellow_dye", "lime_dye", "green_dye", "cyan_dye", "light_blue_dye", "lapis_lazuli", "purple_dye", "magenta_dye", "pink_dye"]})
+all_versions.append({"id": "alpha_v1.2.1", "item_list": ["netherrack", "soul_sand", "glowstone", "glowstone_dust", "carved_pumpkin", "jack_o_lantern", "clock", "cod", "cooked_cod"]})
+all_versions.append({"id": "alpha_v1.1.1", "item_list": ["fishing_rod"]})
+all_versions.append({"id": "alpha_v1.1.0", "item_list": ["compass"]})
+all_versions.append({"id": "alpha_v1.0.17", "item_list": ["oak_fence"]})
+all_versions.append({"id": "alpha_v1.0.14", "item_list": ["egg", "jukebox", "music_disc_13", "music_disc_cat", "furnace_minecart", "chest_minecart"]})
+all_versions.append({"id": "alpha_v1.0.11", "item_list": ["clay", "clay_ball", "sugar_cane", "paper", "book", "brick", "slime_ball"]})
+all_versions.append({"id": "alpha_v1.0.8", "item_list": ["leather", "milk_bucket"]})
+all_versions.append({"id": "alpha_v1.0.6", "item_list": ["cactus", "oak_boat"]})
+all_versions.append({"id": "alpha_v1.0.5", "item_list": ["snow_block", "snowball"]})
+all_versions.append({"id": "alpha_v1.0.4", "item_list": ["ice", "snow"]})
+all_versions.append({"id": "alpha_v1.0.1", "item_list": ["redstone_ore", "redstone", "redstone_torch", "oak_pressure_plate", "stone_pressure_plate", "stone_button", "lever", "iron_door"]})
+all_versions.append({"id": "infdev", "item_list": ["golden_apple", "ladder", "oak_sign", "oak_door", "bucket", "water_bucket", "lava_bucket", "rail", "minecart", "spawner", "saddle", "oak_stairs", "cobblestone_stairs"]})
+all_versions.append({"id": "indev", "item_list": ["farmland", "furnace", "wooden_hoe", "stone_hoe", "iron_hoe", "golden_hoe", "diamond_hoe", "bread", "wheat_seeds", "wheat", "porkchop", "cooked_porkchop", "flint", "golden_helmet", "golden_chestplate", "golden_leggings", "golden_boots", "diamond_helmet", "diamond_chestplate", "diamond_leggings", "diamond_boots", "painting"]})
+all_versions.append({"id": "indev_0.31", "item_list": ["torch", "chest", "diamond_ore", "diamond_block", "crafting_table", "leather_helmet", "leather_chestplate", "leather_leggings", "leather_boots", "chainmail_helmet", "chainmail_chestplate", "chainmail_leggings", "chainmail_boots", "iron_helmet", "iron_chestplate", "iron_leggings", "iron_boots", "apple", "iron_shovel", "iron_sword", "flint_and_steel", "iron_axe", "iron_pickaxe", "bow", "coal", "diamond", "gold_ingot", "iron_ingot", "wooden_sword", "wooden_axe", "wooden_pickaxe", "wooden_shovel", "stone_sword", "stone_axe", "stone_pickaxe", "stone_shovel", "diamond_sword", "diamond_axe", "diamond_pickaxe", "diamond_shovel", "stick", "golden_sword", "golden_axe", "golden_pickaxe", "golden_shovel", "bowl", "mushroom_stew", "gunpowder", "string", "feather"]})
+all_versions.append({"id": "classic_0.28", "item_list": ["obsidian"]})
+all_versions.append({"id": "classic_0.26_survival_test", "item_list": ["bookshelf", "bricks", "iron_block", "tnt", "mossy_cobblestone", "iron_block", "smooth_stone_slab"]})
+all_versions.append({"id": "classic_0.0.20a", "item_list": ["gold_block", "dandelion", "poppy", "red_mushroom", "brown_mushroom", "white_wool", "light_gray_wool", "gray_wool", "red_wool", "orange_wool", "yellow_wool", "lime_wool", "green_wool", "cyan_wool", "light_blue_wool", "blue_wool", "purple_wool", "magenta_wool", "pink_wool"]})
+all_versions.append({"id": "classic_0.0.19a", "item_list": ["glass", "sponge"]})
+all_versions.append({"id": "classic_0.0.14a", "item_list": ["sand", "gravel", "coal_ore", "iron_ore", "gold_ore", "oak_log", "oak_leaves"]})
+all_versions.append({"id": "classic_0.0.12a", "item_list": ["bedrock"]})
+all_versions.append({"id": "preclassic", "item_list": ["stone", "grass_block", "dirt", "oak_planks", "cobblestone", "oak_sapling"]})
 
 print("--Creating manual entity type lists for preclassic through 1.14")
 all_versions[scan_for_version("1.14")]["entity_type_list"] = ["panda", "pillager", "ravager", "cat", "trader_llama", "wandering_trader", "fox"]
@@ -190,8 +199,8 @@ all_versions[scan_for_version("beta_1.8")]["entity_type_list"] = ["experience_or
 all_versions[scan_for_version("beta_1.5")]["entity_type_list"] = ["lightning_bolt"]
 all_versions[scan_for_version("beta_1.4")]["entity_type_list"] = ["wolf"]
 all_versions[scan_for_version("beta_1.2")]["entity_type_list"] = ["squid"]
-all_versions.insert(0, {"id": "beta_1.0", "entity_type_list": ["egg"]})
-all_versions.insert(0, {"id": "alpha_v1.2.0", "entity_type_list": ["ghast", "zombified_piglin", "fishing_bobber", "fireball"]})
+all_versions.append({"id": "beta_1.0", "entity_type_list": ["egg"]})
+all_versions.append({"id": "alpha_v1.2.0", "entity_type_list": ["ghast", "zombified_piglin", "fishing_bobber", "fireball"]})
 all_versions[scan_for_version("alpha_v1.0.14")]["entity_type_list"] = ["chicken", "chest_minecart", "furnace_minecart"]
 all_versions[scan_for_version("alpha_v1.0.11")]["entity_type_list"] = ["slime"]
 all_versions[scan_for_version("alpha_v1.0.8")]["entity_type_list"] = ["cow"]
@@ -202,7 +211,7 @@ all_versions[scan_for_version("indev")]["entity_type_list"] = ["painting"]
 all_versions[scan_for_version("indev_0.31")]["entity_type_list"] = ["giant"]
 all_versions[scan_for_version("classic_0.28")]["entity_type_list"] = ["sheep"]
 all_versions[scan_for_version("classic_0.26_survival_test")]["entity_type_list"] = ["spider", "tnt"]
-all_versions.insert(0, {"id": "classic_0.24_survival_test", "entity_type_list": ["creeper", "pig", "skeleton", "zombie", "arrow", "item"]})
+all_versions.append({"id": "classic_0.24_survival_test", "entity_type_list": ["creeper", "pig", "skeleton", "zombie", "arrow", "item"]})
 
 print("--Interpreting block lists from manual item lists for preclassic through 1.14")
 all_versions[scan_for_version("1.14")].pop("block_list")
@@ -234,6 +243,16 @@ all_versions[scan_for_version("1.9")]["block_list"].extend(["dragon_wall_head", 
 all_versions[scan_for_version("1.13")]["block_list"].extend(["tall_seagrass", "kelp_plant", "cave_air", "void_air", "bubble_column", "tube_coral_wall_fan", "brain_coral_wall_fan", "bubble_coral_wall_fan", "fire_coral_wall_fan", "horn_coral_wall_fan", "dead_tube_coral_wall_fan", "dead_brain_coral_wall_fan", "dead_bubble_coral_wall_fan", "dead_fire_coral_wall_fan", "dead_horn_coral_wall_fan"])
 all_versions[scan_for_version("1.14")]["block_list"].extend(["potted_cornflower", "potted_lily_of_the_valley", "potted_wither_rose", "potted_bamboo", "bamboo_sapling", "spruce_wall_sign", "birch_wall_sign", "acacia_wall_sign", "jungle_wall_sign", "dark_oak_wall_sign", "sweet_berry_bush"])
 
+if combine_non_release_versions == True:
+    for non_release_version in ['classic_0.24_survival_test', 'alpha_v1.2.0', 'beta_1.0', 'preclassic', 'classic_0.0.12a', 'classic_0.0.14a', 'classic_0.0.19a', 'classic_0.0.20a', 'classic_0.26_survival_test', 'classic_0.28', 'indev_0.31', 'indev', 'infdev', 'alpha_v1.0.1', 'alpha_v1.0.4', 'alpha_v1.0.5', 'alpha_v1.0.6', 'alpha_v1.0.8', 'alpha_v1.0.11', 'alpha_v1.0.14', 'alpha_v1.0.17', 'alpha_v1.1.0', 'alpha_v1.1.1', 'alpha_v1.2.1', 'beta_1.2', 'beta_1.3', 'beta_1.4', 'beta_1.5', 'beta_1.6', 'beta_1.7', 'beta_1.8']:
+        if "item_list" in all_versions[scan_for_version(non_release_version)]:
+            all_versions[scan_for_version("1.0")]["item_list"].extend(all_versions[scan_for_version(non_release_version)]["item_list"])
+        if "block_list" in all_versions[scan_for_version(non_release_version)]:
+            all_versions[scan_for_version("1.0")]["block_list"].extend(all_versions[scan_for_version(non_release_version)]["block_list"])
+        if "entity_type_list" in all_versions[scan_for_version(non_release_version)]:
+            all_versions[scan_for_version("1.0")]["entity_type_list"].extend(all_versions[scan_for_version(non_release_version)]["entity_type_list"])
+        all_versions.remove(all_versions[scan_for_version(non_release_version)])
+
 def save_tag(tag_list,path,id):
     Path(path).mkdir(parents=True, exist_ok=True)
     with open(f"{path}/{id}.json", "w") as new_json:
@@ -256,12 +275,14 @@ for version in all_versions:
         has_entities_registry.append(version['id'])
     all_registry.append(version['id'])
 
-mcfunction = "\n".join([
-    f"data modify storage bldp:registry all.update.all set value {all_registry}",
-    f"data modify storage bldp:registry all.update.has_items set value {has_items_registry}",
-    f"data modify storage bldp:registry all.update.has_blocks set value {has_blocks_registry}",
-    f"data modify storage bldp:registry all.update.has_entities set value {has_entities_registry}"
-])
+bldp.string_to_file(f"data modify storage bldp:registry all.updates set value {all_registry}","bldp/function/registry","updates.mcfunction")
+bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.updates run function bldp:registry/updates")
 
-bldp.string_to_file(mcfunction,"bldp/function/registry","update.mcfunction")
-bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.update run function bldp:registry/update")
+bldp.string_to_file(f"data modify storage bldp:registry all.updates_with_items set value {has_items_registry}","bldp/function/registry","updates_with_items.mcfunction")
+bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.updates_with_items run function bldp:registry/updates_with_items")
+
+bldp.string_to_file(f"data modify storage bldp:registry all.updates_with_blocks set value {has_blocks_registry}","bldp/function/registry","updates_with_blocks.mcfunction")
+bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.updates_with_blocks run function bldp:registry/updates_with_blocks")
+
+bldp.string_to_file(f"data modify storage bldp:registry all.updates_with_entities set value {has_entities_registry}","bldp/function/registry","updates_with_entities.mcfunction")
+bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.updates_with_entities run function bldp:registry/updates_with_entities")
