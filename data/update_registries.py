@@ -14,7 +14,7 @@ if not Path("bldp.py").is_file():
 
 import bldp
 
-bldp.remove_path("bldp/function/registry/updates.mcfunction")
+bldp.remove_path("bldp/function/registry/update/mcfunction")
 bldp.remove_path("bldp/tags/item/update")
 bldp.remove_path("bldp/tags/block/update")
 bldp.remove_path("bldp/tags/entity_type/update")
@@ -240,22 +240,28 @@ def save_tag(tag_list,path,id):
         json.dump({"values":tag_list},new_json,indent=4)
 
 print("--Saving tag files")
-applicable_versions = []
-update_registry = []
+all_registry = []
+has_items_registry = []
+has_blocks_registry = []
+has_entities_registry = []
 for version in all_versions:
     if "item_list" in version and version["item_list"] != None and len(version["item_list"]) > 0:
         save_tag(version["item_list"],"bldp/tags/item/update",version['id'])
-        if not version['id'] in applicable_versions:
-            applicable_versions.append(version['id'])
+        has_items_registry.append(version['id'])
     if "block_list" in version and version["block_list"] != None and len(version["block_list"]) > 0:
         save_tag(version["block_list"],"bldp/tags/block/update",version['id'])
-        if not version['id'] in applicable_versions:
-            applicable_versions.append(version['id'])
+        has_blocks_registry.append(version['id'])
     if "entity_type_list" in version and version["entity_type_list"] != None and len(version["entity_type_list"]) > 0:
         save_tag(version["entity_type_list"],"bldp/tags/entity_type/update",version['id'])
-        if not version['id'] in applicable_versions:
-            applicable_versions.append(version['id'])
-    update_registry.append(version['id'])
+        has_entities_registry.append(version['id'])
+    all_registry.append(version['id'])
 
-bldp.string_to_file(f"data modify storage bldp:registry all.updates set value {update_registry}","bldp/function/registry","updates.mcfunction")
-bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.updates run function bldp:registry/updates")
+mcfunction = "\n".join([
+    f"data modify storage bldp:registry all.update.all set value {all_registry}",
+    f"data modify storage bldp:registry all.update.has_items set value {has_items_registry}",
+    f"data modify storage bldp:registry all.update.has_blocks set value {has_blocks_registry}",
+    f"data modify storage bldp:registry all.update.has_entities set value {has_entities_registry}"
+])
+
+bldp.string_to_file(mcfunction,"bldp/function/registry","update.mcfunction")
+bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.update run function bldp:registry/update")
