@@ -3,8 +3,6 @@ from pathlib import Path
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-DEBUG = False
-
 if not Path.cwd().name == "data":
     print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
@@ -16,6 +14,7 @@ if not Path("bldp.py").is_file():
 
 import bldp
 
+bldp.remove_path("bldp/function/registry/updates.mcfunction")
 bldp.remove_path("bldp/tags/item/update")
 bldp.remove_path("bldp/tags/block/update")
 bldp.remove_path("bldp/tags/entity_type/update")
@@ -242,6 +241,7 @@ def save_tag(tag_list,path,id):
 
 print("--Saving tag files")
 applicable_versions = []
+update_registry = []
 for version in all_versions:
     if "item_list" in version and version["item_list"] != None and len(version["item_list"]) > 0:
         save_tag(version["item_list"],"bldp/tags/item/update",version['id'])
@@ -255,8 +255,7 @@ for version in all_versions:
         save_tag(version["entity_type_list"],"bldp/tags/entity_type/update",version['id'])
         if not version['id'] in applicable_versions:
             applicable_versions.append(version['id'])
+    update_registry.append(version['id'])
 
-if DEBUG == True:
-    Path("debug").mkdir(parents=True, exist_ok=True)
-    with open(f"debug/update_tags_versions.json", "w") as new_json:
-        json.dump({"versions":applicable_versions},new_json,indent=4)
+bldp.string_to_file(f"data modify storage bldp:registry all.updates set value {update_registry}","bldp/function/registry","updates.mcfunction")
+bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.updates run function bldp:registry/updates")

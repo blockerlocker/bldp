@@ -24,7 +24,13 @@ import bldp
 
 MCVERSION = bldp.get_version(MCVERSION)
 
-bldp.remove_path("bldp/function/registry")
+bldp.remove_path("bldp/function/registry/items.mcfunction")
+bldp.remove_path("bldp/function/registry/block_placing_items.mcfunction")
+bldp.remove_path("bldp/function/registry/blocks.mcfunction")
+bldp.remove_path("bldp/function/registry/entities.mcfunction")
+bldp.remove_path("bldp/function/registry/mobs.mcfunction")
+bldp.remove_path("bldp/function/registry/non_mob_entities.mcfunction")
+bldp.remove_path("bldp/function/registry/biomes.mcfunction")
 bldp.remove_path("bldp/tags/item/all.json")
 bldp.remove_path("bldp/tags/item/block_placing_item.json")
 bldp.remove_path("bldp/tags/block/all.json")
