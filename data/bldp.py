@@ -1,4 +1,4 @@
-import os, json, shutil, urllib.request, zipfile, colorsys
+import os, json, shutil, urllib.request, zipfile
 from pathlib import Path
 from PIL import Image
 
