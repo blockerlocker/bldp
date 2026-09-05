@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.16" set value ['hoglin', 'piglin', 'strider', 'zoglin']

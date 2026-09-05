@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.4.6" set value ['firework_rocket']

@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."1.20.5" set value ['heavy_core', 'vault']

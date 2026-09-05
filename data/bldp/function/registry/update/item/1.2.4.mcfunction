@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."1.2.4" set value ['spruce_planks', 'birch_planks', 'jungle_planks', 'cut_sandstone', 'chiseled_sandstone']

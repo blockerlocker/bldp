@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.4.2" set value ['item_frame', 'wither_skull', 'zombie_villager', 'wither', 'wither_skeleton', 'bat', 'witch']

@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.21" set value ['breeze', 'wind_charge', 'bogged', 'breeze_wind_charge', 'ominous_item_spawner']

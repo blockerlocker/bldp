@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."1.9" set value ['dirt_path', 'structure_block', 'dragon_head', 'end_rod', 'end_stone_bricks', 'purpur_block', 'purpur_pillar', 'purpur_slab', 'purpur_stairs', 'chorus_plant', 'chorus_flower', 'chain_command_block', 'repeating_command_block', 'dragon_wall_head', 'end_gateway', 'beetroots', 'frosted_ice']

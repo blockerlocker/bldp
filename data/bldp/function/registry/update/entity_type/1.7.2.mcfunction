@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.7.2" set value ['command_block_minecart']

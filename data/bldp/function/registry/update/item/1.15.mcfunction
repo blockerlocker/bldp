@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."1.15" set value ['bee_nest', 'bee_spawn_egg', 'beehive', 'honey_block', 'honey_bottle', 'honeycomb', 'honeycomb_block']

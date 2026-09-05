@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.21.2" set value ['acacia_boat', 'acacia_chest_boat', 'bamboo_chest_raft', 'bamboo_raft', 'birch_boat', 'birch_chest_boat', 'cherry_boat', 'cherry_chest_boat', 'dark_oak_boat', 'dark_oak_chest_boat', 'jungle_boat', 'jungle_chest_boat', 'mangrove_boat', 'mangrove_chest_boat', 'spruce_boat', 'spruce_chest_boat']

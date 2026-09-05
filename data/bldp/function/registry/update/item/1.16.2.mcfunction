@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."1.16.2" set value ['piglin_brute_spawn_egg']

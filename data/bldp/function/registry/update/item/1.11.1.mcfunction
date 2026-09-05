@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."1.11.1" set value ['iron_nugget']

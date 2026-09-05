@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."1.19.3" set value ['ender_dragon_spawn_egg', 'iron_golem_spawn_egg', 'snow_golem_spawn_egg', 'wither_spawn_egg']

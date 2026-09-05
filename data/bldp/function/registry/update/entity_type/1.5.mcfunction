@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.5" set value ['hopper_minecart', 'spawner_minecart', 'tnt_minecart']

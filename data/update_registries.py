@@ -267,15 +267,24 @@ has_entities_registry = []
 for version in all_versions:
     if "item_list" in version and version["item_list"] != None and len(version["item_list"]) > 0:
         save_tag(version["item_list"],"bldp/tags/item/update",version['id'])
+
         bldp.string_to_file(f"data modify storage bldp:registry all.update.item.\"{version['id']}\" set value {version["item_list"]}","bldp/function/registry/update/item",f"{version['id']}.mcfunction")
+        bldp.mcfunction_append(f"bldp/function/main","load",f"execute unless data storage bldp:registry all.update.item.\"{version['id']}\" run function bldp:registry/update/item/{version['id']}")
+
         has_items_registry.append(version['id'])
     if "block_list" in version and version["block_list"] != None and len(version["block_list"]) > 0:
         save_tag(version["block_list"],"bldp/tags/block/update",version['id'])
+
         bldp.string_to_file(f"data modify storage bldp:registry all.update.block.\"{version['id']}\" set value {version["block_list"]}","bldp/function/registry/update/block",f"{version['id']}.mcfunction")
+        bldp.mcfunction_append(f"bldp/function/main","load",f"execute unless data storage bldp:registry all.update.block.\"{version['id']}\" run function bldp:registry/update/block/{version['id']}")
+
         has_blocks_registry.append(version['id'])
     if "entity_type_list" in version and version["entity_type_list"] != None and len(version["entity_type_list"]) > 0:
         save_tag(version["entity_type_list"],"bldp/tags/entity_type/update",version['id'])
+
         bldp.string_to_file(f"data modify storage bldp:registry all.update.entity_type.\"{version['id']}\" set value {version["entity_type_list"]}","bldp/function/registry/update/entity_type",f"{version['id']}.mcfunction")
+        bldp.mcfunction_append(f"bldp/function/main","load",f"execute unless data storage bldp:registry all.update.entity_type.\"{version['id']}\" run function bldp:registry/update/entity_type/{version['id']}")
+
         has_entities_registry.append(version['id'])
     all_registry.append(version['id'])
 

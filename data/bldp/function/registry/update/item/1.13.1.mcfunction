@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."1.13.1" set value ['dead_tube_coral', 'dead_brain_coral', 'dead_bubble_coral', 'dead_fire_coral', 'dead_horn_coral']

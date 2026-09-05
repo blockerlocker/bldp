@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.14" set value ['panda', 'pillager', 'ravager', 'cat', 'trader_llama', 'wandering_trader', 'fox']

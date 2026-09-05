@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."1.11" set value ['llama', 'vindicator', 'evoker', 'vex', 'evoker_fangs', 'llama_spit']

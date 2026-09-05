@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."1.21.4" set value ['chiseled_resin_bricks', 'closed_eyeblossom', 'open_eyeblossom', 'potted_closed_eyeblossom', 'potted_open_eyeblossom', 'resin_block', 'resin_brick_slab', 'resin_brick_stairs', 'resin_brick_wall', 'resin_bricks', 'resin_clump']

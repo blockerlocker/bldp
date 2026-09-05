@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."1.4.6" set value ['nether_brick_slab']

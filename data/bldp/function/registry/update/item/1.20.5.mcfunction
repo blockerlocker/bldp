@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."1.20.5" set value ['armadillo_scute', 'armadillo_spawn_egg', 'wolf_armor']
