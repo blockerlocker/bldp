@@ -49,16 +49,22 @@ bldp.string_to_file(commit_function,"bldp/function/func/array/random","commit.mc
 
 bldp.mcfunction_append("bldp/function/main","load","scoreboard objectives add operator dummy")
 
+def registry_crawl(registry):
+    for sub_registry in registry.iterdir():
+        if sub_registry.is_file():
+            registry_path = str(registry).replace("\\","/")[23:]
+            subregistry_name = Path(sub_registry).stem
+            bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.\"{subregistry_name}\"\nfunction bldp:func/array/random/init",f"bldp/function/func/random/{registry_path}",f"{subregistry_name}.mcfunction")
+        elif sub_registry.is_dir():
+            registry_crawl(sub_registry)
+
 if Path("bldp/function/registry").is_dir():
     for registry in Path("bldp/function/registry").iterdir():
         if registry.is_file():
             registry_name = Path(registry).stem
-            bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.{registry_name}\nfunction bldp:func/array/random/init","bldp/function/func/random",f"{registry_name}.mcfunction")
+            bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.\"{registry_name}\"\nfunction bldp:func/array/random/init","bldp/function/func/random",f"{registry_name}.mcfunction")
         elif registry.is_dir():
-            for sub_registry in registry.iterdir():
-                registry_name = Path(registry).stem
-                subregistry_name = Path(sub_registry).stem
-                bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.{subregistry_name}\nfunction bldp:func/array/random/init",f"bldp/function/func/random/{registry_name}",f"{subregistry_name}.mcfunction")
+            registry_crawl(registry)
         
 bldp.tag_append("bldp/tags/function","load","bldp:main/load")
 bldp.tag_append("minecraft/tags/function","load","#bldp:load")
