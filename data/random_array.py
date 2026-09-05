@@ -51,8 +51,14 @@ bldp.mcfunction_append("bldp/function/main","load","scoreboard objectives add op
 
 if Path("bldp/function/registry").is_dir():
     for registry in Path("bldp/function/registry").iterdir():
-        registry_name = Path(registry).stem
-        bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.{registry_name}\nfunction bldp:func/array/random/init","bldp/function/func/random",f"{registry_name}.mcfunction")
-
+        if registry.is_file():
+            registry_name = Path(registry).stem
+            bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.{registry_name}\nfunction bldp:func/array/random/init","bldp/function/func/random",f"{registry_name}.mcfunction")
+        elif registry.is_dir():
+            for sub_registry in registry.iterdir():
+                registry_name = Path(registry).stem
+                subregistry_name = Path(sub_registry).stem
+                bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.{subregistry_name}\nfunction bldp:func/array/random/init",f"bldp/function/func/random/{registry_name}",f"{subregistry_name}.mcfunction")
+        
 bldp.tag_append("bldp/tags/function","load","bldp:main/load")
 bldp.tag_append("minecraft/tags/function","load","#bldp:load")
