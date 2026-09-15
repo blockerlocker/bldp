@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."beta_1.7" set value ['piston', 'sticky_piston', 'shears']

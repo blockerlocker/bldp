@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."beta_1.8" set value ['experience_orb', 'cave_spider', 'enderman', 'silverfish']

@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."classic_0.0.20a" set value ['gold_block', 'dandelion', 'poppy', 'red_mushroom', 'brown_mushroom', 'white_wool', 'light_gray_wool', 'gray_wool', 'red_wool', 'orange_wool', 'yellow_wool', 'lime_wool', 'green_wool', 'cyan_wool', 'light_blue_wool', 'blue_wool', 'purple_wool', 'magenta_wool', 'pink_wool']

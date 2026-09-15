@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."infdev" set value ['ladder', 'oak_sign', 'oak_door', 'rail', 'spawner', 'oak_stairs', 'cobblestone_stairs', 'oak_wall_sign']

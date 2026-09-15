@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."infdev" set value ['golden_apple', 'ladder', 'oak_sign', 'oak_door', 'bucket', 'water_bucket', 'lava_bucket', 'rail', 'minecart', 'spawner', 'saddle', 'oak_stairs', 'cobblestone_stairs']

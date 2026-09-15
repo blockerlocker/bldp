@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."indev_0.31" set value ['torch', 'chest', 'diamond_ore', 'diamond_block', 'crafting_table', 'fire', 'wall_torch']

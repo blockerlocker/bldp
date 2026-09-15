@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."alpha_v1.0.11" set value ['clay', 'clay_ball', 'sugar_cane', 'paper', 'book', 'brick', 'slime_ball']

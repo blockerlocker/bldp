@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."classic_0.0.14a" set value ['sand', 'gravel', 'coal_ore', 'iron_ore', 'gold_ore', 'oak_log', 'oak_leaves']

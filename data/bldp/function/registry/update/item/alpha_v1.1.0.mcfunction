@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."alpha_v1.1.0" set value ['compass']

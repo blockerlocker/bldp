@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."alpha_v1.0.1" set value ['redstone_ore', 'redstone_torch', 'oak_pressure_plate', 'stone_pressure_plate', 'stone_button', 'lever', 'iron_door', 'redstone_wall_torch', 'redstone_wire']

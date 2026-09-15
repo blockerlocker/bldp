@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."beta_1.7" set value ['piston', 'sticky_piston', 'moving_piston', 'piston_head']

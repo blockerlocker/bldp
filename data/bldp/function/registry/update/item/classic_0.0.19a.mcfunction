@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."classic_0.0.19a" set value ['glass', 'sponge']

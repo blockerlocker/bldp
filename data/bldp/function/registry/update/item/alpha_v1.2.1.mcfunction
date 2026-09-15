@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."alpha_v1.2.1" set value ['netherrack', 'soul_sand', 'glowstone', 'glowstone_dust', 'carved_pumpkin', 'jack_o_lantern', 'clock', 'cod', 'cooked_cod']

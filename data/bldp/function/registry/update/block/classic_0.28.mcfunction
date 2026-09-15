@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."classic_0.28" set value ['obsidian']

@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."alpha_v1.0.14" set value ['egg', 'jukebox', 'music_disc_13', 'music_disc_cat', 'furnace_minecart', 'chest_minecart']

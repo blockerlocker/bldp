@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."26.3-pre-2" set value ['cushion', 'poplar_boat', 'poplar_chest_boat']

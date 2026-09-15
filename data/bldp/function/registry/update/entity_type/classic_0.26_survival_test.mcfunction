@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."classic_0.26_survival_test" set value ['spider', 'tnt']

@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."alpha_v1.0.5" set value ['snowball']

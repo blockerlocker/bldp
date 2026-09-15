@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."alpha_v1.0.14" set value ['chicken', 'chest_minecart', 'furnace_minecart']

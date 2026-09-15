@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."beta_1.6" set value ['dead_bush', 'short_grass', 'fern', 'oak_trapdoor', 'filled_map']

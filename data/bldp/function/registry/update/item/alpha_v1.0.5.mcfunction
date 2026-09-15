@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."alpha_v1.0.5" set value ['snow_block', 'snowball']

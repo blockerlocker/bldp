@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."beta_1.3" set value ['cobblestone_slab', 'petrified_oak_slab', 'sandstone_slab', 'smooth_stone', 'red_bed', 'repeater']

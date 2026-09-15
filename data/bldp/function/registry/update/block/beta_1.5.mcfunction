@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."beta_1.5" set value ['spruce_sapling', 'birch_sapling', 'powered_rail', 'detector_rail', 'cobweb']

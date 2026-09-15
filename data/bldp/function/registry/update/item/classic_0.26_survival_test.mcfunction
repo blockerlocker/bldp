@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.item."classic_0.26_survival_test" set value ['bookshelf', 'bricks', 'iron_block', 'tnt', 'mossy_cobblestone', 'iron_block', 'smooth_stone_slab']

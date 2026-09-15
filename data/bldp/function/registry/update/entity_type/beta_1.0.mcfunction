@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."beta_1.0" set value ['egg']

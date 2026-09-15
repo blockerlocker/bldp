@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.entity_type."beta_1.2" set value ['squid']

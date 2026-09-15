@@ -1,0 +1,1 @@
+data modify storage bldp:registry all.update.block."indev" set value ['farmland', 'furnace', 'wheat']
