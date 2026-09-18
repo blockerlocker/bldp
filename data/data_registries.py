@@ -63,7 +63,7 @@ bldp.string_to_file(f"data modify storage bldp:registry all.entities set value {
 bldp.json_to_file({"values":entity_type_list},"bldp/tags/entity_type","all")
 bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.entities run function bldp:registry/entities")
 
-mob_list = [mob for mob in entity_type_list if not re.search("_boat|_raft|minecart|potion|item|_display|armor_stand|area_effect_cloud|ball|arrow|firework|llama_spit|trident|skull|wind_charge|cushion|egg|ender_pearl|experience|falling_block|eye_of_ender|fishing_bobber|interaction|leash_knot|lightning_bolt|marker|painting|shulker_bullet|end_crystal|tnt|player",mob)]
+mob_list = [mob for mob in entity_type_list if not re.search("_boat|_raft|minecart|potion|item|_display|armor_stand|area_effect_cloud|ball|arrow|firework|llama_spit|trident|skull|wind_charge|cushion|egg|ender_pearl|experience|falling_block|eye_of_ender|fishing_bobber|interaction|leash_knot|lightning_bolt|marker|painting|shulker_bullet|end_crystal|tnt|player|evoker_fangs",mob)]
 bldp.string_to_file(f"data modify storage bldp:registry all.mobs set value {mob_list}","bldp/function/registry","mobs.mcfunction")
 bldp.json_to_file({"values":mob_list},"bldp/tags/entity_type","mobs")
 bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:registry all.mobs run function bldp:registry/mobs")
