@@ -163,7 +163,7 @@ for id in item_list:
 
 bldp.string_to_file(f"data modify storage bldp:icon all.item set value {item_icons_list}","bldp/function/icon","item.mcfunction")
 
-bldp.mcfunction_append("bldp/function/main","load","execute unless data storage bldp:icon all.item run function bldp:icon/item")
+bldp.tag_append("bldp/tags/function","load","bldp:icon/item")
 
 bldp.tag_append("bldp/tags/function","load","bldp:crafted_item/load")
 bldp.tag_append("minecraft/tags/function","load","#bldp:load")
