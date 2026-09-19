@@ -30,3 +30,6 @@ Some files in this library are manually defined and are not automatically genera
 | Function | Description |
 | --- | --- |
 | test/within_world | Returns either true or false depending on whether or not the execution location is within the world (the tile allows block modification). |
+| get/entity_type | Stores the entity id of the executing entity in data storage `bldp:get all.entity_type` |
+| get/entity_name | Stores the name of the executing entity in data storage `bldp:get all.entity_name` |
+| get/entity_midpoint | Stores the midpoint between the feet position and eye position of the executing entity in data storage `bldp:get all.entity_midpoint`. This is not a world coordinate position, it is a positive value representing the vertical distance from the entity's foot position. For example, a standing player's midpoint is `0.8100014f` |
