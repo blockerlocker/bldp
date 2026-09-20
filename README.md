@@ -20,12 +20,6 @@ These generators are powered using the automatically generated and version-contr
 ## Manually Defined Resources
 Some files in this library are manually defined and are not automatically generated. These are typically kept up-to-date to the latest snapshot, since that is the version I tend to develop in.
 
-### Predicates
-| Predicate | Description |
-| --- | --- |
-| interaction_attack | Used to detect if entities have the `attack` NBT tag. |
-| interaction_interact | Used to detect if entities have the `interaction` NBT tag. |
-
 ### Functions
 | Function | Description |
 | --- | --- |
