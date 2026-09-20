@@ -16,14 +16,5 @@ These generators are powered using the automatically generated and version-contr
 | random_array | Functions for getting a random value from an array. Will always output to `storage bldp:array_random out`. Functions start with `function bldp:func/random/` and rely on the registries from other modules (such as `data_registries` and `update_registries`). You can copy the format to get a random value from any array. |
 | color_tags | Block tags that attempt to sort every block in the game into the 16 Minecraft color categories. Not perfectly accurate at the moment, but close enough. Tags are in the format `#bldp:color/<color>` |
 | inverted_block_tags | Creates block tags for every block in the game, which each contain every OTHER block in the game besides the one named. I thought this would be useful for `execute unless blocks` but I forgot how that actually works, so I have no idea what the application is for this right now lol. |
-
-## Manually Defined Resources
-Some files in this library are manually defined and are not automatically generated. These are typically kept up-to-date to the latest snapshot, since that is the version I tend to develop in.
-
-### Functions
-| Function | Description |
-| --- | --- |
-| test/within_world | Returns either true or false depending on whether or not the execution location is within the world (the tile allows block modification). |
-| get/entity_type | Stores the entity id of the executing entity in data storage `bldp:get all.entity_type` |
-| get/entity_name | Stores the name of the executing entity in data storage `bldp:get all.entity_name` |
-| get/entity_midpoint | Stores the midpoint between the feet position and eye position of the executing entity in data storage `bldp:get all.entity_midpoint`. This is not a world coordinate position, it is a positive value representing the vertical distance from the entity's foot position. For example, a standing player's midpoint is `0.8100014f` |
+| get | Functions for grabbing different types of data, dumped into the data storage `bldp:get`. Includes functions `bldp:get/entity_midpoint`, `bldp:get/entity_name` and `bldp:get/entity_type` |
+| test | Functions for testing certain conditions, returns true or false. Currently only the function `bldp:test/within_world` |
