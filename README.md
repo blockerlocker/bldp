@@ -18,3 +18,4 @@ These generators are powered using the automatically generated and version-contr
 | inverted_block_tags | Creates block tags for every block in the game, which each contain every OTHER block in the game besides the one named. I thought this would be useful for `execute unless blocks` but I forgot how that actually works, so I have no idea what the application is for this right now lol. |
 | get | Functions for grabbing different types of data, dumped into the data storage `bldp:get`. Includes functions `bldp:get/entity_midpoint`, `bldp:get/entity_name` and `bldp:get/entity_type` |
 | test | Functions for testing certain conditions, returns true or false. Currently only the function `bldp:test/within_world` |
+| texture_map | Creates a map in data storage `bldp:texture_map` that pairs block IDs with corresponding texture paths. |

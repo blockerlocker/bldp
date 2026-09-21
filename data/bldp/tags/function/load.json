@@ -188,6 +188,7 @@
         "bldp:registry/updates_with_items",
         "bldp:registry/updates_with_blocks",
         "bldp:registry/updates_with_entities",
-        "bldp:icon/item"
+        "bldp:icon/item",
+        "bldp:texture_map/block"
     ]
 }
