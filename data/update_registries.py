@@ -299,3 +299,5 @@ bldp.tag_append("bldp/tags/function","load","bldp:registry/updates_with_blocks")
 
 bldp.string_to_file(f"data modify storage bldp:registry all.updates_with_entities set value {has_entities_registry}","bldp/function/registry","updates_with_entities.mcfunction")
 bldp.tag_append("bldp/tags/function","load","bldp:registry/updates_with_entities")
+
+bldp.tag_append("minecraft/tags/function","load","#bldp:load")

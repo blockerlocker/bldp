@@ -215,4 +215,6 @@ for file in os.listdir(blockstate_dir):
 bldp.string_to_file(f"data modify storage bldp:texture_map all.block set value {block_map}","bldp/function/texture_map","block.mcfunction")
 bldp.tag_append("bldp/tags/function","load","bldp:texture_map/block")
 
+bldp.tag_append("minecraft/tags/function","load","#bldp:load")
+
 bldp.remove_path(TEMP_DIR)
