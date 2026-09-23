@@ -29,6 +29,6 @@ MCVERSION = bldp.get_version(MCVERSION)
 current_path = Path(dname)
 
 for file in current_path.iterdir():
-    if file.is_file() and file.suffix.lower() == ".py" and not file.name == "!all.py":
+    if file.is_file() and file.suffix.lower() == ".py" and not file.name in ["!all.py","bldp.py"]:
         print(f"-Running module {Path(file).name}")
         subprocess.run([sys.executable, file, MCVERSION])
