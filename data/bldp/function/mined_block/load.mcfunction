@@ -1,4 +1,4 @@
-
+scoreboard objectives add bldp.blocks_mined dummy
 scoreboard objectives add bldp.mined.acacia_button minecraft.mined:acacia_button
 scoreboard objectives add bldp.mined.acacia_door minecraft.mined:acacia_door
 scoreboard objectives add bldp.mined.acacia_fence minecraft.mined:acacia_fence

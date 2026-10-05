@@ -1,4 +1,3 @@
-
 scoreboard players reset @s bldp.picked_up.abandoned_camp_map
 scoreboard players reset @s bldp.picked_up.acacia_boat
 scoreboard players reset @s bldp.picked_up.acacia_button

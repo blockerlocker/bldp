@@ -1,4 +1,3 @@
-
 scoreboard players reset @s bldp.mined.acacia_button
 scoreboard players reset @s bldp.mined.acacia_door
 scoreboard players reset @s bldp.mined.acacia_fence

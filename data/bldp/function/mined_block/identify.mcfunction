@@ -1,4 +1,3 @@
-
 execute if score @s bldp.mined.acacia_button matches 1.. run data modify storage bldp:mined_block out set value acacia_button
 execute if score @s bldp.mined.acacia_door matches 1.. run data modify storage bldp:mined_block out set value acacia_door
 execute if score @s bldp.mined.acacia_fence matches 1.. run data modify storage bldp:mined_block out set value acacia_fence

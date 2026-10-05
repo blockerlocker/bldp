@@ -1,4 +1,3 @@
-
 scoreboard objectives add bldp.picked_up.abandoned_camp_map minecraft.picked_up:abandoned_camp_map
 scoreboard objectives add bldp.picked_up.acacia_boat minecraft.picked_up:acacia_boat
 scoreboard objectives add bldp.picked_up.acacia_button minecraft.picked_up:acacia_button

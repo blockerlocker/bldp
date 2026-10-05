@@ -1,4 +1,3 @@
-
 execute if score @s bldp.picked_up.abandoned_camp_map matches 1.. run data modify storage bldp:picked_up_item out set value abandoned_camp_map
 execute if score @s bldp.picked_up.acacia_boat matches 1.. run data modify storage bldp:picked_up_item out set value acacia_boat
 execute if score @s bldp.picked_up.acacia_button matches 1.. run data modify storage bldp:picked_up_item out set value acacia_button
