@@ -20,3 +20,4 @@ These generators are powered using the automatically generated and version-contr
 | get | Functions for grabbing different types of data, dumped into the data storage `bldp:get`. Includes functions `bldp:get/entity_midpoint`, `bldp:get/entity_name` and `bldp:get/entity_type` |
 | test | Functions for testing certain conditions, returns true or false. Currently only the function `bldp:test/within_world` |
 | texture_map | Creates a map in data storage `bldp:texture_map` that pairs block IDs with corresponding texture paths. |
+| block_in_volume | Used for generating predicates that check whether or not a user-specified block id exists within a user-specified volume. Can also be used to generate a macro function for any arbitrary block id. |
