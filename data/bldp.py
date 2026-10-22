@@ -14,6 +14,11 @@ def get_version(mcversion):
         elif mcversion == "latest-snapshot":
             return version_manifest["latest"]["snapshot"]        
 
+def get_version_data(mcversion):
+    version_data_response = urllib.request.urlopen(f"https://raw.githubusercontent.com/misode/mcmeta/summary/versions/data.json")
+    all_version_data = json.load(version_data_response)
+    return next((version for version in all_version_data if version["id"] == mcversion),None)
+
 def get_registry_data(mcversion,registry):
     registry_response = urllib.request.urlopen(f"https://raw.githubusercontent.com/misode/mcmeta/{mcversion}-registries/{registry}/data.json")
     return(json.load(registry_response))
