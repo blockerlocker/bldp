@@ -171,6 +171,7 @@ scoreboard players reset @s bldp.picked_up.brick_slab
 scoreboard players reset @s bldp.picked_up.brick_stairs
 scoreboard players reset @s bldp.picked_up.brick_wall
 scoreboard players reset @s bldp.picked_up.bricks
+scoreboard players reset @s bldp.picked_up.brittle_ice
 scoreboard players reset @s bldp.picked_up.brown_banner
 scoreboard players reset @s bldp.picked_up.brown_bed
 scoreboard players reset @s bldp.picked_up.brown_bundle
@@ -211,6 +212,10 @@ scoreboard players reset @s bldp.picked_up.cactus
 scoreboard players reset @s bldp.picked_up.cactus_flower
 scoreboard players reset @s bldp.picked_up.cake
 scoreboard players reset @s bldp.picked_up.calcite
+scoreboard players reset @s bldp.picked_up.calcite_pillar
+scoreboard players reset @s bldp.picked_up.calcite_slab
+scoreboard players reset @s bldp.picked_up.calcite_stairs
+scoreboard players reset @s bldp.picked_up.calcite_wall
 scoreboard players reset @s bldp.picked_up.calibrated_sculk_sensor
 scoreboard players reset @s bldp.picked_up.camel_husk_spawn_egg
 scoreboard players reset @s bldp.picked_up.camel_spawn_egg
@@ -257,11 +262,13 @@ scoreboard players reset @s bldp.picked_up.chiseled_cinnabar
 scoreboard players reset @s bldp.picked_up.chiseled_copper
 scoreboard players reset @s bldp.picked_up.chiseled_deepslate
 scoreboard players reset @s bldp.picked_up.chiseled_nether_bricks
+scoreboard players reset @s bldp.picked_up.chiseled_packed_ice
 scoreboard players reset @s bldp.picked_up.chiseled_polished_blackstone
 scoreboard players reset @s bldp.picked_up.chiseled_quartz_block
 scoreboard players reset @s bldp.picked_up.chiseled_red_sandstone
 scoreboard players reset @s bldp.picked_up.chiseled_resin_bricks
 scoreboard players reset @s bldp.picked_up.chiseled_sandstone
+scoreboard players reset @s bldp.picked_up.chiseled_soulshale
 scoreboard players reset @s bldp.picked_up.chiseled_stone_bricks
 scoreboard players reset @s bldp.picked_up.chiseled_sulfur
 scoreboard players reset @s bldp.picked_up.chiseled_tuff
@@ -569,6 +576,7 @@ scoreboard players reset @s bldp.picked_up.fox_spawn_egg
 scoreboard players reset @s bldp.picked_up.friend_pottery_sherd
 scoreboard players reset @s bldp.picked_up.frog_spawn_egg
 scoreboard players reset @s bldp.picked_up.frogspawn
+scoreboard players reset @s bldp.picked_up.frostbite_spawn_egg
 scoreboard players reset @s bldp.picked_up.furnace
 scoreboard players reset @s bldp.picked_up.furnace_minecart
 scoreboard players reset @s bldp.picked_up.ghast_spawn_egg
@@ -681,6 +689,9 @@ scoreboard players reset @s bldp.picked_up.host_armor_trim_smithing_template
 scoreboard players reset @s bldp.picked_up.howl_pottery_sherd
 scoreboard players reset @s bldp.picked_up.husk_spawn_egg
 scoreboard players reset @s bldp.picked_up.ice
+scoreboard players reset @s bldp.picked_up.ice_ball
+scoreboard players reset @s bldp.picked_up.ice_crystal
+scoreboard players reset @s bldp.picked_up.icicle
 scoreboard players reset @s bldp.picked_up.infested_chiseled_stone_bricks
 scoreboard players reset @s bldp.picked_up.infested_cobblestone
 scoreboard players reset @s bldp.picked_up.infested_cracked_stone_bricks
@@ -906,6 +917,7 @@ scoreboard players reset @s bldp.picked_up.music_disc_chirp
 scoreboard players reset @s bldp.picked_up.music_disc_creator
 scoreboard players reset @s bldp.picked_up.music_disc_creator_music_box
 scoreboard players reset @s bldp.picked_up.music_disc_far
+scoreboard players reset @s bldp.picked_up.music_disc_flurry
 scoreboard players reset @s bldp.picked_up.music_disc_lava_chicken
 scoreboard players reset @s bldp.picked_up.music_disc_mall
 scoreboard players reset @s bldp.picked_up.music_disc_mellohi
@@ -1018,6 +1030,10 @@ scoreboard players reset @s bldp.picked_up.oxidized_cut_copper_slab
 scoreboard players reset @s bldp.picked_up.oxidized_cut_copper_stairs
 scoreboard players reset @s bldp.picked_up.oxidized_lightning_rod
 scoreboard players reset @s bldp.picked_up.packed_ice
+scoreboard players reset @s bldp.picked_up.packed_ice_brick_slab
+scoreboard players reset @s bldp.picked_up.packed_ice_brick_stairs
+scoreboard players reset @s bldp.picked_up.packed_ice_brick_wall
+scoreboard players reset @s bldp.picked_up.packed_ice_bricks
 scoreboard players reset @s bldp.picked_up.packed_mud
 scoreboard players reset @s bldp.picked_up.painting
 scoreboard players reset @s bldp.picked_up.pale_hanging_moss
@@ -1102,6 +1118,14 @@ scoreboard players reset @s bldp.picked_up.polished_blackstone_pressure_plate
 scoreboard players reset @s bldp.picked_up.polished_blackstone_slab
 scoreboard players reset @s bldp.picked_up.polished_blackstone_stairs
 scoreboard players reset @s bldp.picked_up.polished_blackstone_wall
+scoreboard players reset @s bldp.picked_up.polished_calcite
+scoreboard players reset @s bldp.picked_up.polished_calcite_brick_slab
+scoreboard players reset @s bldp.picked_up.polished_calcite_brick_stairs
+scoreboard players reset @s bldp.picked_up.polished_calcite_brick_wall
+scoreboard players reset @s bldp.picked_up.polished_calcite_bricks
+scoreboard players reset @s bldp.picked_up.polished_calcite_slab
+scoreboard players reset @s bldp.picked_up.polished_calcite_stairs
+scoreboard players reset @s bldp.picked_up.polished_calcite_wall
 scoreboard players reset @s bldp.picked_up.polished_cinnabar
 scoreboard players reset @s bldp.picked_up.polished_cinnabar_slab
 scoreboard players reset @s bldp.picked_up.polished_cinnabar_stairs
@@ -1330,6 +1354,10 @@ scoreboard players reset @s bldp.picked_up.snort_pottery_sherd
 scoreboard players reset @s bldp.picked_up.snout_armor_trim_smithing_template
 scoreboard players reset @s bldp.picked_up.snow
 scoreboard players reset @s bldp.picked_up.snow_block
+scoreboard players reset @s bldp.picked_up.snow_brick_slab
+scoreboard players reset @s bldp.picked_up.snow_brick_stairs
+scoreboard players reset @s bldp.picked_up.snow_brick_wall
+scoreboard players reset @s bldp.picked_up.snow_bricks
 scoreboard players reset @s bldp.picked_up.snow_golem_spawn_egg
 scoreboard players reset @s bldp.picked_up.snowball
 scoreboard players reset @s bldp.picked_up.snowy_village_map

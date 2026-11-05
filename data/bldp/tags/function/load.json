@@ -190,6 +190,10 @@
         "bldp:registry/updates_with_entities",
         "bldp:icon/item",
         "bldp:texture_map/block",
-        "bldp:used_item/load"
+        "bldp:used_item/load",
+        "bldp:registry/non_air_blocks",
+        "bldp:registry/update/item/26.4-snapshot-7",
+        "bldp:registry/update/block/26.4-snapshot-7",
+        "bldp:registry/update/entity_type/26.4-snapshot-7"
     ]
 }

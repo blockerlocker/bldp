@@ -1562,6 +1562,15 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.crafted.brittle_ice": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.crafted.brown_banner": {
                     "min": 1
                 }
@@ -1914,6 +1923,42 @@
             "entity": "this",
             "scores": {
                 "bldp.crafted.calcite": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.calcite_pillar": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.calcite_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.calcite_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.calcite_wall": {
                     "min": 1
                 }
             }
@@ -2336,6 +2381,15 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.crafted.chiseled_packed_ice": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.crafted.chiseled_polished_blackstone": {
                     "min": 1
                 }
@@ -2373,6 +2427,15 @@
             "entity": "this",
             "scores": {
                 "bldp.crafted.chiseled_sandstone": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.chiseled_soulshale": {
                     "min": 1
                 }
             }
@@ -5144,6 +5207,15 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.crafted.frostbite_spawn_egg": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.crafted.furnace": {
                     "min": 1
                 }
@@ -6144,6 +6216,33 @@
             "entity": "this",
             "scores": {
                 "bldp.crafted.ice": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.ice_ball": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.ice_crystal": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.icicle": {
                     "min": 1
                 }
             }
@@ -8177,6 +8276,15 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.crafted.music_disc_flurry": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.crafted.music_disc_lava_chicken": {
                     "min": 1
                 }
@@ -9185,6 +9293,42 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.crafted.packed_ice_brick_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.packed_ice_brick_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.packed_ice_brick_wall": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.packed_ice_bricks": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.crafted.packed_mud": {
                     "min": 1
                 }
@@ -9933,6 +10077,78 @@
             "entity": "this",
             "scores": {
                 "bldp.crafted.polished_blackstone_wall": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.polished_calcite": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.polished_calcite_brick_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.polished_calcite_brick_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.polished_calcite_brick_wall": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.polished_calcite_bricks": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.polished_calcite_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.polished_calcite_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.polished_calcite_wall": {
                     "min": 1
                 }
             }
@@ -11985,6 +12201,42 @@
             "entity": "this",
             "scores": {
                 "bldp.crafted.snow_block": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.snow_brick_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.snow_brick_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.snow_brick_wall": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.crafted.snow_bricks": {
                     "min": 1
                 }
             }

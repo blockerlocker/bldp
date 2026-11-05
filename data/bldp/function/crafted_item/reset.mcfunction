@@ -171,6 +171,7 @@ scoreboard players reset @s bldp.crafted.brick_slab
 scoreboard players reset @s bldp.crafted.brick_stairs
 scoreboard players reset @s bldp.crafted.brick_wall
 scoreboard players reset @s bldp.crafted.bricks
+scoreboard players reset @s bldp.crafted.brittle_ice
 scoreboard players reset @s bldp.crafted.brown_banner
 scoreboard players reset @s bldp.crafted.brown_bed
 scoreboard players reset @s bldp.crafted.brown_bundle
@@ -211,6 +212,10 @@ scoreboard players reset @s bldp.crafted.cactus
 scoreboard players reset @s bldp.crafted.cactus_flower
 scoreboard players reset @s bldp.crafted.cake
 scoreboard players reset @s bldp.crafted.calcite
+scoreboard players reset @s bldp.crafted.calcite_pillar
+scoreboard players reset @s bldp.crafted.calcite_slab
+scoreboard players reset @s bldp.crafted.calcite_stairs
+scoreboard players reset @s bldp.crafted.calcite_wall
 scoreboard players reset @s bldp.crafted.calibrated_sculk_sensor
 scoreboard players reset @s bldp.crafted.camel_husk_spawn_egg
 scoreboard players reset @s bldp.crafted.camel_spawn_egg
@@ -257,11 +262,13 @@ scoreboard players reset @s bldp.crafted.chiseled_cinnabar
 scoreboard players reset @s bldp.crafted.chiseled_copper
 scoreboard players reset @s bldp.crafted.chiseled_deepslate
 scoreboard players reset @s bldp.crafted.chiseled_nether_bricks
+scoreboard players reset @s bldp.crafted.chiseled_packed_ice
 scoreboard players reset @s bldp.crafted.chiseled_polished_blackstone
 scoreboard players reset @s bldp.crafted.chiseled_quartz_block
 scoreboard players reset @s bldp.crafted.chiseled_red_sandstone
 scoreboard players reset @s bldp.crafted.chiseled_resin_bricks
 scoreboard players reset @s bldp.crafted.chiseled_sandstone
+scoreboard players reset @s bldp.crafted.chiseled_soulshale
 scoreboard players reset @s bldp.crafted.chiseled_stone_bricks
 scoreboard players reset @s bldp.crafted.chiseled_sulfur
 scoreboard players reset @s bldp.crafted.chiseled_tuff
@@ -569,6 +576,7 @@ scoreboard players reset @s bldp.crafted.fox_spawn_egg
 scoreboard players reset @s bldp.crafted.friend_pottery_sherd
 scoreboard players reset @s bldp.crafted.frog_spawn_egg
 scoreboard players reset @s bldp.crafted.frogspawn
+scoreboard players reset @s bldp.crafted.frostbite_spawn_egg
 scoreboard players reset @s bldp.crafted.furnace
 scoreboard players reset @s bldp.crafted.furnace_minecart
 scoreboard players reset @s bldp.crafted.ghast_spawn_egg
@@ -681,6 +689,9 @@ scoreboard players reset @s bldp.crafted.host_armor_trim_smithing_template
 scoreboard players reset @s bldp.crafted.howl_pottery_sherd
 scoreboard players reset @s bldp.crafted.husk_spawn_egg
 scoreboard players reset @s bldp.crafted.ice
+scoreboard players reset @s bldp.crafted.ice_ball
+scoreboard players reset @s bldp.crafted.ice_crystal
+scoreboard players reset @s bldp.crafted.icicle
 scoreboard players reset @s bldp.crafted.infested_chiseled_stone_bricks
 scoreboard players reset @s bldp.crafted.infested_cobblestone
 scoreboard players reset @s bldp.crafted.infested_cracked_stone_bricks
@@ -906,6 +917,7 @@ scoreboard players reset @s bldp.crafted.music_disc_chirp
 scoreboard players reset @s bldp.crafted.music_disc_creator
 scoreboard players reset @s bldp.crafted.music_disc_creator_music_box
 scoreboard players reset @s bldp.crafted.music_disc_far
+scoreboard players reset @s bldp.crafted.music_disc_flurry
 scoreboard players reset @s bldp.crafted.music_disc_lava_chicken
 scoreboard players reset @s bldp.crafted.music_disc_mall
 scoreboard players reset @s bldp.crafted.music_disc_mellohi
@@ -1018,6 +1030,10 @@ scoreboard players reset @s bldp.crafted.oxidized_cut_copper_slab
 scoreboard players reset @s bldp.crafted.oxidized_cut_copper_stairs
 scoreboard players reset @s bldp.crafted.oxidized_lightning_rod
 scoreboard players reset @s bldp.crafted.packed_ice
+scoreboard players reset @s bldp.crafted.packed_ice_brick_slab
+scoreboard players reset @s bldp.crafted.packed_ice_brick_stairs
+scoreboard players reset @s bldp.crafted.packed_ice_brick_wall
+scoreboard players reset @s bldp.crafted.packed_ice_bricks
 scoreboard players reset @s bldp.crafted.packed_mud
 scoreboard players reset @s bldp.crafted.painting
 scoreboard players reset @s bldp.crafted.pale_hanging_moss
@@ -1102,6 +1118,14 @@ scoreboard players reset @s bldp.crafted.polished_blackstone_pressure_plate
 scoreboard players reset @s bldp.crafted.polished_blackstone_slab
 scoreboard players reset @s bldp.crafted.polished_blackstone_stairs
 scoreboard players reset @s bldp.crafted.polished_blackstone_wall
+scoreboard players reset @s bldp.crafted.polished_calcite
+scoreboard players reset @s bldp.crafted.polished_calcite_brick_slab
+scoreboard players reset @s bldp.crafted.polished_calcite_brick_stairs
+scoreboard players reset @s bldp.crafted.polished_calcite_brick_wall
+scoreboard players reset @s bldp.crafted.polished_calcite_bricks
+scoreboard players reset @s bldp.crafted.polished_calcite_slab
+scoreboard players reset @s bldp.crafted.polished_calcite_stairs
+scoreboard players reset @s bldp.crafted.polished_calcite_wall
 scoreboard players reset @s bldp.crafted.polished_cinnabar
 scoreboard players reset @s bldp.crafted.polished_cinnabar_slab
 scoreboard players reset @s bldp.crafted.polished_cinnabar_stairs
@@ -1330,6 +1354,10 @@ scoreboard players reset @s bldp.crafted.snort_pottery_sherd
 scoreboard players reset @s bldp.crafted.snout_armor_trim_smithing_template
 scoreboard players reset @s bldp.crafted.snow
 scoreboard players reset @s bldp.crafted.snow_block
+scoreboard players reset @s bldp.crafted.snow_brick_slab
+scoreboard players reset @s bldp.crafted.snow_brick_stairs
+scoreboard players reset @s bldp.crafted.snow_brick_wall
+scoreboard players reset @s bldp.crafted.snow_bricks
 scoreboard players reset @s bldp.crafted.snow_golem_spawn_egg
 scoreboard players reset @s bldp.crafted.snowball
 scoreboard players reset @s bldp.crafted.snowy_village_map

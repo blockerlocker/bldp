@@ -171,6 +171,7 @@ scoreboard objectives add bldp.used.brick_slab minecraft.used:brick_slab
 scoreboard objectives add bldp.used.brick_stairs minecraft.used:brick_stairs
 scoreboard objectives add bldp.used.brick_wall minecraft.used:brick_wall
 scoreboard objectives add bldp.used.bricks minecraft.used:bricks
+scoreboard objectives add bldp.used.brittle_ice minecraft.used:brittle_ice
 scoreboard objectives add bldp.used.brown_banner minecraft.used:brown_banner
 scoreboard objectives add bldp.used.brown_bed minecraft.used:brown_bed
 scoreboard objectives add bldp.used.brown_bundle minecraft.used:brown_bundle
@@ -211,6 +212,10 @@ scoreboard objectives add bldp.used.cactus minecraft.used:cactus
 scoreboard objectives add bldp.used.cactus_flower minecraft.used:cactus_flower
 scoreboard objectives add bldp.used.cake minecraft.used:cake
 scoreboard objectives add bldp.used.calcite minecraft.used:calcite
+scoreboard objectives add bldp.used.calcite_pillar minecraft.used:calcite_pillar
+scoreboard objectives add bldp.used.calcite_slab minecraft.used:calcite_slab
+scoreboard objectives add bldp.used.calcite_stairs minecraft.used:calcite_stairs
+scoreboard objectives add bldp.used.calcite_wall minecraft.used:calcite_wall
 scoreboard objectives add bldp.used.calibrated_sculk_sensor minecraft.used:calibrated_sculk_sensor
 scoreboard objectives add bldp.used.camel_husk_spawn_egg minecraft.used:camel_husk_spawn_egg
 scoreboard objectives add bldp.used.camel_spawn_egg minecraft.used:camel_spawn_egg
@@ -257,11 +262,13 @@ scoreboard objectives add bldp.used.chiseled_cinnabar minecraft.used:chiseled_ci
 scoreboard objectives add bldp.used.chiseled_copper minecraft.used:chiseled_copper
 scoreboard objectives add bldp.used.chiseled_deepslate minecraft.used:chiseled_deepslate
 scoreboard objectives add bldp.used.chiseled_nether_bricks minecraft.used:chiseled_nether_bricks
+scoreboard objectives add bldp.used.chiseled_packed_ice minecraft.used:chiseled_packed_ice
 scoreboard objectives add bldp.used.chiseled_polished_blackstone minecraft.used:chiseled_polished_blackstone
 scoreboard objectives add bldp.used.chiseled_quartz_block minecraft.used:chiseled_quartz_block
 scoreboard objectives add bldp.used.chiseled_red_sandstone minecraft.used:chiseled_red_sandstone
 scoreboard objectives add bldp.used.chiseled_resin_bricks minecraft.used:chiseled_resin_bricks
 scoreboard objectives add bldp.used.chiseled_sandstone minecraft.used:chiseled_sandstone
+scoreboard objectives add bldp.used.chiseled_soulshale minecraft.used:chiseled_soulshale
 scoreboard objectives add bldp.used.chiseled_stone_bricks minecraft.used:chiseled_stone_bricks
 scoreboard objectives add bldp.used.chiseled_sulfur minecraft.used:chiseled_sulfur
 scoreboard objectives add bldp.used.chiseled_tuff minecraft.used:chiseled_tuff
@@ -569,6 +576,7 @@ scoreboard objectives add bldp.used.fox_spawn_egg minecraft.used:fox_spawn_egg
 scoreboard objectives add bldp.used.friend_pottery_sherd minecraft.used:friend_pottery_sherd
 scoreboard objectives add bldp.used.frog_spawn_egg minecraft.used:frog_spawn_egg
 scoreboard objectives add bldp.used.frogspawn minecraft.used:frogspawn
+scoreboard objectives add bldp.used.frostbite_spawn_egg minecraft.used:frostbite_spawn_egg
 scoreboard objectives add bldp.used.furnace minecraft.used:furnace
 scoreboard objectives add bldp.used.furnace_minecart minecraft.used:furnace_minecart
 scoreboard objectives add bldp.used.ghast_spawn_egg minecraft.used:ghast_spawn_egg
@@ -681,6 +689,9 @@ scoreboard objectives add bldp.used.host_armor_trim_smithing_template minecraft.
 scoreboard objectives add bldp.used.howl_pottery_sherd minecraft.used:howl_pottery_sherd
 scoreboard objectives add bldp.used.husk_spawn_egg minecraft.used:husk_spawn_egg
 scoreboard objectives add bldp.used.ice minecraft.used:ice
+scoreboard objectives add bldp.used.ice_ball minecraft.used:ice_ball
+scoreboard objectives add bldp.used.ice_crystal minecraft.used:ice_crystal
+scoreboard objectives add bldp.used.icicle minecraft.used:icicle
 scoreboard objectives add bldp.used.infested_chiseled_stone_bricks minecraft.used:infested_chiseled_stone_bricks
 scoreboard objectives add bldp.used.infested_cobblestone minecraft.used:infested_cobblestone
 scoreboard objectives add bldp.used.infested_cracked_stone_bricks minecraft.used:infested_cracked_stone_bricks
@@ -906,6 +917,7 @@ scoreboard objectives add bldp.used.music_disc_chirp minecraft.used:music_disc_c
 scoreboard objectives add bldp.used.music_disc_creator minecraft.used:music_disc_creator
 scoreboard objectives add bldp.used.music_disc_creator_music_box minecraft.used:music_disc_creator_music_box
 scoreboard objectives add bldp.used.music_disc_far minecraft.used:music_disc_far
+scoreboard objectives add bldp.used.music_disc_flurry minecraft.used:music_disc_flurry
 scoreboard objectives add bldp.used.music_disc_lava_chicken minecraft.used:music_disc_lava_chicken
 scoreboard objectives add bldp.used.music_disc_mall minecraft.used:music_disc_mall
 scoreboard objectives add bldp.used.music_disc_mellohi minecraft.used:music_disc_mellohi
@@ -1018,6 +1030,10 @@ scoreboard objectives add bldp.used.oxidized_cut_copper_slab minecraft.used:oxid
 scoreboard objectives add bldp.used.oxidized_cut_copper_stairs minecraft.used:oxidized_cut_copper_stairs
 scoreboard objectives add bldp.used.oxidized_lightning_rod minecraft.used:oxidized_lightning_rod
 scoreboard objectives add bldp.used.packed_ice minecraft.used:packed_ice
+scoreboard objectives add bldp.used.packed_ice_brick_slab minecraft.used:packed_ice_brick_slab
+scoreboard objectives add bldp.used.packed_ice_brick_stairs minecraft.used:packed_ice_brick_stairs
+scoreboard objectives add bldp.used.packed_ice_brick_wall minecraft.used:packed_ice_brick_wall
+scoreboard objectives add bldp.used.packed_ice_bricks minecraft.used:packed_ice_bricks
 scoreboard objectives add bldp.used.packed_mud minecraft.used:packed_mud
 scoreboard objectives add bldp.used.painting minecraft.used:painting
 scoreboard objectives add bldp.used.pale_hanging_moss minecraft.used:pale_hanging_moss
@@ -1102,6 +1118,14 @@ scoreboard objectives add bldp.used.polished_blackstone_pressure_plate minecraft
 scoreboard objectives add bldp.used.polished_blackstone_slab minecraft.used:polished_blackstone_slab
 scoreboard objectives add bldp.used.polished_blackstone_stairs minecraft.used:polished_blackstone_stairs
 scoreboard objectives add bldp.used.polished_blackstone_wall minecraft.used:polished_blackstone_wall
+scoreboard objectives add bldp.used.polished_calcite minecraft.used:polished_calcite
+scoreboard objectives add bldp.used.polished_calcite_brick_slab minecraft.used:polished_calcite_brick_slab
+scoreboard objectives add bldp.used.polished_calcite_brick_stairs minecraft.used:polished_calcite_brick_stairs
+scoreboard objectives add bldp.used.polished_calcite_brick_wall minecraft.used:polished_calcite_brick_wall
+scoreboard objectives add bldp.used.polished_calcite_bricks minecraft.used:polished_calcite_bricks
+scoreboard objectives add bldp.used.polished_calcite_slab minecraft.used:polished_calcite_slab
+scoreboard objectives add bldp.used.polished_calcite_stairs minecraft.used:polished_calcite_stairs
+scoreboard objectives add bldp.used.polished_calcite_wall minecraft.used:polished_calcite_wall
 scoreboard objectives add bldp.used.polished_cinnabar minecraft.used:polished_cinnabar
 scoreboard objectives add bldp.used.polished_cinnabar_slab minecraft.used:polished_cinnabar_slab
 scoreboard objectives add bldp.used.polished_cinnabar_stairs minecraft.used:polished_cinnabar_stairs
@@ -1330,6 +1354,10 @@ scoreboard objectives add bldp.used.snort_pottery_sherd minecraft.used:snort_pot
 scoreboard objectives add bldp.used.snout_armor_trim_smithing_template minecraft.used:snout_armor_trim_smithing_template
 scoreboard objectives add bldp.used.snow minecraft.used:snow
 scoreboard objectives add bldp.used.snow_block minecraft.used:snow_block
+scoreboard objectives add bldp.used.snow_brick_slab minecraft.used:snow_brick_slab
+scoreboard objectives add bldp.used.snow_brick_stairs minecraft.used:snow_brick_stairs
+scoreboard objectives add bldp.used.snow_brick_wall minecraft.used:snow_brick_wall
+scoreboard objectives add bldp.used.snow_bricks minecraft.used:snow_bricks
 scoreboard objectives add bldp.used.snow_golem_spawn_egg minecraft.used:snow_golem_spawn_egg
 scoreboard objectives add bldp.used.snowball minecraft.used:snowball
 scoreboard objectives add bldp.used.snowy_village_map minecraft.used:snowy_village_map

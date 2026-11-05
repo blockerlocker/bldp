@@ -1238,6 +1238,15 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.mined.brittle_ice": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.mined.brown_banner": {
                     "min": 1
                 }
@@ -1509,6 +1518,42 @@
             "entity": "this",
             "scores": {
                 "bldp.mined.calcite": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.calcite_pillar": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.calcite_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.calcite_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.calcite_wall": {
                     "min": 1
                 }
             }
@@ -1850,6 +1895,15 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.mined.chiseled_packed_ice": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.mined.chiseled_polished_blackstone": {
                     "min": 1
                 }
@@ -1887,6 +1941,15 @@
             "entity": "this",
             "scores": {
                 "bldp.mined.chiseled_sandstone": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.chiseled_soulshale": {
                     "min": 1
                 }
             }
@@ -4487,6 +4550,24 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.mined.ice_crystal": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.icicle": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.mined.infested_chiseled_stone_bricks": {
                     "min": 1
                 }
@@ -6665,6 +6746,42 @@
             "type": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "bldp.mined.packed_ice_brick_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.packed_ice_brick_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.packed_ice_brick_wall": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.packed_ice_bricks": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "bldp.mined.packed_mud": {
                     "min": 1
                 }
@@ -7278,6 +7395,78 @@
             "entity": "this",
             "scores": {
                 "bldp.mined.polished_blackstone_wall": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.polished_calcite": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.polished_calcite_brick_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.polished_calcite_brick_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.polished_calcite_brick_wall": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.polished_calcite_bricks": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.polished_calcite_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.polished_calcite_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.polished_calcite_wall": {
                     "min": 1
                 }
             }
@@ -9213,6 +9402,42 @@
             "entity": "this",
             "scores": {
                 "bldp.mined.snow_block": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.snow_brick_slab": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.snow_brick_stairs": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.snow_brick_wall": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "type": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "bldp.mined.snow_bricks": {
                     "min": 1
                 }
             }

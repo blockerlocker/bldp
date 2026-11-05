@@ -171,6 +171,7 @@ scoreboard objectives add bldp.picked_up.brick_slab minecraft.picked_up:brick_sl
 scoreboard objectives add bldp.picked_up.brick_stairs minecraft.picked_up:brick_stairs
 scoreboard objectives add bldp.picked_up.brick_wall minecraft.picked_up:brick_wall
 scoreboard objectives add bldp.picked_up.bricks minecraft.picked_up:bricks
+scoreboard objectives add bldp.picked_up.brittle_ice minecraft.picked_up:brittle_ice
 scoreboard objectives add bldp.picked_up.brown_banner minecraft.picked_up:brown_banner
 scoreboard objectives add bldp.picked_up.brown_bed minecraft.picked_up:brown_bed
 scoreboard objectives add bldp.picked_up.brown_bundle minecraft.picked_up:brown_bundle
@@ -211,6 +212,10 @@ scoreboard objectives add bldp.picked_up.cactus minecraft.picked_up:cactus
 scoreboard objectives add bldp.picked_up.cactus_flower minecraft.picked_up:cactus_flower
 scoreboard objectives add bldp.picked_up.cake minecraft.picked_up:cake
 scoreboard objectives add bldp.picked_up.calcite minecraft.picked_up:calcite
+scoreboard objectives add bldp.picked_up.calcite_pillar minecraft.picked_up:calcite_pillar
+scoreboard objectives add bldp.picked_up.calcite_slab minecraft.picked_up:calcite_slab
+scoreboard objectives add bldp.picked_up.calcite_stairs minecraft.picked_up:calcite_stairs
+scoreboard objectives add bldp.picked_up.calcite_wall minecraft.picked_up:calcite_wall
 scoreboard objectives add bldp.picked_up.calibrated_sculk_sensor minecraft.picked_up:calibrated_sculk_sensor
 scoreboard objectives add bldp.picked_up.camel_husk_spawn_egg minecraft.picked_up:camel_husk_spawn_egg
 scoreboard objectives add bldp.picked_up.camel_spawn_egg minecraft.picked_up:camel_spawn_egg
@@ -257,11 +262,13 @@ scoreboard objectives add bldp.picked_up.chiseled_cinnabar minecraft.picked_up:c
 scoreboard objectives add bldp.picked_up.chiseled_copper minecraft.picked_up:chiseled_copper
 scoreboard objectives add bldp.picked_up.chiseled_deepslate minecraft.picked_up:chiseled_deepslate
 scoreboard objectives add bldp.picked_up.chiseled_nether_bricks minecraft.picked_up:chiseled_nether_bricks
+scoreboard objectives add bldp.picked_up.chiseled_packed_ice minecraft.picked_up:chiseled_packed_ice
 scoreboard objectives add bldp.picked_up.chiseled_polished_blackstone minecraft.picked_up:chiseled_polished_blackstone
 scoreboard objectives add bldp.picked_up.chiseled_quartz_block minecraft.picked_up:chiseled_quartz_block
 scoreboard objectives add bldp.picked_up.chiseled_red_sandstone minecraft.picked_up:chiseled_red_sandstone
 scoreboard objectives add bldp.picked_up.chiseled_resin_bricks minecraft.picked_up:chiseled_resin_bricks
 scoreboard objectives add bldp.picked_up.chiseled_sandstone minecraft.picked_up:chiseled_sandstone
+scoreboard objectives add bldp.picked_up.chiseled_soulshale minecraft.picked_up:chiseled_soulshale
 scoreboard objectives add bldp.picked_up.chiseled_stone_bricks minecraft.picked_up:chiseled_stone_bricks
 scoreboard objectives add bldp.picked_up.chiseled_sulfur minecraft.picked_up:chiseled_sulfur
 scoreboard objectives add bldp.picked_up.chiseled_tuff minecraft.picked_up:chiseled_tuff
@@ -569,6 +576,7 @@ scoreboard objectives add bldp.picked_up.fox_spawn_egg minecraft.picked_up:fox_s
 scoreboard objectives add bldp.picked_up.friend_pottery_sherd minecraft.picked_up:friend_pottery_sherd
 scoreboard objectives add bldp.picked_up.frog_spawn_egg minecraft.picked_up:frog_spawn_egg
 scoreboard objectives add bldp.picked_up.frogspawn minecraft.picked_up:frogspawn
+scoreboard objectives add bldp.picked_up.frostbite_spawn_egg minecraft.picked_up:frostbite_spawn_egg
 scoreboard objectives add bldp.picked_up.furnace minecraft.picked_up:furnace
 scoreboard objectives add bldp.picked_up.furnace_minecart minecraft.picked_up:furnace_minecart
 scoreboard objectives add bldp.picked_up.ghast_spawn_egg minecraft.picked_up:ghast_spawn_egg
@@ -681,6 +689,9 @@ scoreboard objectives add bldp.picked_up.host_armor_trim_smithing_template minec
 scoreboard objectives add bldp.picked_up.howl_pottery_sherd minecraft.picked_up:howl_pottery_sherd
 scoreboard objectives add bldp.picked_up.husk_spawn_egg minecraft.picked_up:husk_spawn_egg
 scoreboard objectives add bldp.picked_up.ice minecraft.picked_up:ice
+scoreboard objectives add bldp.picked_up.ice_ball minecraft.picked_up:ice_ball
+scoreboard objectives add bldp.picked_up.ice_crystal minecraft.picked_up:ice_crystal
+scoreboard objectives add bldp.picked_up.icicle minecraft.picked_up:icicle
 scoreboard objectives add bldp.picked_up.infested_chiseled_stone_bricks minecraft.picked_up:infested_chiseled_stone_bricks
 scoreboard objectives add bldp.picked_up.infested_cobblestone minecraft.picked_up:infested_cobblestone
 scoreboard objectives add bldp.picked_up.infested_cracked_stone_bricks minecraft.picked_up:infested_cracked_stone_bricks
@@ -906,6 +917,7 @@ scoreboard objectives add bldp.picked_up.music_disc_chirp minecraft.picked_up:mu
 scoreboard objectives add bldp.picked_up.music_disc_creator minecraft.picked_up:music_disc_creator
 scoreboard objectives add bldp.picked_up.music_disc_creator_music_box minecraft.picked_up:music_disc_creator_music_box
 scoreboard objectives add bldp.picked_up.music_disc_far minecraft.picked_up:music_disc_far
+scoreboard objectives add bldp.picked_up.music_disc_flurry minecraft.picked_up:music_disc_flurry
 scoreboard objectives add bldp.picked_up.music_disc_lava_chicken minecraft.picked_up:music_disc_lava_chicken
 scoreboard objectives add bldp.picked_up.music_disc_mall minecraft.picked_up:music_disc_mall
 scoreboard objectives add bldp.picked_up.music_disc_mellohi minecraft.picked_up:music_disc_mellohi
@@ -1018,6 +1030,10 @@ scoreboard objectives add bldp.picked_up.oxidized_cut_copper_slab minecraft.pick
 scoreboard objectives add bldp.picked_up.oxidized_cut_copper_stairs minecraft.picked_up:oxidized_cut_copper_stairs
 scoreboard objectives add bldp.picked_up.oxidized_lightning_rod minecraft.picked_up:oxidized_lightning_rod
 scoreboard objectives add bldp.picked_up.packed_ice minecraft.picked_up:packed_ice
+scoreboard objectives add bldp.picked_up.packed_ice_brick_slab minecraft.picked_up:packed_ice_brick_slab
+scoreboard objectives add bldp.picked_up.packed_ice_brick_stairs minecraft.picked_up:packed_ice_brick_stairs
+scoreboard objectives add bldp.picked_up.packed_ice_brick_wall minecraft.picked_up:packed_ice_brick_wall
+scoreboard objectives add bldp.picked_up.packed_ice_bricks minecraft.picked_up:packed_ice_bricks
 scoreboard objectives add bldp.picked_up.packed_mud minecraft.picked_up:packed_mud
 scoreboard objectives add bldp.picked_up.painting minecraft.picked_up:painting
 scoreboard objectives add bldp.picked_up.pale_hanging_moss minecraft.picked_up:pale_hanging_moss
@@ -1102,6 +1118,14 @@ scoreboard objectives add bldp.picked_up.polished_blackstone_pressure_plate mine
 scoreboard objectives add bldp.picked_up.polished_blackstone_slab minecraft.picked_up:polished_blackstone_slab
 scoreboard objectives add bldp.picked_up.polished_blackstone_stairs minecraft.picked_up:polished_blackstone_stairs
 scoreboard objectives add bldp.picked_up.polished_blackstone_wall minecraft.picked_up:polished_blackstone_wall
+scoreboard objectives add bldp.picked_up.polished_calcite minecraft.picked_up:polished_calcite
+scoreboard objectives add bldp.picked_up.polished_calcite_brick_slab minecraft.picked_up:polished_calcite_brick_slab
+scoreboard objectives add bldp.picked_up.polished_calcite_brick_stairs minecraft.picked_up:polished_calcite_brick_stairs
+scoreboard objectives add bldp.picked_up.polished_calcite_brick_wall minecraft.picked_up:polished_calcite_brick_wall
+scoreboard objectives add bldp.picked_up.polished_calcite_bricks minecraft.picked_up:polished_calcite_bricks
+scoreboard objectives add bldp.picked_up.polished_calcite_slab minecraft.picked_up:polished_calcite_slab
+scoreboard objectives add bldp.picked_up.polished_calcite_stairs minecraft.picked_up:polished_calcite_stairs
+scoreboard objectives add bldp.picked_up.polished_calcite_wall minecraft.picked_up:polished_calcite_wall
 scoreboard objectives add bldp.picked_up.polished_cinnabar minecraft.picked_up:polished_cinnabar
 scoreboard objectives add bldp.picked_up.polished_cinnabar_slab minecraft.picked_up:polished_cinnabar_slab
 scoreboard objectives add bldp.picked_up.polished_cinnabar_stairs minecraft.picked_up:polished_cinnabar_stairs
@@ -1330,6 +1354,10 @@ scoreboard objectives add bldp.picked_up.snort_pottery_sherd minecraft.picked_up
 scoreboard objectives add bldp.picked_up.snout_armor_trim_smithing_template minecraft.picked_up:snout_armor_trim_smithing_template
 scoreboard objectives add bldp.picked_up.snow minecraft.picked_up:snow
 scoreboard objectives add bldp.picked_up.snow_block minecraft.picked_up:snow_block
+scoreboard objectives add bldp.picked_up.snow_brick_slab minecraft.picked_up:snow_brick_slab
+scoreboard objectives add bldp.picked_up.snow_brick_stairs minecraft.picked_up:snow_brick_stairs
+scoreboard objectives add bldp.picked_up.snow_brick_wall minecraft.picked_up:snow_brick_wall
+scoreboard objectives add bldp.picked_up.snow_bricks minecraft.picked_up:snow_bricks
 scoreboard objectives add bldp.picked_up.snow_golem_spawn_egg minecraft.picked_up:snow_golem_spawn_egg
 scoreboard objectives add bldp.picked_up.snowball minecraft.picked_up:snowball
 scoreboard objectives add bldp.picked_up.snowy_village_map minecraft.picked_up:snowy_village_map

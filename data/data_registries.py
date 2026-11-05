@@ -54,6 +54,11 @@ bldp.string_to_file(f"data modify storage bldp:registry all.block_placing_items 
 bldp.json_to_file({"values":block_placing_item_list},"bldp/tags/item","block_placing_item")
 bldp.tag_append("bldp/tags/function","load","bldp:registry/block_placing_items")
 
+non_air_block_list = [block for block in block_list if block not in ["air", "void_air", "cave_air"]]
+bldp.string_to_file(f"data modify storage bldp:registry all.non_air_blocks set value {non_air_block_list}","bldp/function/registry","non_air_blocks.mcfunction")
+bldp.json_to_file({"values":non_air_block_list},"bldp/tags/block","non_air_blocks")
+bldp.tag_append("bldp/tags/function","load","bldp:registry/non_air_blocks")
+
 biome_list = bldp.get_registry_data(MCVERSION,"worldgen/biome")
 bldp.string_to_file(f"data modify storage bldp:registry all.biomes set value {biome_list}","bldp/function/registry","biomes.mcfunction")
 bldp.tag_append("bldp/tags/function","load","bldp:registry/biomes")

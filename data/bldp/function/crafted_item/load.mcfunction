@@ -171,6 +171,7 @@ scoreboard objectives add bldp.crafted.brick_slab minecraft.crafted:brick_slab
 scoreboard objectives add bldp.crafted.brick_stairs minecraft.crafted:brick_stairs
 scoreboard objectives add bldp.crafted.brick_wall minecraft.crafted:brick_wall
 scoreboard objectives add bldp.crafted.bricks minecraft.crafted:bricks
+scoreboard objectives add bldp.crafted.brittle_ice minecraft.crafted:brittle_ice
 scoreboard objectives add bldp.crafted.brown_banner minecraft.crafted:brown_banner
 scoreboard objectives add bldp.crafted.brown_bed minecraft.crafted:brown_bed
 scoreboard objectives add bldp.crafted.brown_bundle minecraft.crafted:brown_bundle
@@ -211,6 +212,10 @@ scoreboard objectives add bldp.crafted.cactus minecraft.crafted:cactus
 scoreboard objectives add bldp.crafted.cactus_flower minecraft.crafted:cactus_flower
 scoreboard objectives add bldp.crafted.cake minecraft.crafted:cake
 scoreboard objectives add bldp.crafted.calcite minecraft.crafted:calcite
+scoreboard objectives add bldp.crafted.calcite_pillar minecraft.crafted:calcite_pillar
+scoreboard objectives add bldp.crafted.calcite_slab minecraft.crafted:calcite_slab
+scoreboard objectives add bldp.crafted.calcite_stairs minecraft.crafted:calcite_stairs
+scoreboard objectives add bldp.crafted.calcite_wall minecraft.crafted:calcite_wall
 scoreboard objectives add bldp.crafted.calibrated_sculk_sensor minecraft.crafted:calibrated_sculk_sensor
 scoreboard objectives add bldp.crafted.camel_husk_spawn_egg minecraft.crafted:camel_husk_spawn_egg
 scoreboard objectives add bldp.crafted.camel_spawn_egg minecraft.crafted:camel_spawn_egg
@@ -257,11 +262,13 @@ scoreboard objectives add bldp.crafted.chiseled_cinnabar minecraft.crafted:chise
 scoreboard objectives add bldp.crafted.chiseled_copper minecraft.crafted:chiseled_copper
 scoreboard objectives add bldp.crafted.chiseled_deepslate minecraft.crafted:chiseled_deepslate
 scoreboard objectives add bldp.crafted.chiseled_nether_bricks minecraft.crafted:chiseled_nether_bricks
+scoreboard objectives add bldp.crafted.chiseled_packed_ice minecraft.crafted:chiseled_packed_ice
 scoreboard objectives add bldp.crafted.chiseled_polished_blackstone minecraft.crafted:chiseled_polished_blackstone
 scoreboard objectives add bldp.crafted.chiseled_quartz_block minecraft.crafted:chiseled_quartz_block
 scoreboard objectives add bldp.crafted.chiseled_red_sandstone minecraft.crafted:chiseled_red_sandstone
 scoreboard objectives add bldp.crafted.chiseled_resin_bricks minecraft.crafted:chiseled_resin_bricks
 scoreboard objectives add bldp.crafted.chiseled_sandstone minecraft.crafted:chiseled_sandstone
+scoreboard objectives add bldp.crafted.chiseled_soulshale minecraft.crafted:chiseled_soulshale
 scoreboard objectives add bldp.crafted.chiseled_stone_bricks minecraft.crafted:chiseled_stone_bricks
 scoreboard objectives add bldp.crafted.chiseled_sulfur minecraft.crafted:chiseled_sulfur
 scoreboard objectives add bldp.crafted.chiseled_tuff minecraft.crafted:chiseled_tuff
@@ -569,6 +576,7 @@ scoreboard objectives add bldp.crafted.fox_spawn_egg minecraft.crafted:fox_spawn
 scoreboard objectives add bldp.crafted.friend_pottery_sherd minecraft.crafted:friend_pottery_sherd
 scoreboard objectives add bldp.crafted.frog_spawn_egg minecraft.crafted:frog_spawn_egg
 scoreboard objectives add bldp.crafted.frogspawn minecraft.crafted:frogspawn
+scoreboard objectives add bldp.crafted.frostbite_spawn_egg minecraft.crafted:frostbite_spawn_egg
 scoreboard objectives add bldp.crafted.furnace minecraft.crafted:furnace
 scoreboard objectives add bldp.crafted.furnace_minecart minecraft.crafted:furnace_minecart
 scoreboard objectives add bldp.crafted.ghast_spawn_egg minecraft.crafted:ghast_spawn_egg
@@ -681,6 +689,9 @@ scoreboard objectives add bldp.crafted.host_armor_trim_smithing_template minecra
 scoreboard objectives add bldp.crafted.howl_pottery_sherd minecraft.crafted:howl_pottery_sherd
 scoreboard objectives add bldp.crafted.husk_spawn_egg minecraft.crafted:husk_spawn_egg
 scoreboard objectives add bldp.crafted.ice minecraft.crafted:ice
+scoreboard objectives add bldp.crafted.ice_ball minecraft.crafted:ice_ball
+scoreboard objectives add bldp.crafted.ice_crystal minecraft.crafted:ice_crystal
+scoreboard objectives add bldp.crafted.icicle minecraft.crafted:icicle
 scoreboard objectives add bldp.crafted.infested_chiseled_stone_bricks minecraft.crafted:infested_chiseled_stone_bricks
 scoreboard objectives add bldp.crafted.infested_cobblestone minecraft.crafted:infested_cobblestone
 scoreboard objectives add bldp.crafted.infested_cracked_stone_bricks minecraft.crafted:infested_cracked_stone_bricks
@@ -906,6 +917,7 @@ scoreboard objectives add bldp.crafted.music_disc_chirp minecraft.crafted:music_
 scoreboard objectives add bldp.crafted.music_disc_creator minecraft.crafted:music_disc_creator
 scoreboard objectives add bldp.crafted.music_disc_creator_music_box minecraft.crafted:music_disc_creator_music_box
 scoreboard objectives add bldp.crafted.music_disc_far minecraft.crafted:music_disc_far
+scoreboard objectives add bldp.crafted.music_disc_flurry minecraft.crafted:music_disc_flurry
 scoreboard objectives add bldp.crafted.music_disc_lava_chicken minecraft.crafted:music_disc_lava_chicken
 scoreboard objectives add bldp.crafted.music_disc_mall minecraft.crafted:music_disc_mall
 scoreboard objectives add bldp.crafted.music_disc_mellohi minecraft.crafted:music_disc_mellohi
@@ -1018,6 +1030,10 @@ scoreboard objectives add bldp.crafted.oxidized_cut_copper_slab minecraft.crafte
 scoreboard objectives add bldp.crafted.oxidized_cut_copper_stairs minecraft.crafted:oxidized_cut_copper_stairs
 scoreboard objectives add bldp.crafted.oxidized_lightning_rod minecraft.crafted:oxidized_lightning_rod
 scoreboard objectives add bldp.crafted.packed_ice minecraft.crafted:packed_ice
+scoreboard objectives add bldp.crafted.packed_ice_brick_slab minecraft.crafted:packed_ice_brick_slab
+scoreboard objectives add bldp.crafted.packed_ice_brick_stairs minecraft.crafted:packed_ice_brick_stairs
+scoreboard objectives add bldp.crafted.packed_ice_brick_wall minecraft.crafted:packed_ice_brick_wall
+scoreboard objectives add bldp.crafted.packed_ice_bricks minecraft.crafted:packed_ice_bricks
 scoreboard objectives add bldp.crafted.packed_mud minecraft.crafted:packed_mud
 scoreboard objectives add bldp.crafted.painting minecraft.crafted:painting
 scoreboard objectives add bldp.crafted.pale_hanging_moss minecraft.crafted:pale_hanging_moss
@@ -1102,6 +1118,14 @@ scoreboard objectives add bldp.crafted.polished_blackstone_pressure_plate minecr
 scoreboard objectives add bldp.crafted.polished_blackstone_slab minecraft.crafted:polished_blackstone_slab
 scoreboard objectives add bldp.crafted.polished_blackstone_stairs minecraft.crafted:polished_blackstone_stairs
 scoreboard objectives add bldp.crafted.polished_blackstone_wall minecraft.crafted:polished_blackstone_wall
+scoreboard objectives add bldp.crafted.polished_calcite minecraft.crafted:polished_calcite
+scoreboard objectives add bldp.crafted.polished_calcite_brick_slab minecraft.crafted:polished_calcite_brick_slab
+scoreboard objectives add bldp.crafted.polished_calcite_brick_stairs minecraft.crafted:polished_calcite_brick_stairs
+scoreboard objectives add bldp.crafted.polished_calcite_brick_wall minecraft.crafted:polished_calcite_brick_wall
+scoreboard objectives add bldp.crafted.polished_calcite_bricks minecraft.crafted:polished_calcite_bricks
+scoreboard objectives add bldp.crafted.polished_calcite_slab minecraft.crafted:polished_calcite_slab
+scoreboard objectives add bldp.crafted.polished_calcite_stairs minecraft.crafted:polished_calcite_stairs
+scoreboard objectives add bldp.crafted.polished_calcite_wall minecraft.crafted:polished_calcite_wall
 scoreboard objectives add bldp.crafted.polished_cinnabar minecraft.crafted:polished_cinnabar
 scoreboard objectives add bldp.crafted.polished_cinnabar_slab minecraft.crafted:polished_cinnabar_slab
 scoreboard objectives add bldp.crafted.polished_cinnabar_stairs minecraft.crafted:polished_cinnabar_stairs
@@ -1330,6 +1354,10 @@ scoreboard objectives add bldp.crafted.snort_pottery_sherd minecraft.crafted:sno
 scoreboard objectives add bldp.crafted.snout_armor_trim_smithing_template minecraft.crafted:snout_armor_trim_smithing_template
 scoreboard objectives add bldp.crafted.snow minecraft.crafted:snow
 scoreboard objectives add bldp.crafted.snow_block minecraft.crafted:snow_block
+scoreboard objectives add bldp.crafted.snow_brick_slab minecraft.crafted:snow_brick_slab
+scoreboard objectives add bldp.crafted.snow_brick_stairs minecraft.crafted:snow_brick_stairs
+scoreboard objectives add bldp.crafted.snow_brick_wall minecraft.crafted:snow_brick_wall
+scoreboard objectives add bldp.crafted.snow_bricks minecraft.crafted:snow_bricks
 scoreboard objectives add bldp.crafted.snow_golem_spawn_egg minecraft.crafted:snow_golem_spawn_egg
 scoreboard objectives add bldp.crafted.snowball minecraft.crafted:snowball
 scoreboard objectives add bldp.crafted.snowy_village_map minecraft.crafted:snowy_village_map
