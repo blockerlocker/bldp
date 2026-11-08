@@ -62,7 +62,7 @@ def import_config():
 
 def remove_paths(path_list):
     if isinstance(path_list,str):
-        path_list = [str]
+        path_list = [path_list]
 
     for path in path_list:
         if Path(path).exists():
