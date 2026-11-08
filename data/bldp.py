@@ -23,11 +23,11 @@ def get_registry_data(mcversion,registry):
     registry_response = urllib.request.urlopen(f"https://raw.githubusercontent.com/misode/mcmeta/{mcversion}-registries/{registry}/data.json")
     return(json.load(registry_response))
 
-def unpack_client(mcversion,temp_dir,extract_paths):
-    if not Path(temp_dir).is_dir():
+def unpack_client(mcversion,directory,extract_paths):
+    if not Path(directory).is_dir():
         print("--Setting up temporary directory")
-        shutil.rmtree(temp_dir, ignore_errors=True)
-        Path(temp_dir).mkdir(parents=True, exist_ok=True)
+        shutil.rmtree(directory, ignore_errors=True)
+        Path(directory).mkdir(parents=True, exist_ok=True)
 
     print("--Grabbing version manifest")
     version_manifest = json.load(urllib.request.urlopen("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"))
@@ -38,15 +38,27 @@ def unpack_client(mcversion,temp_dir,extract_paths):
         print(f"--{mcversion} does not exist in version manifest!")
         return(None)
 
-    print(f"--Downloading client.jar for {mcversion}")
-    version_info = json.load(urllib.request.urlopen(version["url"]))
-    version_server = version_info["downloads"]["client"]["url"]
-    urllib.request.urlretrieve(version_server,f"{temp_dir}/client.jar")
+    if Path(f"{directory}/{mcversion}.jar").is_file():
+        print(f"--Found {mcversion}.jar")
+    else:
+        print(f"--Downloading {mcversion}.jar")
+        version_info = json.load(urllib.request.urlopen(version["url"]))
+        version_server = version_info["downloads"]["client"]["url"]
+        urllib.request.urlretrieve(version_server,f"{directory}/{mcversion}.jar")
+        json_to_file(version_info,directory,mcversion)
 
-    print("--Unpacking from client.jar")
-    with zipfile.ZipFile(f"{temp_dir}/client.jar","r") as jar:
-        files_to_extract = [item for item in jar.namelist() if item.startswith(extract_paths)]
-        jar.extractall(path=temp_dir,members=files_to_extract)
+    print(f"--Unpacking from {mcversion}.jar")
+    with zipfile.ZipFile(f"{directory}/{mcversion}.jar","r") as jar:
+        files_to_extract = [item for item in jar.namelist() if item.startswith(extract_paths) and not extract_paths == ""]
+        jar.extractall(path=directory,members=files_to_extract)
+
+def import_config():
+    if not Path("../bldp_config.json").is_file(): return None
+
+    with open("../bldp_config.json") as config_json:
+        config = json.load(config_json)
+    
+    return config
 
 def remove_path(path):
     if Path(path).exists():
@@ -103,6 +115,7 @@ def tag_append(path,tag,append_value):
             new_tag = json.load(tag_json)
             if not append_value in new_tag["values"]:
                 new_tag["values"].append(append_value)
+                new_tag["values"].sort()
                 with open(file_path, "w") as new_tag_json:
                     json.dump(new_tag,new_tag_json,indent=4)
     else:

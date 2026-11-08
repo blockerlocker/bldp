@@ -29,53 +29,74 @@ bldp.remove_path("bldp/function/registry/block_placing_items.mcfunction")
 bldp.remove_path("bldp/function/registry/blocks.mcfunction")
 bldp.remove_path("bldp/function/registry/entities.mcfunction")
 bldp.remove_path("bldp/function/registry/mobs.mcfunction")
+bldp.remove_path("bldp/function/registry/mob_effects.mcfunction")
+bldp.remove_path("bldp/function/registry/non_air_blocks.mcfunction")
 bldp.remove_path("bldp/function/registry/non_mob_entities.mcfunction")
 bldp.remove_path("bldp/function/registry/biomes.mcfunction")
 bldp.remove_path("bldp/tags/item/all.json")
-bldp.remove_path("bldp/tags/item/block_placing_item.json")
+bldp.remove_path("bldp/tags/item/block_placing_items.json")
 bldp.remove_path("bldp/tags/block/all.json")
+bldp.remove_path("bldp/tags/block/non_air_blocks.json")
 bldp.remove_path("bldp/tags/entity_type/all.json")
 bldp.remove_path("bldp/tags/entity_type/mobs.json")
-bldp.remove_path("bldp/tags/entity_type/non_mobs_entities.json")
+bldp.remove_path("bldp/tags/entity_type/non_mob_entities.json")
+
+bldp_config = bldp.import_config()
+
+if bldp_config == None:
+    bldp_config = {
+        "data/data_registries": {
+            "all": True
+        }
+    }
+
+all_registries = ["items","blocks","block_placing_items","non_air_blocks","biomes","entities","mobs","non_mob_entities","mob_effects"]
+
+if "all" in bldp_config["data/data_registries"] and bldp_config["data/data_registries"]["all"] == True:
+    for registry in all_registries:
+        bldp_config["data/data_registries"][registry] = ["storage","tag"]
+else:
+    for registry in all_registries:
+        if not registry in bldp_config["data/data_registries"]:
+            bldp_config["data/data_registries"][registry] = []
+
+def export_files(data,storage_name,type=None,tag_name=None):
+    if not storage_name in bldp_config["data/data_registries"]: return
+    
+    if "storage" in bldp_config["data/data_registries"][storage_name]:
+        bldp.string_to_file(f"data modify storage bldp:registry all.{storage_name} set value {data}","bldp/function/registry",f"{storage_name}.mcfunction")
+        bldp.tag_append("bldp/tags/function","load",f"bldp:registry/{storage_name}")
+
+    if "tag" in bldp_config["data/data_registries"][storage_name] and not type == None:
+        if tag_name == None: tag_name = storage_name
+        bldp.json_to_file({"values":data},f"bldp/tags/{type}",tag_name)
 
 item_list = bldp.get_registry_data(MCVERSION,"item")
-bldp.string_to_file(f"data modify storage bldp:registry all.items set value {item_list}","bldp/function/registry","items.mcfunction")
-bldp.json_to_file({"values":item_list},"bldp/tags/item","all")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/items")
+export_files(item_list,"items","item","all")
 
 block_list = bldp.get_registry_data(MCVERSION,"block")
-bldp.string_to_file(f"data modify storage bldp:registry all.blocks set value {block_list}","bldp/function/registry","blocks.mcfunction")
-bldp.json_to_file({"values":block_list},"bldp/tags/block","all")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/blocks")
+export_files(block_list,"blocks","block","all")
 
 block_placing_item_list = [item for item in item_list if item in block_list and not re.fullmatch("air|wheat",item)]
 block_placing_item_list.extend(["beetroot_seeds", "carrot", "cocoa_beans", "glow_berries", "melon_seeds", "pitcher_pod", "potato", "powder_snow_bucket", "pumpkin_seeds", "redstone", "string", "sweet_berries", "torchflower_seeds", "wheat_seeds"])
-bldp.string_to_file(f"data modify storage bldp:registry all.block_placing_items set value {block_placing_item_list}","bldp/function/registry","block_placing_items.mcfunction")
-bldp.json_to_file({"values":block_placing_item_list},"bldp/tags/item","block_placing_item")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/block_placing_items")
+export_files(block_placing_item_list,"block_placing_items","item")
 
 non_air_block_list = [block for block in block_list if block not in ["air", "void_air", "cave_air"]]
-bldp.string_to_file(f"data modify storage bldp:registry all.non_air_blocks set value {non_air_block_list}","bldp/function/registry","non_air_blocks.mcfunction")
-bldp.json_to_file({"values":non_air_block_list},"bldp/tags/block","non_air_blocks")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/non_air_blocks")
+export_files(non_air_block_list,"non_air_blocks","block")
 
 biome_list = bldp.get_registry_data(MCVERSION,"worldgen/biome")
-bldp.string_to_file(f"data modify storage bldp:registry all.biomes set value {biome_list}","bldp/function/registry","biomes.mcfunction")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/biomes")
+export_files(biome_list,"biomes")
 
 entity_type_list = bldp.get_registry_data(MCVERSION,"entity_type")
-bldp.string_to_file(f"data modify storage bldp:registry all.entities set value {entity_type_list}","bldp/function/registry","entities.mcfunction")
-bldp.json_to_file({"values":entity_type_list},"bldp/tags/entity_type","all")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/entities")
+export_files(entity_type_list,"entities","entity_type","all")
 
 mob_list = [mob for mob in entity_type_list if not re.search("_boat|_raft|minecart|potion|item|_display|armor_stand|area_effect_cloud|ball|arrow|firework|llama_spit|trident|skull|wind_charge|cushion|egg|ender_pearl|experience|falling_block|eye_of_ender|fishing_bobber|interaction|leash_knot|lightning_bolt|marker|painting|shulker_bullet|end_crystal|tnt|player|evoker_fangs",mob)]
-bldp.string_to_file(f"data modify storage bldp:registry all.mobs set value {mob_list}","bldp/function/registry","mobs.mcfunction")
-bldp.json_to_file({"values":mob_list},"bldp/tags/entity_type","mobs")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/mobs")
+export_files(mob_list,"mobs","entity_type")
 
 non_mob_entities_list = [entity for entity in entity_type_list if not entity in mob_list]
-bldp.string_to_file(f"data modify storage bldp:registry all.non_mob_entities set value {non_mob_entities_list}","bldp/function/registry","non_mob_entities.mcfunction")
-bldp.json_to_file({"values":non_mob_entities_list},"bldp/tags/entity_type","non_mob_entities")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/non_mob_entities")
+export_files(non_mob_entities_list,"non_mob_entities","entity_type")
+
+mob_effect_list = bldp.get_registry_data(MCVERSION,"mob_effect")
+export_files(mob_effect_list,"mob_effects")
 
 bldp.tag_append("minecraft/tags/function","load","#bldp:load")
