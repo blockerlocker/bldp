@@ -24,8 +24,8 @@ import bldp
 
 MCVERSION = bldp.get_version(MCVERSION)
 
-bldp.remove_path("bldp/function/picked_up_item")
-bldp.remove_path("bldp/predicate/picked_up_item.json")
+bldp.remove_paths("bldp/function/picked_up_item")
+bldp.remove_paths("bldp/predicate/picked_up_item.json")
 
 item_list = bldp.get_registry_data(MCVERSION,"item")
 

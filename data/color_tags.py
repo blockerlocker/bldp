@@ -26,8 +26,8 @@ MCVERSION = bldp.get_version(MCVERSION)
 
 TEMP_DIR = "temp_bldp"
 
-bldp.remove_path(TEMP_DIR)
-bldp.remove_path("bldp/tags/block/color")
+bldp.remove_paths(TEMP_DIR)
+bldp.remove_paths("bldp/tags/block/color")
 
 bldp.unpack_client(MCVERSION,TEMP_DIR,("assets/minecraft/blockstates","assets/minecraft/models/block","assets/minecraft/textures"))
 
@@ -213,4 +213,4 @@ for file in os.listdir(blockstate_dir):
 for color in block_dict:
     bldp.json_to_file({"values":block_dict[color]},"bldp/tags/block/color",color)
 
-bldp.remove_path(TEMP_DIR)
+bldp.remove_paths(TEMP_DIR)

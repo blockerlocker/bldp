@@ -20,14 +20,14 @@ if combine_non_release_versions.lower() in ["y","yes","okay","ok","k","1","true"
 else:
     combine_non_release_versions = False
 
-bldp.remove_path("bldp/function/registry/updates.mcfunction")
-bldp.remove_path("bldp/function/registry/updates_with_items.mcfunction")
-bldp.remove_path("bldp/function/registry/updates_with_blocks.mcfunction")
-bldp.remove_path("bldp/function/registry/updates_with_entities.mcfunction")
-bldp.remove_path("bldp/function/registry/update")
-bldp.remove_path("bldp/tags/item/update")
-bldp.remove_path("bldp/tags/block/update")
-bldp.remove_path("bldp/tags/entity_type/update")
+bldp.remove_paths("bldp/function/registry/updates.mcfunction")
+bldp.remove_paths("bldp/function/registry/updates_with_items.mcfunction")
+bldp.remove_paths("bldp/function/registry/updates_with_blocks.mcfunction")
+bldp.remove_paths("bldp/function/registry/updates_with_entities.mcfunction")
+bldp.remove_paths("bldp/function/registry/update")
+bldp.remove_paths("bldp/tags/item/update")
+bldp.remove_paths("bldp/tags/block/update")
+bldp.remove_paths("bldp/tags/entity_type/update")
 
 print("--Grabbing version manifest")
 version_manifest = json.load(urllib.request.urlopen("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"))

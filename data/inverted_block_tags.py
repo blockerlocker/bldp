@@ -24,7 +24,7 @@ import bldp
 
 MCVERSION = bldp.get_version(MCVERSION)
 
-bldp.remove_path("bldp/tags/block/inverted")
+bldp.remove_paths("bldp/tags/block/inverted")
 
 block_list = bldp.get_registry_data(MCVERSION,"block")
 for block in block_list:

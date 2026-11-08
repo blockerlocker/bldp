@@ -26,8 +26,8 @@ MCVERSION = bldp.get_version(MCVERSION)
 
 TEMP_DIR = "temp_bldp"
 
-bldp.remove_path(TEMP_DIR)
-bldp.remove_path("bldp/function/texture_map")
+bldp.remove_paths(TEMP_DIR)
+bldp.remove_paths("bldp/function/texture_map")
 
 bldp.unpack_client(MCVERSION,TEMP_DIR,("assets/minecraft/blockstates","assets/minecraft/models/block","assets/minecraft/textures"))
 
@@ -217,4 +217,4 @@ bldp.tag_append("bldp/tags/function","load","bldp:texture_map/block")
 
 bldp.tag_append("minecraft/tags/function","load","#bldp:load")
 
-bldp.remove_path(TEMP_DIR)
+bldp.remove_paths(TEMP_DIR)

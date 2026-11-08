@@ -24,22 +24,23 @@ import bldp
 
 MCVERSION = bldp.get_version(MCVERSION)
 
-bldp.remove_path("bldp/function/registry/items.mcfunction")
-bldp.remove_path("bldp/function/registry/block_placing_items.mcfunction")
-bldp.remove_path("bldp/function/registry/blocks.mcfunction")
-bldp.remove_path("bldp/function/registry/entities.mcfunction")
-bldp.remove_path("bldp/function/registry/mobs.mcfunction")
-bldp.remove_path("bldp/function/registry/mob_effects.mcfunction")
-bldp.remove_path("bldp/function/registry/non_air_blocks.mcfunction")
-bldp.remove_path("bldp/function/registry/non_mob_entities.mcfunction")
-bldp.remove_path("bldp/function/registry/biomes.mcfunction")
-bldp.remove_path("bldp/tags/item/all.json")
-bldp.remove_path("bldp/tags/item/block_placing_items.json")
-bldp.remove_path("bldp/tags/block/all.json")
-bldp.remove_path("bldp/tags/block/non_air_blocks.json")
-bldp.remove_path("bldp/tags/entity_type/all.json")
-bldp.remove_path("bldp/tags/entity_type/mobs.json")
-bldp.remove_path("bldp/tags/entity_type/non_mob_entities.json")
+bldp.remove_paths(["bldp/function/registry/items.mcfunction",
+        "bldp/function/registry/block_placing_items.mcfunction",
+        "bldp/function/registry/blocks.mcfunction",
+        "bldp/function/registry/entities.mcfunction",
+        "bldp/function/registry/mobs.mcfunction",
+        "bldp/function/registry/mob_effects.mcfunction",
+        "bldp/function/registry/non_air_blocks.mcfunction",
+        "bldp/function/registry/non_mob_entities.mcfunction",
+        "bldp/function/registry/biomes.mcfunction",
+        "bldp/tags/item/all.json",
+        "bldp/tags/item/block_placing_items.json",
+        "bldp/tags/block/all.json",
+        "bldp/tags/block/non_air_blocks.json",
+        "bldp/tags/entity_type/all.json",
+        "bldp/tags/entity_type/mobs.json",
+        "bldp/tags/entity_type/non_mob_entities.json"
+    ])
 
 bldp_config = bldp.import_config()
 

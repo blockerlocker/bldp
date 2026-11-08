@@ -24,8 +24,8 @@ import bldp
 
 MCVERSION = bldp.get_version(MCVERSION)
 
-bldp.remove_path("bldp/function/mined_block")
-bldp.remove_path("bldp/predicate/mined_block.json")
+bldp.remove_paths("bldp/function/mined_block")
+bldp.remove_paths("bldp/predicate/mined_block.json")
 
 block_list = bldp.get_registry_data(MCVERSION,"block")
 

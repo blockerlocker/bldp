@@ -14,7 +14,7 @@ if not Path("bldp.py").is_file():
 
 import bldp
 
-bldp.remove_path("bldp/function/test")
+bldp.remove_paths("bldp/function/test")
 
 within_world = "\n".join([
     "execute store success storage bldp:within_world out byte 1 run clone ~ ~ ~ ~ ~ ~ ~ ~ ~ strict replace force",

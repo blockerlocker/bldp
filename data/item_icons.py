@@ -26,7 +26,7 @@ import bldp
 
 MCVERSION = bldp.get_version(MCVERSION)
 
-bldp.remove_path("bldp/function/icon")
+bldp.remove_paths("bldp/function/icon")
 
 item_list = bldp.get_registry_data(MCVERSION,"item")
 block_list = bldp.get_registry_data(MCVERSION,"block")

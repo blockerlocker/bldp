@@ -14,8 +14,8 @@ if not Path("bldp.py").is_file():
 
 import bldp
 
-bldp.remove_path("bldp/function/func/array")
-bldp.remove_path("bldp/function/func/random")
+bldp.remove_paths("bldp/function/func/array")
+bldp.remove_paths("bldp/function/func/random")
 
 bldp.string_to_file("$execute store result storage bldp:temp all.random.value int 1 run random value $(x)..$(y)","bldp/function/func/random","value.mcfunction")
 

@@ -60,11 +60,15 @@ def import_config():
     
     return config
 
-def remove_path(path):
-    if Path(path).exists():
-        if Path(path).is_dir(): shutil.rmtree(path,ignore_errors=True)
-        elif Path(path).is_file(): os.remove(path)
-        print(f"--Removed {path}")
+def remove_paths(path_list):
+    if isinstance(path_list,str):
+        path_list = [str]
+
+    for path in path_list:
+        if Path(path).exists():
+            if Path(path).is_dir(): shutil.rmtree(path,ignore_errors=True)
+            elif Path(path).is_file(): os.remove(path)
+            print(f"--Removed {path}")
 
 def string_to_file(string,path,file_name):
     Path(path).mkdir(parents=True, exist_ok=True)

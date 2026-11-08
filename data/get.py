@@ -14,7 +14,7 @@ if not Path("bldp.py").is_file():
 
 import bldp
 
-bldp.remove_path("bldp/function/get")
+bldp.remove_paths("bldp/function/get")
 
 entity_midpoint = "\n".join([
     "execute at @s anchored eyes run summon marker ^ ^ ^ {UUID:uuid('1d655d4c-d951-442b-98ed-54ae52c6823f')}",
