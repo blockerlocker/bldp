@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."1.16.2" set value ['piglin_brute']

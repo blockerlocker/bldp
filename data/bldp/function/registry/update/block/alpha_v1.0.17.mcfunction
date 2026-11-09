@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."alpha_v1.0.17" set value ['oak_fence']

@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."1.21.6" set value ['dried_ghast']

@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.item."alpha_v1.1.1" set value ['fishing_rod']

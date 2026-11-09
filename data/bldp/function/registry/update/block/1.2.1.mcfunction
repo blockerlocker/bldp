@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."1.2.1" set value ['jungle_log', 'jungle_leaves', 'jungle_sapling', 'redstone_lamp', 'chiseled_stone_bricks']

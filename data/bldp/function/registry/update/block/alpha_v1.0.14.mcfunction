@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."alpha_v1.0.14" set value ['jukebox']

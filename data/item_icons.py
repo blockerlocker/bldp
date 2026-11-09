@@ -9,27 +9,28 @@ else:
     MCVERSION = "latest-snapshot"
 
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(Path(__file__).resolve().parent.parent)
+sys.path.append(str(Path.cwd()))
 
-DEBUG = True
-
-if not Path.cwd().name == "data":
-    print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+if not Path(Path(__file__).resolve().parent).name == "data":
+    print(f"!-This module must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
     sys.exit()
 
-if not Path("bldp.py").is_file():
-    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
+if not Path("blpack.py").is_file():
+    with open("blpack.py", "w", encoding="utf-8") as blpack_main:
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
 
-import bldp
+import blpack
 
-MCVERSION = bldp.get_version(MCVERSION)
+MCVERSION = blpack.get_version(MCVERSION)
 
-bldp.remove_paths("bldp/function/icon")
+DEBUG = False
 
-item_list = bldp.get_registry_data(MCVERSION,"item")
-block_list = bldp.get_registry_data(MCVERSION,"block")
+blpack.remove_paths("data/blpack/function/icon")
+
+item_list = blpack.get_registry_data(MCVERSION,"item")
+block_list = blpack.get_registry_data(MCVERSION,"block")
 
 item_icons_list = []
 
@@ -161,11 +162,11 @@ for id in item_list:
         icon["icon"]["color"] = color
     item_icons_list.append(icon)
 
-bldp.string_to_file(f"data modify storage bldp:icon all.item set value {item_icons_list}","bldp/function/icon","item.mcfunction")
+blpack.string_to_file(f"data modify storage blpack:icon all.item set value {item_icons_list}","data/blpack/function/icon","item.mcfunction")
 
-bldp.tag_append("bldp/tags/function","load","bldp:icon/item")
+blpack.tag_append("data/blpack/tags/function","load","blpack:icon/item")
 
-bldp.tag_append("bldp/tags/function","load","bldp:crafted_item/load")
-bldp.tag_append("minecraft/tags/function","load","#bldp:load")
+blpack.tag_append("data/blpack/tags/function","load","blpack:crafted_item/load")
+blpack.tag_append("data/minecraft/tags/function","load","#blpack:load")
 
-if DEBUG == True: bldp.json_to_file({"values":item_icons_list},"debug","item_icons")
+if DEBUG == True: blpack.json_to_file({"values":item_icons_list},"debug","item_icons")

@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.entity_type."26.3" set value ['cushion', 'poplar_boat', 'poplar_chest_boat']

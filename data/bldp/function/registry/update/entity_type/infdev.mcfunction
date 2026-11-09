@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."infdev" set value ['falling_block', 'minecart']

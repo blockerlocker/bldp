@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."classic_0.28" set value ['sheep']

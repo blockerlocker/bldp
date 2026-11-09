@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.entity_type."classic_0.28" set value ['sheep']

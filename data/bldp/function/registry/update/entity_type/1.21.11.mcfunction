@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."1.21.11" set value ['camel_husk', 'nautilus', 'parched', 'zombie_nautilus']

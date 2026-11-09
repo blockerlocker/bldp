@@ -1,18 +1,19 @@
 import os, sys, urllib.request, re
 from pathlib import Path
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(Path(__file__).resolve().parent.parent)
+sys.path.append(str(Path.cwd()))
 
-if not Path.cwd().name == "data":
-    print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+if not Path(Path(__file__).resolve().parent).name == "data":
+    print(f"!-This module must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
     sys.exit()
 
-if not Path("bldp.py").is_file():
-    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
+if not Path("blpack.py").is_file():
+    with open("blpack.py", "w", encoding="utf-8") as blpack_main:
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
 
-import bldp
+import blpack
 
 volume_input = input("What volumes would you like to generate a test for? Enter in 16x16x16 format, separated by commas.\n> ")
 volumes_raw = volume_input.split(",")
@@ -30,9 +31,9 @@ else:
 
 if generate_macro == False and ("#" in block_id_input or ":" in block_id_input):
     auto_path = block_id_input.replace(":","/").replace("#","")
-    path_input = input(f"You have entered a block tag, would you like to specify a custom path? If not, the file will end up at \"bldp/predicate/block_in_volume/{auto_path}\"\n> ")
+    path_input = input(f"You have entered a block tag, would you like to specify a custom path? If not, the file will end up at \"blpack/predicate/block_in_volume/{auto_path}\"\n> ")
     if path_input == "":
-        custom_path = f"bldp/predicate/block_in_volume/{auto_path}"
+        custom_path = f"data/blpack/predicate/block_in_volume/{auto_path}"
     else:
         custom_path = path_input
     
@@ -79,7 +80,7 @@ for current_volume in all_volumes:
             "return 0"
         ])
 
-        bldp.string_to_file(function,"bldp/function/block_in_volume",f"{current_volume[0]}x{current_volume[1]}x{current_volume[2]}.mcfunction")
+        blpack.string_to_file(function,"data/blpack/function/block_in_volume",f"{current_volume[0]}x{current_volume[1]}x{current_volume[2]}.mcfunction")
     elif generate_macro == False:
         for subpredicate in predicate_template["terms"]:
             subpredicate["predicate"]["block"]["blocks"] = block_id_input
@@ -87,6 +88,6 @@ for current_volume in all_volumes:
         if use_custom_path == True:
             path = custom_path
         else:
-            path = f"bldp/predicate/block_in_volume/{block_id_input}"
+            path = f"data/blpack/predicate/block_in_volume/{block_id_input}"
 
-        bldp.json_to_file(predicate_template,path,f"{current_volume[0]}x{current_volume[1]}x{current_volume[2]}")
+        blpack.json_to_file(predicate_template,path,f"{current_volume[0]}x{current_volume[1]}x{current_volume[2]}")

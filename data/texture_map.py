@@ -9,27 +9,28 @@ else:
     MCVERSION = "latest-snapshot"
 
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(Path(__file__).resolve().parent.parent)
+sys.path.append(str(Path.cwd()))
 
-if not Path.cwd().name == "data":
-    print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+if not Path(Path(__file__).resolve().parent).name == "data":
+    print(f"!-This module must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
     sys.exit()
 
-if not Path("bldp.py").is_file():
-    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
+if not Path("blpack.py").is_file():
+    with open("blpack.py", "w", encoding="utf-8") as blpack_main:
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
 
-import bldp
+import blpack
 
-MCVERSION = bldp.get_version(MCVERSION)
+MCVERSION = blpack.get_version(MCVERSION)
 
-TEMP_DIR = "temp_bldp"
+TEMP_DIR = "temp_blpack"
 
-bldp.remove_paths(TEMP_DIR)
-bldp.remove_paths("bldp/function/texture_map")
+blpack.remove_paths(TEMP_DIR)
+blpack.remove_paths("data/blpack/function/texture_map")
 
-bldp.unpack_client(MCVERSION,TEMP_DIR,("assets/minecraft/blockstates","assets/minecraft/models/block","assets/minecraft/textures"))
+blpack.unpack_client(MCVERSION,TEMP_DIR,("assets/minecraft/blockstates","assets/minecraft/models/block","assets/minecraft/textures"))
 
 print("--Generating Block Texture Map")
 blockstate_dir = f"{TEMP_DIR}/assets/minecraft/blockstates/"
@@ -212,9 +213,9 @@ for file in os.listdir(blockstate_dir):
 
         block_map.append({"id":block_id,"main_texture":main_texture,"all_textures":texture_paths})
 
-bldp.string_to_file(f"data modify storage bldp:texture_map all.block set value {block_map}","bldp/function/texture_map","block.mcfunction")
-bldp.tag_append("bldp/tags/function","load","bldp:texture_map/block")
+blpack.string_to_file(f"data modify storage blpack:texture_map all.block set value {block_map}","data/blpack/function/texture_map","block.mcfunction")
+blpack.tag_append("data/blpack/tags/function","load","blpack:texture_map/block")
 
-bldp.tag_append("minecraft/tags/function","load","#bldp:load")
+blpack.tag_append("data/minecraft/tags/function","load","#blpack:load")
 
-bldp.remove_paths(TEMP_DIR)
+blpack.remove_paths(TEMP_DIR)

@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."26.4-snapshot-7" set value ['frostbite', 'ice_ball']

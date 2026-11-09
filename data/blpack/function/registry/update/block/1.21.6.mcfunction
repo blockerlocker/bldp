@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.block."1.21.6" set value ['dried_ghast']

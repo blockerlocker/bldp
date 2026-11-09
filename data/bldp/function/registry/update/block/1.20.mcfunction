@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."1.20" set value ['calibrated_sculk_sensor', 'pitcher_crop', 'pitcher_plant', 'sniffer_egg', 'suspicious_gravel']

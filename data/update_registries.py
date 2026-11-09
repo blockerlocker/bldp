@@ -1,18 +1,19 @@
 import os, urllib.request, json, requests, re, sys
 from pathlib import Path
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(Path(__file__).resolve().parent.parent)
+sys.path.append(str(Path.cwd()))
 
-if not Path.cwd().name == "data":
-    print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+if not Path(Path(__file__).resolve().parent).name == "data":
+    print(f"!-This module must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
     sys.exit()
 
-if not Path("bldp.py").is_file():
-    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
+if not Path("blpack.py").is_file():
+    with open("blpack.py", "w", encoding="utf-8") as blpack_main:
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
 
-import bldp
+import blpack
 
 combine_non_release_versions = input("Combine preclassic, classic, alpha, and beta updates all into 1.0? (Respond yes or no)\n> ")
 if combine_non_release_versions.lower() in ["y","yes","okay","ok","k","1","true","tru","ye","yeah","alright","sure"]:
@@ -20,14 +21,16 @@ if combine_non_release_versions.lower() in ["y","yes","okay","ok","k","1","true"
 else:
     combine_non_release_versions = False
 
-bldp.remove_paths("bldp/function/registry/updates.mcfunction")
-bldp.remove_paths("bldp/function/registry/updates_with_items.mcfunction")
-bldp.remove_paths("bldp/function/registry/updates_with_blocks.mcfunction")
-bldp.remove_paths("bldp/function/registry/updates_with_entities.mcfunction")
-bldp.remove_paths("bldp/function/registry/update")
-bldp.remove_paths("bldp/tags/item/update")
-bldp.remove_paths("bldp/tags/block/update")
-bldp.remove_paths("bldp/tags/entity_type/update")
+blpack.remove_paths([
+    "data/blpack/function/registry/updates.mcfunction",
+    "data/blpack/function/registry/updates_with_items.mcfunction",
+    "data/blpack/function/registry/updates_with_blocks.mcfunction",
+    "data/blpack/function/registry/updates_with_entities.mcfunction",
+    "data/blpack/function/registry/update",
+    "data/blpack/tags/item/update",
+    "data/blpack/tags/block/update",
+    "data/blpack/tags/entity_type/update"
+])
 
 print("--Grabbing version manifest")
 version_manifest = json.load(urllib.request.urlopen("https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"))
@@ -266,38 +269,38 @@ has_blocks_registry = []
 has_entities_registry = []
 for version in all_versions:
     if "item_list" in version and version["item_list"] != None and len(version["item_list"]) > 0:
-        save_tag(version["item_list"],"bldp/tags/item/update",version['id'])
+        save_tag(version["item_list"],"data/blpack/tags/item/update",version['id'])
 
-        bldp.string_to_file(f"data modify storage bldp:registry all.update.item.\"{version['id']}\" set value {version["item_list"]}","bldp/function/registry/update/item",f"{version['id']}.mcfunction")
-        bldp.tag_append("bldp/tags/function","load",f"bldp:registry/update/item/{version['id']}")
+        blpack.string_to_file(f"data modify storage blpack:registry all.update.item.\"{version['id']}\" set value {version["item_list"]}","data/blpack/function/registry/update/item",f"{version['id']}.mcfunction")
+        blpack.tag_append("data/blpack/tags/function","load",f"blpack:registry/update/item/{version['id']}")
 
         has_items_registry.append(version['id'])
     if "block_list" in version and version["block_list"] != None and len(version["block_list"]) > 0:
-        save_tag(version["block_list"],"bldp/tags/block/update",version['id'])
+        save_tag(version["block_list"],"data/blpack/tags/block/update",version['id'])
 
-        bldp.string_to_file(f"data modify storage bldp:registry all.update.block.\"{version['id']}\" set value {version["block_list"]}","bldp/function/registry/update/block",f"{version['id']}.mcfunction")
-        bldp.tag_append("bldp/tags/function","load",f"bldp:registry/update/block/{version['id']}")
+        blpack.string_to_file(f"data modify storage blpack:registry all.update.block.\"{version['id']}\" set value {version["block_list"]}","data/blpack/function/registry/update/block",f"{version['id']}.mcfunction")
+        blpack.tag_append("data/blpack/tags/function","load",f"blpack:registry/update/block/{version['id']}")
 
         has_blocks_registry.append(version['id'])
     if "entity_type_list" in version and version["entity_type_list"] != None and len(version["entity_type_list"]) > 0:
-        save_tag(version["entity_type_list"],"bldp/tags/entity_type/update",version['id'])
+        save_tag(version["entity_type_list"],"data/blpack/tags/entity_type/update",version['id'])
 
-        bldp.string_to_file(f"data modify storage bldp:registry all.update.entity_type.\"{version['id']}\" set value {version["entity_type_list"]}","bldp/function/registry/update/entity_type",f"{version['id']}.mcfunction")
-        bldp.tag_append("bldp/tags/function","load",f"bldp:registry/update/entity_type/{version['id']}")
+        blpack.string_to_file(f"data modify storage blpack:registry all.update.entity_type.\"{version['id']}\" set value {version["entity_type_list"]}","data/blpack/function/registry/update/entity_type",f"{version['id']}.mcfunction")
+        blpack.tag_append("data/blpack/tags/function","load",f"blpack:registry/update/entity_type/{version['id']}")
 
         has_entities_registry.append(version['id'])
     all_registry.append(version['id'])
 
-bldp.string_to_file(f"data modify storage bldp:registry all.updates set value {all_registry}","bldp/function/registry","updates.mcfunction")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/updates")
+blpack.string_to_file(f"data modify storage blpack:registry all.updates set value {all_registry}","data/blpack/function/registry","updates.mcfunction")
+blpack.tag_append("data/blpack/tags/function","load","blpack:registry/updates")
 
-bldp.string_to_file(f"data modify storage bldp:registry all.updates_with_items set value {has_items_registry}","bldp/function/registry","updates_with_items.mcfunction")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/updates_with_items")
+blpack.string_to_file(f"data modify storage blpack:registry all.updates_with_items set value {has_items_registry}","data/blpack/function/registry","updates_with_items.mcfunction")
+blpack.tag_append("data/blpack/tags/function","load","blpack:registry/updates_with_items")
 
-bldp.string_to_file(f"data modify storage bldp:registry all.updates_with_blocks set value {has_blocks_registry}","bldp/function/registry","updates_with_blocks.mcfunction")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/updates_with_blocks")
+blpack.string_to_file(f"data modify storage blpack:registry all.updates_with_blocks set value {has_blocks_registry}","data/blpack/function/registry","updates_with_blocks.mcfunction")
+blpack.tag_append("data/blpack/tags/function","load","blpack:registry/updates_with_blocks")
 
-bldp.string_to_file(f"data modify storage bldp:registry all.updates_with_entities set value {has_entities_registry}","bldp/function/registry","updates_with_entities.mcfunction")
-bldp.tag_append("bldp/tags/function","load","bldp:registry/updates_with_entities")
+blpack.string_to_file(f"data modify storage blpack:registry all.updates_with_entities set value {has_entities_registry}","data/blpack/function/registry","updates_with_entities.mcfunction")
+blpack.tag_append("data/blpack/tags/function","load","blpack:registry/updates_with_entities")
 
-bldp.tag_append("minecraft/tags/function","load","#bldp:load")
+blpack.tag_append("data/minecraft/tags/function","load","#blpack:load")

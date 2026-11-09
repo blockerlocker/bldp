@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."beta_1.5" set value ['lightning_bolt']

@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.block."classic_0.0.12a" set value ['bedrock', 'water', 'lava']

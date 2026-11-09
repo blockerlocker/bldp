@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."alpha_v1.0.11" set value ['slime']

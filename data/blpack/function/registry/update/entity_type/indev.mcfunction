@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.entity_type."indev" set value ['painting']

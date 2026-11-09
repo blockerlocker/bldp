@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."1.10" set value ['bone_block', 'magma_block', 'nether_wart_block', 'red_nether_bricks', 'structure_void']

@@ -9,30 +9,28 @@ else:
     MCVERSION = "latest-snapshot"
 
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(Path(__file__).resolve().parent.parent)
+sys.path.append(str(Path.cwd()))
 
-if not Path.cwd().name == "data":
-    print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+if not Path(Path(__file__).resolve().parent).name == "data":
+    print(f"!-This module must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
     sys.exit()
 
-if not Path("bldp.py").is_file():
-    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
+if not Path("blpack.py").is_file():
+    with open("blpack.py", "w", encoding="utf-8") as blpack_main:
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
 
-import bldp
+import blpack
 
-MCVERSION = bldp.get_version(MCVERSION)
+MCVERSION = blpack.get_version(MCVERSION)
 
-bldp.remove_paths("bldp/tags/block/inverted")
+blpack.remove_paths("data/blpack/tags/block/inverted")
 
-block_list = bldp.get_registry_data(MCVERSION,"block")
+block_list = blpack.get_registry_data(MCVERSION,"block")
 for block in block_list:
     tag_template = {"values":[]}
 
     tag_template["values"] = [other_block for other_block in block_list if other_block != block]
 
-    Path("bldp/tags/block/inverted/").mkdir(parents=True, exist_ok=True)
-    
-    with open(f"bldp/tags/block/inverted/{block}.json", "w") as output_file:
-        json.dump(tag_template,output_file,indent=4)
+    blpack.json_to_file(tag_template,"data/blpack/tags/block/inverted",block)

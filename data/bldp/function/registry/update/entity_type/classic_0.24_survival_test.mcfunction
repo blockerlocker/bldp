@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."classic_0.24_survival_test" set value ['creeper', 'pig', 'skeleton', 'zombie', 'arrow', 'item']

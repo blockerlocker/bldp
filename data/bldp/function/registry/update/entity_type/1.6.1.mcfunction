@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."1.6.1" set value ['leash_knot', 'horse', 'mule', 'donkey', 'skeleton_horse', 'zombie_horse']

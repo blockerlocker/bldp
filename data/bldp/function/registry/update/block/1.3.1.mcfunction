@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."1.3.1" set value ['oak_slab', 'spruce_slab', 'birch_slab', 'jungle_slab', 'emerald_ore', 'ender_chest', 'sandstone_stairs', 'tripwire_hook', 'emerald_block', 'spruce_stairs', 'birch_stairs', 'jungle_stairs', 'oak_wood', 'spruce_wood', 'birch_wood', 'jungle_wood', 'cocoa', 'tripwire']

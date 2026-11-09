@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.item."beta_1.4" set value ['cookie']

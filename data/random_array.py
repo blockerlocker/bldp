@@ -1,60 +1,65 @@
 import os, sys, urllib.request
 from pathlib import Path
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(Path(__file__).resolve().parent.parent)
+sys.path.append(str(Path.cwd()))
 
-if not Path.cwd().name == "data":
-    print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+if not Path(Path(__file__).resolve().parent).name == "data":
+    print(f"!-This module must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
     sys.exit()
 
-if not Path("bldp.py").is_file():
-    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
+if not Path("blpack.py").is_file():
+    with open("blpack.py", "w", encoding="utf-8") as blpack_main:
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
 
-import bldp
+import blpack
 
-bldp.remove_paths("bldp/function/func/array")
-bldp.remove_paths("bldp/function/func/random")
+blpack.remove_paths([
+    "data/blpack/function/func/array",
+    "data/blpack/function/func/random"
+])
 
-bldp.string_to_file("$execute store result storage bldp:temp all.random.value int 1 run random value $(x)..$(y)","bldp/function/func/random","value.mcfunction")
+blpack.string_to_file("$execute store result storage blpack:temp all.random.value int 1 run random value $(x)..$(y)","data/blpack/function/func/random","value.mcfunction")
 
 init_function = "\n".join([
-    "data remove storage bldp:array_random out",
-    "execute store result score #bldp_array_random operator if data storage bldp:array_random in[]",
-    "data modify storage bldp:temp all.random.x set value 0",
-    "execute store result storage bldp:temp all.random.y int 1 run scoreboard players remove #bldp_array_random operator 1",
-    "function bldp:func/random/value with storage bldp:temp all.random",
-    "function bldp:func/array/random/commit with storage bldp:temp all.random",
-    "data remove storage bldp:array_random in",
-    "data remove storage bldp:temp all"
+    "data remove storage blpack:array_random out",
+    "execute store result score #blpack_array_random operator if data storage blpack:array_random in[]",
+    "data modify storage blpack:temp all.random.x set value 0",
+    "execute store result storage blpack:temp all.random.y int 1 run scoreboard players remove #blpack_array_random operator 1",
+    "function blpack:func/random/value with storage blpack:temp all.random",
+    "function blpack:func/array/random/commit with storage blpack:temp all.random",
+    "data remove storage blpack:array_random in",
+    "data remove storage blpack:temp all"
 ])
-bldp.string_to_file(init_function,"bldp/function/func/array/random","init.mcfunction")
+blpack.string_to_file(init_function,"data/blpack/function/func/array/random","init.mcfunction")
 
 commit_function = "\n".join([
-    "$data modify storage bldp:array_random out set from storage bldp:array_random in[$(value)]",
-    "data modify storage bldp:array_random index set from storage bldp:temp all.random.value"
+    "$data modify storage blpack:array_random out set from storage blpack:array_random in[$(value)]",
+    "data modify storage blpack:array_random index set from storage blpack:temp all.random.value"
 ])
-bldp.string_to_file(commit_function,"bldp/function/func/array/random","commit.mcfunction")
+blpack.string_to_file(commit_function,"data/blpack/function/func/array/random","commit.mcfunction")
 
-bldp.mcfunction_append("bldp/function/main","load","scoreboard objectives add operator dummy")
+blpack.mcfunction_append("data/blpack/function/main","load","scoreboard objectives add operator dummy")
 
 def registry_crawl(registry):
     for sub_registry in registry.iterdir():
         if sub_registry.is_file():
-            registry_path = str(registry).replace("\\","/")[23:]
+            print(str(registry))
+            registry_path = str(registry).replace("\\","/").replace("data/blpack/function/registry/","")
+            print(registry_path)
             subregistry_name = Path(sub_registry).stem
-            bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.\"{subregistry_name}\"\nfunction bldp:func/array/random/init",f"bldp/function/func/random/{registry_path}",f"{subregistry_name}.mcfunction")
+            blpack.string_to_file(f"data modify storage blpack:array_random in set from storage blpack:registry all.\"{subregistry_name}\"\nfunction blpack:func/array/random/init",f"data/blpack/function/func/random/{registry_path}",f"{subregistry_name}.mcfunction")
         elif sub_registry.is_dir():
             registry_crawl(sub_registry)
 
-if Path("bldp/function/registry").is_dir():
-    for registry in Path("bldp/function/registry").iterdir():
+if Path("data/blpack/function/registry").is_dir():
+    for registry in Path("data/blpack/function/registry").iterdir():
         if registry.is_file():
             registry_name = Path(registry).stem
-            bldp.string_to_file(f"data modify storage bldp:array_random in set from storage bldp:registry all.\"{registry_name}\"\nfunction bldp:func/array/random/init","bldp/function/func/random",f"{registry_name}.mcfunction")
+            blpack.string_to_file(f"data modify storage blpack:array_random in set from storage blpack:registry all.\"{registry_name}\"\nfunction blpack:func/array/random/init","data/blpack/function/func/random",f"{registry_name}.mcfunction")
         elif registry.is_dir():
             registry_crawl(registry)
         
-bldp.tag_append("bldp/tags/function","load","bldp:main/load")
-bldp.tag_append("minecraft/tags/function","load","#bldp:load")
+blpack.tag_append("data/blpack/tags/function","load","blpack:main/load")
+blpack.tag_append("data/minecraft/tags/function","load","#blpack:load")

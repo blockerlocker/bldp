@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."1.19.4" set value ['block_display', 'interaction', 'item_display', 'text_display']

@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."1.0" set value ['nether_bricks', 'nether_brick_stairs', 'nether_brick_fence', 'nether_wart', 'mycelium', 'lily_pad', 'end_portal_frame', 'cauldron', 'enchanting_table', 'brewing_stand', 'end_stone', 'dragon_egg', 'end_portal', 'water_cauldron']

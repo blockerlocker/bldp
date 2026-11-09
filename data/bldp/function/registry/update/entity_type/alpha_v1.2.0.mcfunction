@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."alpha_v1.2.0" set value ['ghast', 'zombified_piglin', 'fishing_bobber', 'fireball']

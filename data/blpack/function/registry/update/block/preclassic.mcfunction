@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.block."preclassic" set value ['stone', 'grass_block', 'dirt', 'oak_planks', 'cobblestone', 'oak_sapling']

@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.item."1.4.6" set value ['nether_brick_slab', 'firework_star', 'firework_rocket', 'enchanted_book']

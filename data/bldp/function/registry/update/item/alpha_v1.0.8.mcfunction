@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.item."alpha_v1.0.8" set value ['leather', 'milk_bucket']

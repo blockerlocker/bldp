@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.block."alpha_v1.0.6" set value ['cactus']

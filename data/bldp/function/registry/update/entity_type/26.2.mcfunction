@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."26.2" set value ['sulfur_cube']

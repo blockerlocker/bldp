@@ -9,27 +9,30 @@ else:
     MCVERSION = "latest-snapshot"
 
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(Path(__file__).resolve().parent.parent)
+sys.path.append(str(Path.cwd()))
 
-if not Path.cwd().name == "data":
-    print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+if not Path(Path(__file__).resolve().parent).name == "data":
+    print(f"!-This module must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
     sys.exit()
 
-if not Path("bldp.py").is_file():
-    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
+if not Path("blpack.py").is_file():
+    with open("blpack.py", "w", encoding="utf-8") as blpack_main:
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
 
-import bldp
+import blpack
 
-MCVERSION = bldp.get_version(MCVERSION)
+MCVERSION = blpack.get_version(MCVERSION)
 
-TEMP_DIR = "temp_bldp"
+TEMP_DIR = "temp_blpack"
 
-bldp.remove_paths(TEMP_DIR)
-bldp.remove_paths("bldp/tags/block/color")
+blpack.remove_paths([
+    TEMP_DIR,
+    "data/blpack/tags/block/color"
+])
 
-bldp.unpack_client(MCVERSION,TEMP_DIR,("assets/minecraft/blockstates","assets/minecraft/models/block","assets/minecraft/textures"))
+blpack.unpack_client(MCVERSION,TEMP_DIR,("assets/minecraft/blockstates","assets/minecraft/models/block","assets/minecraft/textures"))
 
 override_map = {
     "grass_block": "green",
@@ -111,22 +114,22 @@ override_map = {
 
 print("--Getting average colors of concrete blocks")
 color_map = {
-    "black": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/black_concrete.png"),
-    "blue": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/blue_concrete.png"),
-    "brown": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/brown_concrete.png"),
-    "cyan": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/cyan_concrete.png"),
-    "gray": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/gray_concrete.png"),
-    "green": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/green_concrete.png"),
-    "light_blue": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/light_blue_concrete.png"),
-    "light_gray": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/light_gray_concrete.png"),
-    "lime": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/lime_concrete.png"),
-    "magenta": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/magenta_concrete.png"),
-    "orange": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/orange_concrete.png"),
-    "pink": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/pink_concrete.png"),
-    "purple": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/purple_concrete.png"),
-    "red": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/red_concrete.png"),
-    "white": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/white_concrete.png"),
-    "yellow": bldp.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/yellow_concrete.png")
+    "black": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/black_concrete.png"),
+    "blue": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/blue_concrete.png"),
+    "brown": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/brown_concrete.png"),
+    "cyan": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/cyan_concrete.png"),
+    "gray": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/gray_concrete.png"),
+    "green": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/green_concrete.png"),
+    "light_blue": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/light_blue_concrete.png"),
+    "light_gray": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/light_gray_concrete.png"),
+    "lime": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/lime_concrete.png"),
+    "magenta": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/magenta_concrete.png"),
+    "orange": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/orange_concrete.png"),
+    "pink": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/pink_concrete.png"),
+    "purple": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/purple_concrete.png"),
+    "red": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/red_concrete.png"),
+    "white": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/white_concrete.png"),
+    "yellow": blpack.average_color(f"{TEMP_DIR}/assets/minecraft/textures/block/yellow_concrete.png")
 }
 
 print("--Sorting blocks by color")
@@ -192,7 +195,7 @@ for file in os.listdir(blockstate_dir):
                     texture_path = texture_path[10:]
                 if texture_path != "missingno" and texture_path[0:1] != "#":
                     actual_texture_path = f"{TEMP_DIR}/assets/minecraft/textures/{texture_path}.png"
-                    add_r, add_g, add_b = bldp.average_color(actual_texture_path)
+                    add_r, add_g, add_b = blpack.average_color(actual_texture_path)
 
                     total_r += add_r
                     total_g += add_g
@@ -211,6 +214,6 @@ for file in os.listdir(blockstate_dir):
             block_dict[closest_color].append(block_id)
 
 for color in block_dict:
-    bldp.json_to_file({"values":block_dict[color]},"bldp/tags/block/color",color)
+    blpack.json_to_file({"values":block_dict[color]},"data/blpack/tags/block/color",color)
 
-bldp.remove_paths(TEMP_DIR)
+blpack.remove_paths(TEMP_DIR)

@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."1.21.9" set value ['copper_golem', 'mannequin']

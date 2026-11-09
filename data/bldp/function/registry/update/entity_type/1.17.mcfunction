@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."1.17" set value ['axolotl', 'glow_item_frame', 'glow_squid', 'goat', 'marker']

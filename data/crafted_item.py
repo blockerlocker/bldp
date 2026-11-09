@@ -1,4 +1,4 @@
-import os, json, sys, urllib.request, re
+import os, sys, urllib.request, re
 from pathlib import Path
 
 
@@ -9,25 +9,28 @@ else:
     MCVERSION = "latest-snapshot"
 
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(Path(__file__).resolve().parent.parent)
+sys.path.append(str(Path.cwd()))
 
-if not Path.cwd().name == "data":
-    print(f"Working directory not named 'data'! Instead got '{Path.cwd().name}'. bldp generation scripts must be stored within the 'data' folder of your pack to generate correctly!")
+if not Path(Path(__file__).resolve().parent).name == "data":
+    print(f"!-This module must be stored within the 'data' folder of your pack to generate correctly!")
     input("Press Enter to exit program...")
     sys.exit()
 
-if not Path("bldp.py").is_file():
-    with open("bldp.py", "w", encoding="utf-8") as bldp_main:
-        bldp_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/bldp/main/data/bldp.py").read().decode('utf-8'))
+if not Path("blpack.py").is_file():
+    with open("blpack.py", "w", encoding="utf-8") as blpack_main:
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
 
-import bldp
+import blpack
 
-MCVERSION = bldp.get_version(MCVERSION)
+MCVERSION = blpack.get_version(MCVERSION)
 
-bldp.remove_paths("bldp/function/crafted_item")
-bldp.remove_paths("bldp/predicate/crafted_item.json")
+blpack.remove_paths([
+    "data/blpack/function/crafted_item",
+    "data/blpack/predicate/crafted_item.json"
+])
 
-item_list = bldp.get_registry_data(MCVERSION,"item")
+item_list = blpack.get_registry_data(MCVERSION,"item")
 
 predicate_template = {
         "type": "minecraft:any_of",
@@ -41,20 +44,20 @@ for item in item_list:
             "scores": {}
         }
     
-    term_template["scores"]["bldp.crafted."+item] = {"min": 1}
+    term_template["scores"]["blpack.crafted."+item] = {"min": 1}
 
     predicate_template["terms"].append(term_template)
 
-bldp.json_to_file(predicate_template,"bldp/predicate","crafted_item")
+blpack.json_to_file(predicate_template,"data/blpack/predicate","crafted_item")
 
-load_function = "\n".join([re.sub("(^.*$)",r"scoreboard objectives add bldp.crafted.\1 minecraft.crafted:\1",item) for item in item_list])
-bldp.string_to_file(load_function,"bldp/function/crafted_item","load.mcfunction")
+load_function = "\n".join([re.sub("(^.*$)",r"scoreboard objectives add blpack.crafted.\1 minecraft.crafted:\1",item) for item in item_list])
+blpack.string_to_file(load_function,"data/blpack/function/crafted_item","load.mcfunction")
 
-reset_function = "\n".join([re.sub("(^.*$)",r"scoreboard players reset @s bldp.crafted.\1",item) for item in item_list])
-bldp.string_to_file(reset_function,"bldp/function/crafted_item","reset.mcfunction")
+reset_function = "\n".join([re.sub("(^.*$)",r"scoreboard players reset @s blpack.crafted.\1",item) for item in item_list])
+blpack.string_to_file(reset_function,"data/blpack/function/crafted_item","reset.mcfunction")
 
-identify_function = "\n".join([re.sub("(^.*$)",r"execute if score @s bldp.crafted.\1 matches 1.. run data modify storage bldp:crafted_item out set value \1",item) for item in item_list])
-bldp.string_to_file(identify_function,"bldp/function/crafted_item","identify.mcfunction")
+identify_function = "\n".join([re.sub("(^.*$)",r"execute if score @s blpack.crafted.\1 matches 1.. run data modify storage blpack:crafted_item out set value \1",item) for item in item_list])
+blpack.string_to_file(identify_function,"data/blpack/function/crafted_item","identify.mcfunction")
 
-bldp.tag_append("bldp/tags/function","load","bldp:crafted_item/load")
-bldp.tag_append("minecraft/tags/function","load","#bldp:load")
+blpack.tag_append("data/blpack/tags/function","load","blpack:crafted_item/load")
+blpack.tag_append("data/minecraft/tags/function","load","#blpack:load")

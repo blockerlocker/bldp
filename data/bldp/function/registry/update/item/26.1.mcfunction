@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.item."26.1" set value ['golden_dandelion']

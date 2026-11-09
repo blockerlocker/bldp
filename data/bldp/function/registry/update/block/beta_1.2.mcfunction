@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.block."beta_1.2" set value ['brown_wool', 'black_wool', 'cake', 'dispenser', 'note_block', 'sandstone', 'spruce_log', 'spruce_leaves', 'birch_log', 'birch_leaves', 'lapis_ore', 'lapis_block']

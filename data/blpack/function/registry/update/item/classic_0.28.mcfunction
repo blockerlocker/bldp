@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.item."classic_0.28" set value ['obsidian']

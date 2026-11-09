@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.block."classic_0.0.19a" set value ['glass', 'sponge']

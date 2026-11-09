@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.item."1.2.1" set value ['jungle_log', 'jungle_leaves', 'jungle_sapling', 'experience_bottle', 'fire_charge', 'ocelot_spawn_egg', 'redstone_lamp', 'chiseled_stone_bricks']

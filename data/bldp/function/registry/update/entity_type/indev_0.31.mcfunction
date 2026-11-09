@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."indev_0.31" set value ['giant']

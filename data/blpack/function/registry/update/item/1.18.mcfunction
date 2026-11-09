@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.item."1.18" set value ['music_disc_otherside']

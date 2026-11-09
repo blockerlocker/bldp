@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."1.8" set value ['armor_stand', 'endermite', 'guardian', 'elder_guardian', 'rabbit']

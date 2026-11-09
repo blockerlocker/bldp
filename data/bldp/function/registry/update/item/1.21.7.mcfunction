@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.item."1.21.7" set value ['music_disc_lava_chicken']

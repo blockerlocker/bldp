@@ -1,1 +1,0 @@
-data modify storage bldp:registry all.update.entity_type."1.2.1" set value ['experience_bottle', 'ocelot', 'iron_golem']

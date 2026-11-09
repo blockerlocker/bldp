@@ -1,0 +1,1 @@
+data modify storage blpack:registry all.update.entity_type."1.0" set value ['small_fireball', 'eye_of_ender', 'ender_pearl', 'end_crystal', 'splash_potion', 'blaze', 'magma_cube', 'mooshroom', 'snow_golem', 'villager', 'ender_dragon']
