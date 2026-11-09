@@ -45,9 +45,7 @@ blpack.mcfunction_append("data/blpack/function/main","load","scoreboard objectiv
 def registry_crawl(registry):
     for sub_registry in registry.iterdir():
         if sub_registry.is_file():
-            print(str(registry))
             registry_path = str(registry).replace("\\","/").replace("data/blpack/function/registry/","")
-            print(registry_path)
             subregistry_name = Path(sub_registry).stem
             blpack.string_to_file(f"data modify storage blpack:array_random in set from storage blpack:registry all.\"{subregistry_name}\"\nfunction blpack:func/array/random/init",f"data/blpack/function/func/random/{registry_path}",f"{subregistry_name}.mcfunction")
         elif sub_registry.is_dir():
