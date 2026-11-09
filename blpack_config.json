@@ -1,5 +1,6 @@
 {
     "data/data_registries": {
         "all": true
-    }
+    },
+    "data/update_registries": {}
 }
