@@ -13,7 +13,7 @@ os.chdir(Path(__file__).resolve().parent)
 
 if not Path("blpack.py").is_file():
     with open("blpack.py", "w", encoding="utf-8") as blpack_main:
-        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blockerlocker_pack/main/blpack.py").read().decode('utf-8'))
+        blpack_main.write(urllib.request.urlopen("https://raw.githubusercontent.com/blockerlocker/blpack/main/blpack.py").read().decode('utf-8'))
 
 import blpack
 

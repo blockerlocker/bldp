@@ -1,4 +1,4 @@
-blockerlocker_pack is a data pack and resource pack library I use for my projects. This repo contains the entirety of blpack, but the individual modules can be generated with each individual Python script. The Python scripts must be stored in the 'data' or 'assets' folder of your pack in order to generate correctly. Below are descriptions of each module.
+blpack is a data pack and resource pack library I use for my projects. This repo contains the entirety of blpack, but the individual modules can be generated with each individual Python script. The Python scripts must be stored in the 'data' or 'assets' folder of your pack in order to generate correctly. Below are descriptions of each module.
 
 All Python scripts can have the target Minecraft version set manually by editing the **MCVERSION** variable near the top of script, or by running the script via the command line (ie; `python mined_block.py "26.2"`). This is also true of `blpack_install.py`, which installs all modules in the folder using whatever MCVERSION it has set for itself.
 
