@@ -15,5 +15,10 @@
         "non_mob_entities": ["storage","tag"],
         "mob_effects": ["storage","tag"]
     },
-    "data/update_registries": {}
+    "data/update_registries": {},
+    "data/get": [
+        "entity_midpoint",
+        "entity_name",
+        "entity_type"
+    ]
 }

@@ -17,30 +17,42 @@ import blpack
 
 blpack.remove_paths("data/blpack/function/get")
 
-entity_midpoint = "\n".join([
-    "execute at @s anchored eyes run summon marker ^ ^ ^ {UUID:uuid('1d655d4c-d951-442b-98ed-54ae52c6823f')}",
-    "data modify storage blpack:temp all.feet set from entity @s Pos[1]",
-    "data modify storage blpack:temp all.eyes set from entity 1d655d4c-d951-442b-98ed-54ae52c6823f Pos[1]",
-    "data modify storage blpack:get all.entity_midpoint set compute default float {type:div,left:{type:sub,left:{type:storage,storage:'blpack:temp',path:all.eyes},right:{type:storage,storage:'blpack:temp',path:all.feet}},right:2}",
-    "kill 1d655d4c-d951-442b-98ed-54ae52c6823f",
-    "data remove storage blpack:temp all"
-])
-blpack.string_to_file(entity_midpoint,"data/blpack/function/get","entity_midpoint.mcfunction")
+config = blpack.import_config_settings(f"{Path(__file__).resolve().parent.name}/{Path(__file__).stem}")
 
-entity_name = "\n".join([
-    "tag @s add blpack_get_entity_name",
-    "summon text_display ~ ~ ~ {text:{selector:'@n[tag=blpack_get_entity_name]'},UUID:uuid('dd344b15-32c3-4264-b149-f1e0c083f0f2')}",
-    "data modify storage blpack:get all.entity_name set from entity dd344b15-32c3-4264-b149-f1e0c083f0f2 text.hover_event.name",
-    "tag @s remove blpack_get_entity_name",
-    "kill dd344b15-32c3-4264-b149-f1e0c083f0f2"
-])
-blpack.string_to_file(entity_name,"data/blpack/function/get","entity_name.mcfunction")
+if config == None:
+    config = [
+        "entity_midpoint",
+        "entity_name",
+        "entity_type"
+    ]
 
-entity_type = "\n".join([
-    "tag @s add blpack_get_entity_type",
-    "summon text_display ~ ~ ~ {text:{selector:'@n[tag=blpack_get_entity_type]'},UUID:uuid('dd344b15-32c3-4264-b149-f1e0c083f0f2')}",
-    "data modify storage blpack:get all.entity_type set from entity dd344b15-32c3-4264-b149-f1e0c083f0f2 text.hover_event.id",
-    "tag @s remove blpack_get_entity_type",
-    "kill dd344b15-32c3-4264-b149-f1e0c083f0f2"
-])
-blpack.string_to_file(entity_type,"data/blpack/function/get","entity_type.mcfunction")
+if "entity_midpoint" in config:
+    entity_midpoint = "\n".join([
+        "execute at @s anchored eyes run summon marker ^ ^ ^ {UUID:uuid('1d655d4c-d951-442b-98ed-54ae52c6823f')}",
+        "data modify storage blpack:temp all.feet set from entity @s Pos[1]",
+        "data modify storage blpack:temp all.eyes set from entity 1d655d4c-d951-442b-98ed-54ae52c6823f Pos[1]",
+        "data modify storage blpack:get all.entity_midpoint set compute default float {type:div,left:{type:sub,left:{type:storage,storage:'blpack:temp',path:all.eyes},right:{type:storage,storage:'blpack:temp',path:all.feet}},right:2}",
+        "kill 1d655d4c-d951-442b-98ed-54ae52c6823f",
+        "data remove storage blpack:temp all"
+    ])
+    blpack.string_to_file(entity_midpoint,"data/blpack/function/get","entity_midpoint.mcfunction")
+
+if "entity_name" in config:
+    entity_name = "\n".join([
+        "tag @s add blpack_get_entity_name",
+        "summon text_display ~ ~ ~ {text:{selector:'@n[tag=blpack_get_entity_name]'},UUID:uuid('dd344b15-32c3-4264-b149-f1e0c083f0f2')}",
+        "data modify storage blpack:get all.entity_name set from entity dd344b15-32c3-4264-b149-f1e0c083f0f2 text.hover_event.name",
+        "tag @s remove blpack_get_entity_name",
+        "kill dd344b15-32c3-4264-b149-f1e0c083f0f2"
+    ])
+    blpack.string_to_file(entity_name,"data/blpack/function/get","entity_name.mcfunction")
+
+if "entity_type" in config:
+    entity_type = "\n".join([
+        "tag @s add blpack_get_entity_type",
+        "summon text_display ~ ~ ~ {text:{selector:'@n[tag=blpack_get_entity_type]'},UUID:uuid('dd344b15-32c3-4264-b149-f1e0c083f0f2')}",
+        "data modify storage blpack:get all.entity_type set from entity dd344b15-32c3-4264-b149-f1e0c083f0f2 text.hover_event.id",
+        "tag @s remove blpack_get_entity_type",
+        "kill dd344b15-32c3-4264-b149-f1e0c083f0f2"
+    ])
+    blpack.string_to_file(entity_type,"data/blpack/function/get","entity_type.mcfunction")

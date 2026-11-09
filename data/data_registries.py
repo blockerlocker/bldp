@@ -34,8 +34,10 @@ blpack.remove_paths([
     "data/blpack/tags/item/block_placing_items.json"
 ])
 
-def config_default():
-    return {
+config = blpack.import_config_settings(f"{Path(__file__).resolve().parent.name}/{Path(__file__).stem}")
+
+if config == None:
+    config = {
         "items": ["storage","tag"],
         "blocks": ["storage","tag"],
         "block_placing_items": ["storage","tag"],
@@ -46,11 +48,6 @@ def config_default():
         "non_mob_entities": ["storage","tag"],
         "mob_effects": ["storage","tag"]
     }
-
-config = blpack.import_config_settings(f"{Path(__file__).resolve().parent.name}/{Path(__file__).stem}")
-
-if config == None:
-    config = config_default()
 
 MCVERSION = blpack.import_config_version()
 

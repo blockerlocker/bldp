@@ -15,13 +15,10 @@ if not Path("blpack.py").is_file():
 
 import blpack
 
-def config_default():
-    return {}
-
 config = blpack.import_config_settings(f"{Path(__file__).resolve().parent.name}/{Path(__file__).stem}")
 
 if config == None:
-    config = config_default()
+    config = {}
 
 if "volume_input" not in config:
     config["volume_input"] = input("What volumes would you like to generate a test for? Enter in 16x16x16 format, separated by commas.\n> ")
