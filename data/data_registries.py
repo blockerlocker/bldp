@@ -63,6 +63,8 @@ else:
         if not registry in blpack_config["data/data_registries"]:
             blpack_config["data/data_registries"][registry] = []
 
+
+
 def export_files(data,storage_name,type=None,tag_name=None):
     if not storage_name in blpack_config["data/data_registries"]: return
     
@@ -102,5 +104,5 @@ export_files(non_mob_entities_list,"non_mob_entities","entity_type")
 mob_effect_list = blpack.get_registry_data(MCVERSION,"mob_effect")
 export_files(mob_effect_list,"mob_effects")
 
-
-blpack.tag_append("data/minecraft/tags/function","load","#blpack:load")
+if Path("data/blpack/tags/function/load.json").is_file():
+    blpack.tag_append("data/minecraft/tags/function","load","#blpack:load")
