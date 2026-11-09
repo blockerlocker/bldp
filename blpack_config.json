@@ -1,6 +1,19 @@
 {
+    "version": "latest-snapshot",
+    "data/block_in_volume": {
+        "volume_input": "",
+        "block_id_input": ""
+    },
     "data/data_registries": {
-        "all": true
+        "items": ["storage","tag"],
+        "blocks": ["storage","tag"],
+        "block_placing_items": ["storage","tag"],
+        "non_air_blocks": ["storage","tag"],
+        "biomes": ["storage","tag"],
+        "entities": ["storage","tag"],
+        "mobs": ["storage","tag"],
+        "non_mob_entities": ["storage","tag"],
+        "mob_effects": ["storage","tag"]
     },
     "data/update_registries": {}
 }

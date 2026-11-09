@@ -1,10 +1,15 @@
 blpack is a data pack and resource pack library I use for my projects. This repo contains the entirety of blpack, but the individual modules can be generated with each individual Python script. The Python scripts must be stored in the 'data' or 'assets' folder of your pack in order to generate correctly. Below are descriptions of each module.
 
-All Python scripts can have the target Minecraft version set manually by editing the **MCVERSION** variable near the top of script, or by running the script via the command line (ie; `python mined_block.py "26.2"`). This is also true of `blpack_install.py`, which installs all modules in the folder using whatever MCVERSION it has set for itself.
-
 These generators are powered using the automatically generated and version-controlled mcmeta data maintained by Misode, check out the repo here: https://github.com/misode/mcmeta
 
-## Modules
+## Install Script and Config File
+The entirety of blpack can be accessed with `blpack_install.py` and `blpack_config.json`. The install script simply runs every single module that is listed within the config file, as well as any modules it detects within the 'data' or 'assets' folders. If a module is listed in the config file but is not downloaded, the install script will grab it, so you only need these two files.
+
+The config file is used for modifying the settings of each module. If not specified, modules will either use default settings, or ask the user for inputs in the terminal if necessary. The Minecraft version you are generating your pack for is also specified in the config (for example, "26.3" or "26.4-snapshot-5"), and if not present, will default to the latest snapshot "latest-snapshot" and "latest-release" are valid inputs.
+
+The version of `blpack_config.json` within this repository contains default settings of each module so you can understand their format.
+
+## Data Modules
 | Module | Description |
 | --- | --- |
 | mined_block | A predicate that can be used to detect if the player mined any block. The predicate is `blpack:mined_block`, and has a scoreboard for every block in the game. After detecting, you can use `blpack:mined_block/identify` to identify which block was mined, and `blpack:mined_block/add` to add the total number of mined blocks into a single scoreboard value (`blpack.blocks_mined`), and `blpack:mined_block/reset` to reset every scoreboard to detect the predicate again. |
@@ -12,7 +17,7 @@ These generators are powered using the automatically generated and version-contr
 | picked_up_item | A predicate that can be used to detect if the player picked up any item. The predicate is `blpack:picked_up_item`, and has a scoreboard for every item in the game. After detecting, you can use `blpack:picked_up_item/identify` to identify which item was picked up, and `blpack:picked_up_item/reset` to reset every scoreboard to detect the predicate again. |
 | used_item | A predicate that can be used to detect if the player used any item. The predicate is `blpack:used_item`, and has a scoreboard for every item in the game. After detecting, you can use `blpack:used_item/identify` to identify which item was used, and `blpack:used_item/reset` to reset every scoreboard to detect the predicate again. |
 | update_tags | Sorts every block, entity, and item into different tags based on when they were added to the game. So if you want to kill every entity added in the 1.4.2 Pretty Scary Update, you can run `/kill @e[type=#blpack:update/1.4.2]`. The generator for this pack does not currently support older versions where IDs were different, its designed for the most recent version of the game. |
-| data_registries | Adds several registries accessible via `data get storage blpack:registry` and item/entity/block tags. Includes lists for every item, block, entity, and biome, as well as for all block-placing items, all non-air blocks, all mobs, and all non-mob entities.<br><br>This module can leverage `blpack_config.json` to limit which files are generated, see [slots_give_effects](https://github.com/blockerlocker/slots_give_effects) as an example. |
+| data_registries | Adds several registries accessible via `data get storage blpack:registry` and item/entity/block tags. Includes lists for every item, block, entity, and biome, as well as for all block-placing items, all non-air blocks, all mobs, all non-mob entities, and all potion effects.<br><br>This module can leverage [blpack_config.json](https://github.com/blockerlocker/blpack/blob/main/blpack_config.json) to limit which files are generated, you can read it to see its file format. |
 | item_icons | A dictionary that matches item ids with a sprite text component. You can easily retrieve the icon with the text component `{storage:"blpack:icon",nbt:"all.item[{id:<item_id>}].icon",interpret:true}` |
 | random_array | Functions for getting a random value from an array. Will always output to `storage blpack:array_random out`. Functions start with `function blpack:func/random/` and rely on the registries from other modules (such as `data_registries` and `update_registries`). You can copy the format to get a random value from any array. |
 | color_tags | Block tags that attempt to sort every block in the game into the 16 Minecraft color categories. Not perfectly accurate at the moment, but close enough. Tags are in the format `#blpack:color/<color>` |

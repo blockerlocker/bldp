@@ -1,14 +1,6 @@
 import os, sys, urllib.request, re
 from pathlib import Path
 
-
-if len(sys.argv) > 1:
-    MCVERSION = sys.argv[1]
-else:
-#### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "latest-snapshot"
-
-
 os.chdir(Path(__file__).resolve().parent.parent)
 sys.path.append(str(Path.cwd()))
 
@@ -23,56 +15,53 @@ if not Path("blpack.py").is_file():
 
 import blpack
 
-MCVERSION = blpack.get_version(MCVERSION)
-
 blpack.remove_paths([
-    "data/blpack/function/registry/items.mcfunction",
+    "data/blpack/function/registry/biomes.mcfunction",
     "data/blpack/function/registry/block_placing_items.mcfunction",
     "data/blpack/function/registry/blocks.mcfunction",
     "data/blpack/function/registry/entities.mcfunction",
-    "data/blpack/function/registry/mobs.mcfunction",
+    "data/blpack/function/registry/items.mcfunction",
     "data/blpack/function/registry/mob_effects.mcfunction",
+    "data/blpack/function/registry/mobs.mcfunction",
     "data/blpack/function/registry/non_air_blocks.mcfunction",
     "data/blpack/function/registry/non_mob_entities.mcfunction",
-    "data/blpack/function/registry/biomes.mcfunction",
-    "data/blpack/tags/item/all.json",
-    "data/blpack/tags/item/block_placing_items.json",
     "data/blpack/tags/block/all.json",
     "data/blpack/tags/block/non_air_blocks.json",
     "data/blpack/tags/entity_type/all.json",
     "data/blpack/tags/entity_type/mobs.json",
-    "data/blpack/tags/entity_type/non_mob_entities.json"
+    "data/blpack/tags/entity_type/non_mob_entities.json",
+    "data/blpack/tags/item/all.json",
+    "data/blpack/tags/item/block_placing_items.json"
 ])
 
-blpack_config = blpack.import_config()
-
-if blpack_config == None:
-    blpack_config = {
-        "data/data_registries": {
-            "all": True
-        }
+def config_default():
+    return {
+        "items": ["storage","tag"],
+        "blocks": ["storage","tag"],
+        "block_placing_items": ["storage","tag"],
+        "non_air_blocks": ["storage","tag"],
+        "biomes": ["storage","tag"],
+        "entities": ["storage","tag"],
+        "mobs": ["storage","tag"],
+        "non_mob_entities": ["storage","tag"],
+        "mob_effects": ["storage","tag"]
     }
 
-all_registries = ["items","blocks","block_placing_items","non_air_blocks","biomes","entities","mobs","non_mob_entities","mob_effects"]
+config = blpack.import_config_settings(f"{Path(__file__).resolve().parent.name}/{Path(__file__).stem}")
 
-if "all" in blpack_config["data/data_registries"] and blpack_config["data/data_registries"]["all"] == True:
-    for registry in all_registries:
-        blpack_config["data/data_registries"][registry] = ["storage","tag"]
-else:
-    for registry in all_registries:
-        if not registry in blpack_config["data/data_registries"]:
-            blpack_config["data/data_registries"][registry] = []
+if config == None:
+    config = config_default()
 
-
+MCVERSION = blpack.import_config_version()
 
 def export_files(data,storage_name,type=None,tag_name=None):
-    if not storage_name in blpack_config["data/data_registries"]: return
+    if not storage_name in config: return
     
-    if "storage" in blpack_config["data/data_registries"][storage_name]:
+    if "storage" in config[storage_name]:
         blpack.string_to_file(f"data modify storage blpack:registry all.{storage_name} set value {data}","data/blpack/function/registry",f"{storage_name}.mcfunction")
         blpack.tag_append("data/blpack/tags/function","load",f"blpack:registry/{storage_name}")
 
-    if "tag" in blpack_config["data/data_registries"][storage_name] and not type == None:
+    if "tag" in config[storage_name] and not type == None:
         if tag_name == None: tag_name = storage_name
         blpack.json_to_file({"values":data},f"data/blpack/tags/{type}",tag_name)
 

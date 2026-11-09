@@ -52,13 +52,40 @@ def unpack_client(mcversion,directory,extract_paths):
         files_to_extract = [item for item in jar.namelist() if item.startswith(extract_paths) and not extract_paths == ""]
         jar.extractall(path=directory,members=files_to_extract)
 
-def import_config():
+def import_config_settings(module):
     if not Path("blpack_config.json").is_file(): return None
 
     with open("blpack_config.json") as config_json:
         config = json.load(config_json)
+
+    if not module in config: return None
     
-    return config
+    return config[module]
+
+def import_config_version():
+    if not Path("blpack_config.json").is_file(): return get_version("latest-snapshot")
+
+    with open("blpack_config.json") as config_json:
+        config = json.load(config_json)
+
+    if not "version" in config: return get_version("latest-snapshot")
+    
+    return get_version(config["version"])
+
+def import_config_modules():
+    if not Path("blpack_config.json").is_file(): return None
+
+    with open("blpack_config.json") as config_json:
+        config = json.load(config_json)
+
+    config_modules = []
+    for module in config:
+        if module[:5] == "data/" or module[:7] == "assets/":
+            config_modules.append(module)
+
+    if len(config_modules) == 0: return None
+    
+    return config_modules
 
 def remove_paths(path_list):
     if isinstance(path_list,str):

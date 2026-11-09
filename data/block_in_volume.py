@@ -15,27 +15,42 @@ if not Path("blpack.py").is_file():
 
 import blpack
 
-volume_input = input("What volumes would you like to generate a test for? Enter in 16x16x16 format, separated by commas.\n> ")
-volumes_raw = volume_input.split(",")
+def config_default():
+    return {}
+
+config = blpack.import_config_settings(f"{Path(__file__).resolve().parent.name}/{Path(__file__).stem}")
+
+if config == None:
+    config = config_default()
+
+if "volume_input" not in config:
+    config["volume_input"] = input("What volumes would you like to generate a test for? Enter in 16x16x16 format, separated by commas.\n> ")
+
+volumes_raw = config["volume_input"].split(",")
 all_volumes = []
 for volume in volumes_raw:
     volume_dimensions = re.split(r'[x: ]', volume)
     volume_dimensions = [int(dim) for dim in volume_dimensions if dim != ""]
     all_volumes.append(volume_dimensions)
 
-block_id_input = input("What block are you testing for? Accepts block ids and block tags.\nIf no block is provided, a macro function is generated instead.\n> ")
-if block_id_input == "":
+if "block_id_input" not in config:
+    config["block_id_input"] = input("What block are you testing for? Accepts block ids and block tags.\nIf no block is provided, a macro function is generated instead.\n> ")
+
+if config["block_id_input"] == "":
     generate_macro = True
 else:
     generate_macro = False
 
-if generate_macro == False and ("#" in block_id_input or ":" in block_id_input):
-    auto_path = block_id_input.replace(":","/").replace("#","")
-    path_input = input(f"You have entered a block tag, would you like to specify a custom path? If not, the file will end up at \"blpack/predicate/block_in_volume/{auto_path}\"\n> ")
-    if path_input == "":
+if generate_macro == False and ("#" in config["block_id_input"] or ":" in config["block_id_input"]):
+    auto_path = config["block_id_input"].replace(":","/").replace("#","")
+    
+    if "path_input" not in config:
+        config["path_input"] = input(f"You have entered a block tag, would you like to specify a custom path? If you enter nothing, the file will end up at \"data/blpack/predicate/block_in_volume/{auto_path}\"\n> ")
+    
+    if config["path_input"] == "":
         custom_path = f"data/blpack/predicate/block_in_volume/{auto_path}"
     else:
-        custom_path = path_input
+        custom_path = config["path_input"]
     
     use_custom_path = True
 else:
@@ -83,11 +98,11 @@ for current_volume in all_volumes:
         blpack.string_to_file(function,"data/blpack/function/block_in_volume",f"{current_volume[0]}x{current_volume[1]}x{current_volume[2]}.mcfunction")
     elif generate_macro == False:
         for subpredicate in predicate_template["terms"]:
-            subpredicate["predicate"]["block"]["blocks"] = block_id_input
+            subpredicate["predicate"]["block"]["blocks"] = config["block_id_input"]
 
         if use_custom_path == True:
             path = custom_path
         else:
-            path = f"data/blpack/predicate/block_in_volume/{block_id_input}"
+            path = f"data/blpack/predicate/block_in_volume/{config["block_id_input"]}"
 
         blpack.json_to_file(predicate_template,path,f"{current_volume[0]}x{current_volume[1]}x{current_volume[2]}")

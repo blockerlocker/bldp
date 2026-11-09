@@ -1,14 +1,6 @@
 import os, sys, urllib.request, re
 from pathlib import Path
 
-
-if len(sys.argv) > 1:
-    MCVERSION = sys.argv[1]
-else:
-#### SET MINECRAFT VERSION MANUALLY HERE ####
-    MCVERSION = "latest-snapshot"
-
-
 os.chdir(Path(__file__).resolve().parent.parent)
 sys.path.append(str(Path.cwd()))
 
@@ -23,7 +15,7 @@ if not Path("blpack.py").is_file():
 
 import blpack
 
-MCVERSION = blpack.get_version(MCVERSION)
+MCVERSION = blpack.import_config_version()
 
 blpack.remove_paths([
     "data/blpack/function/picked_up_item",
