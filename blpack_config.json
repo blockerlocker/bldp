@@ -20,6 +20,6 @@
         "entity_midpoint",
         "entity_name",
         "entity_type",
-        "pos"
+        "marker_pos"
     ]
 }
