@@ -1,7 +1,7 @@
 {
     "pack": {
-        "min_format": 118,
-        "max_format": 118,
-        "description": "blockerlocker data pack library."
+        "min_format": 126,
+        "max_format": 126,
+        "description": "blockerlocker data pack and resource pack library."
     }
 }
