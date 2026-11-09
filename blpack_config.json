@@ -19,6 +19,7 @@
     "data/get": [
         "entity_midpoint",
         "entity_name",
-        "entity_type"
+        "entity_type",
+        "pos"
     ]
 }

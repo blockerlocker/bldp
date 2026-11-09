@@ -23,7 +23,8 @@ if config == None:
     config = [
         "entity_midpoint",
         "entity_name",
-        "entity_type"
+        "entity_type",
+        "pos"
     ]
 
 if "entity_midpoint" in config:
@@ -56,3 +57,11 @@ if "entity_type" in config:
         "kill dd344b15-32c3-4264-b149-f1e0c083f0f2"
     ])
     blpack.string_to_file(entity_type,"data/blpack/function/get","entity_type.mcfunction")
+
+if "pos" in config:
+    pos = "\n".join([
+            "summon marker ~ ~ ~ {UUID:uuid('af00b426-cb84-4039-b96b-cdd86e165734')}",
+            "data modify storage blpack:get all.pos set from entity af00b426-cb84-4039-b96b-cdd86e165734 Pos",
+            "kill af00b426-cb84-4039-b96b-cdd86e165734"
+        ])
+    blpack.string_to_file(pos,"data/blpack/function/get","pos.mcfunction")
